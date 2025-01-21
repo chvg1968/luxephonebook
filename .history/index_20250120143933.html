@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bahia Beach Directory</title>
+    <link rel="stylesheet" href="/public/assets/styles/main.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo-container">
+            <img src="/public/assets/images/logo.png" alt="Luxe Properties Logo" class="logo">
+        </div>
+        
+        <h1 class="main-title">Luxe Properties - Bahia Phone Book - Puerto Rico</h1>
+        
+        <section class="search-section">
+            <div class="search-box">
+                <input 
+                    type="text" 
+                    id="searchInput" 
+                    class="search-input" 
+                    placeholder="Search by name or description..."
+                    aria-label="Search contacts"
+                >
+                <select 
+                    id="categorySelect" 
+                    class="category-select"
+                    aria-label="Filter by category"
+                >
+                    <option value="">All categories</option>
+                </select>
+            </div>
+            <div id="stats" class="stats"></div>
+        </section>
+
+        <div id="resultsContainer" class="results"></div>
+    </div>
+
+    <script type="module" src="/public/js/main.js"></script>
+</body>
+</html>

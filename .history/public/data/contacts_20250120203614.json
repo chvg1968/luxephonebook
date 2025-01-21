@@ -1,0 +1,471 @@
+[
+    {
+      "name"       : "Ambulancias Medina"       ,
+      "phone"      : "787-930-1717"             ,
+      "category"   : "Emergency"                ,
+      "description": "Private Ambulance Service",
+      "section"    : "Emergency Services"
+    },
+    {
+      "name"       : "Dr. Daniela Mendoza",
+      "phone"      : "787-662-5894"       ,
+      "category"   : "Medical"            ,
+      "description": "Emergency Doctor"   ,
+      "section"    : "Emergency Services"
+    },
+    {
+      "name"       : "Dr. Torres"                                 ,
+      "phone"      : "787-692-2072"                               ,
+      "category"   : "Medical"                                    ,
+      "description": "Emergency Doctor, Alternative: 787-667-5031",
+      "section"    : "Emergency Services"
+    },
+    {
+      "name"       : "Dr. Jorge L. Catasus"           ,
+      "phone"      : "787-379-3777"                   ,
+      "category"   : "Medical"                        ,
+      "description": "24/7 Medical Concierge Services",
+      "section"    : "Emergency Services"
+    },
+    {
+      "name"       : "Dr. Jose Castro"      ,
+      "phone"      : "787-306-4231"         ,
+      "category"   : "Medical"              ,
+      "description": "24/7 Medical Services",
+      "section"    : "Emergency Services"
+    },
+    {
+      "name"       : "Security"                ,
+      "phone"      : "787-809-8940"            ,
+      "category"   : "Security"                ,
+      "description": "Resort Security Services",
+      "section"    : "Emergency Services"
+    },
+    {
+      "name"       : "Gatehouse Reception"    ,
+      "phone"      : "787-809-8895"           ,
+      "category"   : "Reception"              ,
+      "description": "Main entrance reception",
+      "section"    : "Emergency Services"
+    },
+    {
+      "name"       : "Golf Shop"                          ,
+      "phone"      : "787-809-8950"                       ,
+      "category"   : "Golf"                               ,
+      "description": "For golf reservations and equipment",
+      "section"    : "Sports"
+    },
+    {
+      "name"       : "Cocoteros Diner"                                ,
+      "phone"      : "787-303-0722"                                   ,
+      "category"   : "Restaurant"                                     ,
+      "description": "Golf course restaurant. Daily 7:30 AM - 4:00 PM",
+      "section"    : "Restaurants"
+    },
+    {
+      "name"       : "Tennis Center"                         ,
+      "phone"      : "787-809-8877"                          ,
+      "category"   : "Tennis"                                ,
+      "description": "Tennis courts and lessons reservations",
+      "section"    : "Sports"
+    },
+    {
+      "name"       : "The Beach Club Restaurant"                     ,
+      "phone"      : "787-809-8881"                                  ,
+      "category"   : "Restaurant"                                    ,
+      "description": "Wed-Sun 11:00 AM - 10:00 PM. Lunch and dinner.",
+      "section"    : "Restaurants"
+    },
+    {
+      "name"       : "Beach Club Pool Bar"     ,
+      "phone"      : "787-809-8881"            ,
+      "category"   : "Restaurant"              ,
+      "description": "Daily 11:00 AM - 5:00 PM",
+      "section"    : "Restaurants"
+    },
+    {
+      "name"       : "Sand Dollar Seafood Grill" ,
+      "phone"      : "787-809-8881"              ,
+      "category"   : "Restaurant"                ,
+      "description": "Sat-Sun 11:30 AM - 5:00 PM",
+      "section"    : "Restaurants"
+    },
+    {
+      "name"       : "Boathouse Bar"           ,
+      "phone"      : "787-809-8823"            ,
+      "category"   : "Bar"                     ,
+      "description": "Daily 12:00 PM - 4:00 PM",
+      "section"    : "Restaurants"
+    },
+    {
+      "name"       : "Blends at Wellness Center"                          ,
+      "phone"      : "787-809-8877"                                       ,
+      "category"   : "Cafe"                                               ,
+      "description": "Coffee, snacks, and shakes. Daily 8:00 AM - 4:00 PM",
+      "section"    : "Restaurants"
+    },
+    {
+      "name"       : "St. Regis Hotel"   ,
+      "phone"      : "787-809-8000"      ,
+      "category"   : "Hotel"             ,
+      "description": "Main hotel contact",
+      "section"    : "Hotel Services"
+    },
+    {
+      "name": "Sea Grapes",
+      "phone": "787-809-8000",
+      "category": "Restaurant",
+      "description": "Daily 7:00 AM - 5:00 PM. Breakfast and lunch. No reservations needed.",
+      "section": "Restaurants"
+    },
+    {
+      "name"       : "The St. Regis Bar"       ,
+      "phone"      : "787-809-8000"            ,
+      "category"   : "Bar"                     ,
+      "description": "Daily 5:00 PM - 10:00 PM",
+      "section"    : "Restaurants"
+    },
+    {
+      "name": "Paros Restaurant",
+      "phone": "787-809-8000",
+      "category": "Restaurant",
+      "description": "Daily 6:00 PM - 10:00 PM. Resort Evening dress code required.",
+      "section": "Restaurants"
+    },
+    {
+      "name"       : "St. Regis Iridium Spa",
+      "phone"      : "787-809-8019"         ,
+      "category"   : "Spa"                  ,
+      "description": "Luxury spa services"  ,
+      "section"    : "Wellness"
+    },
+    {
+      "name"       : "Wellness Center"                                          ,
+      "phone"      : "787-809-8877"                                             ,
+      "category"   : "Fitness"                                                  ,
+      "description": "State-of-the-art fitness center and recreation activities",
+      "section"    : "Wellness"
+    },
+    {
+      "name"       : "Nicky Tours"                                       ,
+      "phone"      : "787-408-2065"                                      ,
+      "category"   : "Tours"                                             ,
+      "description": "El Yunque and Old San Juan Tours, Airport transfer",
+      "section"    : "Tours"
+    },
+    {
+      "name"       : "Shadow Tours" ,
+      "phone"      : "787-962-6924" ,
+      "category"   : "Tours"        ,
+      "description": "General tours",
+      "section"    : "Tours"
+    },
+    {
+      "name"       : "Bespoke Lifestyle Management"                        ,
+      "phone"      : "787-690-8040"                                        ,
+      "category"   : "Tours"                                               ,
+      "description": "All kinds of tours, visit bespokeconcierge.com/tours",
+      "section"    : "Tours"
+    },
+    {
+      "name"       : "Flavors Food Tours"                            ,
+      "phone"      : "787-964-2447"                                  ,
+      "category"   : "Food Tours"                                    ,
+      "description": "Puerto Rican Food Tours and Old San Juan Tours",
+      "section"    : "Tours"
+    },
+    {
+      "name"       : "Hacienda Chocolat PR"                  ,
+      "phone"      : "787-637-5666"                          ,
+      "category"   : "Tours"                                 ,
+      "description": "Cacao Farm Tours and Chocolate Tasting",
+      "section"    : "Tours"
+    },
+    {
+      "name"       : "Carabalí Rainforest Adventure Park" ,
+      "phone"      : "787-889-4954"                       ,
+      "category"   : "Adventure"                          ,
+      "description": "ATVs, UTVs, Horseback riding, Karts",
+      "section"    : "Tours"
+    },
+    {
+      "name": "Beach Aquavento",
+      "phone": "808-283-5357",
+      "category": "Water Sports",
+      "description": "Beach activities and water sports. Alternative: 787-664-9175",
+      "section": "Activities"
+    },
+    {
+      "name"       : "Gringo Jet Ski Rentals"   ,
+      "phone"      : "787-362-9982"             ,
+      "category"   : "Water Sports"             ,
+      "description": "Jet ski rentals and tours",
+      "section"    : "Activities"
+    },
+    {
+      "name"       : "PR Jet Skis"              ,
+      "phone"      : "787-397-3342"             ,
+      "category"   : "Water Sports"             ,
+      "description": "Jet ski rentals and tours",
+      "section"    : "Activities"
+    },
+    {
+      "name"       : "East Island Excursions"         ,
+      "phone"      : "787-860-3434"                   ,
+      "category"   : "Boat Tours"                     ,
+      "description": "Boat excursions and water tours",
+      "section"    : "Activities"
+    },
+    {
+      "name"       : "Sail Getaways"               ,
+      "phone"      : "787-860-7327"                ,
+      "category"   : "Boat Tours"                  ,
+      "description": "Sailing tours and excursions",
+      "section"    : "Activities"
+    },
+    {
+      "name"       : "Samy Transportation"            ,
+      "phone"      : "787-435-8555"                   ,
+      "category"   : "Transportation"                 ,
+      "description": "General transportation services",
+      "section"    : "Transportation"
+    },
+    {
+      "name"       : "Rio Grande Taxis"  ,
+      "phone"      : "939-272-7777"      ,
+      "category"   : "Transportation"    ,
+      "description": "Local taxi service",
+      "section"    : "Transportation"
+    },
+    {
+      "name"       : "Many Transportation"   ,
+      "phone"      : "787-315-8716"          ,
+      "category"   : "Transportation"        ,
+      "description": "Transportation service",
+      "section"    : "Transportation"
+    },
+    {
+      "name"       : "Shadow Transportation"                            ,
+      "phone"      : "787-962-6924"                                     ,
+      "category"   : "Transportation"                                   ,
+      "description": "Transportation service. Alternative: 787-800-4379",
+      "section"    : "Transportation"
+    },
+    {
+      "name"       : "Limo Service Bahia"                                      ,
+      "phone"      : "939-334-5949"                                            ,
+      "category"   : "Transportation"                                          ,
+      "description": "Luxury transportation service. Alternative: 787-809-8889",
+      "section"    : "Transportation"
+    },
+    {
+      "name"       : "Chef Jose Campís"                     ,
+      "phone"      : "787-423-2298"                         ,
+      "category"   : "Personal Chef"                        ,
+      "description": "Personal chef specializing in paellas",
+      "section"    : "Personal Services"
+    },
+    {
+      "name"       : "Chef Josué Montañez"   ,
+      "phone"      : "787-378-2944"          ,
+      "category"   : "Personal Chef"         ,
+      "description": "Personal chef services",
+      "section"    : "Personal Services"
+    },
+    {
+      "name"       : "Joaquín Gonzalez"                        ,
+      "phone"      : "787-587-5623"                            ,
+      "category"   : "Personal Chef"                           ,
+      "description": "Cultura Culinaria personal chef services",
+      "section"    : "Personal Services"
+    },
+    {
+      "name"       : "Carolina Bustamante Photography"           ,
+      "phone"      : "787-365-2266"                              ,
+      "category"   : "Photography"                               ,
+      "description": "Professional photography - Picture Perfect",
+      "section"    : "Personal Services"
+    },
+    {
+      "name"       : "Michael Germosen"         ,
+      "phone"      : "787-648-5259"             ,
+      "category"   : "Photography"              ,
+      "description": "Professional photographer",
+      "section"    : "Personal Services"
+    },
+    {
+      "name"       : "Karyn Otero"                         ,
+      "phone"      : "787-662-0983"                        ,
+      "category"   : "Beauty"                              ,
+      "description": "Hair, nails, makeup, and reflexology",
+      "section"    : "Beauty"
+    },
+    {
+      "name"       : "Priscila Verges"  ,
+      "phone"      : "787-674-2065"     ,
+      "category"   : "Massage"          ,
+      "description": "Massage & Facials",
+      "section"    : "Beauty"
+    },
+    {
+      "name"       : "Alejandra Soto"              ,
+      "phone"      : "787-209-9219"                ,
+      "category"   : "Fitness"                     ,
+      "description": "Personal Trainer and Pilates",
+      "section"    : "Wellness"
+    },
+    {
+      "name"       : "Solimar"         ,
+      "phone"      : "787-388-8521"    ,
+      "category"   : "Fitness"         ,
+      "description": "Personal Trainer",
+      "section"    : "Wellness"
+    },
+    {
+      "name"       : "Wanda Sanchez"  ,
+      "phone"      : "787-315-1537"   ,
+      "category"   : "Yoga"           ,
+      "description": "Yoga Instructor",
+      "section"    : "Wellness"
+    },
+    {
+      "name"       : "Coral Ayala"   ,
+      "phone"      : "787-400-0097"  ,
+      "category"   : "Childcare"     ,
+      "description": "Nanny services",
+      "section"    : "Childcare"
+    },
+    {
+      "name"       : "Liz Villafañe" ,
+      "phone"      : "787-710-4330"  ,
+      "category"   : "Childcare"     ,
+      "description": "Nanny services",
+      "section"    : "Childcare"
+    },
+    {
+      "name"       : "Sitters for your kids"            ,
+      "phone"      : "787-964-4611"                     ,
+      "category"   : "Childcare"                        ,
+      "description": "Professional babysitting services",
+      "section"    : "Childcare"
+    },
+    {
+      "name"       : "St Regis Kid's Club"                        ,
+      "phone"      : "787-809-8000"                               ,
+      "category"   : "Childcare"                                  ,
+      "description": "Children's activities and care at St. Regis",
+      "section"    : "Childcare"
+    },
+    {
+      "restaurants": [
+        {
+          "name": "The Beach Club Restaurant",
+          "phone": "787-809-8881",
+          "category": "Restaurant",
+          "description": "Wed-Sun 11:00 A.M.- 10:00 P.M.",
+          "services": "Lunch and dinner",
+          "section": "Resort Venues"
+        },
+        {
+          "name": "The Beach Club Pool Bar", 
+          "services": "is open daily and has food service",
+          "description": "11:00 A.M.- 5:00 P.M.",
+          "section": "Resort Venues"
+        },
+        {
+          "name": "Sand Dollar Seafood Grill",
+          "description": "Sat-Sun 11:30 A.M.- 5:00 P.M.",
+          "section": "Resort Venues"
+        },
+        {
+          "name": "Cocoteros Diner",
+          "location": "at the golf course",
+          "phone": "787-303-0722",
+          "description": "Daily 7:30 A.M.- 4:00 P.M.",
+          "services": "Breakfast and lunch",
+          "section": "Resort Venues"
+        },
+        {
+          "name": "Boathouse Bar",
+          "description": "Daily 12:00 P.M.- 4:00 P.M.",
+          "phone": "787-809-8823",
+          "section": "Resort Venues"
+        },
+        {
+          "name": "Blends",
+          "location": "at Wellness Center", 
+          "services": "Coffee, snacks, and shakes",
+          "phone": "787-809-8877",
+          "description": "Daily 8:00 A.M.- 4:00 P.M.",
+          "section": "Resort Venues"
+        },
+        {
+          "section": "St. Regis Hotel",
+          "phone": "787-809-8000",
+          "restriction": "THESE RESTAURANTS ARE RESTRICTED JUST FOR ST. REGIS' GUESTS WHEN THE HOTEL HAS HIGH OCCUPANCY. ASK FOR AVAILABILITY ON THE SAME DAY.",
+          "venues": [
+            {
+              "name": "Sea Grapes",
+              "location": "at pool",
+              "description": "Daily 7:00 A.M.- 5:00 P.M.",
+              "services": "Breakfast and lunch",
+              "additional_info": "No reservations needed. Walk-ins accepted."
+            },
+            {
+              "name": "The St. Regis Bar",
+              "description": "Daily 5:00 P.M.- 10:00 P.M."
+            },
+            {
+              "name": "Paros at the St. Regis",
+              "description": "Daily 6:00 P.M.- 10:00 P.M.",
+              "dress_code": "Resort Evening: (No shorts, no T-shirts, no flip flops, and no sleeveless shirts for men)"
+            }
+          ]
+        }
+      ]
+     },
+     {
+      "venues": [
+        {
+          "name": "Beach Club Pools",
+          "services": "\"Family\" and \"Just Adults\" members' pools with full service",
+          "category": "Pools",
+          "section": "Resort Venues"
+        },
+        {
+          "name": "Veranda's Pool at Club House",
+          "services": "self-service grill, kitchenette, pool table and lawn",
+          "category": "Pools",
+          "section": "Resort Venues"
+        },
+        {
+          "name": "Beach Club",
+          "description": "You can access this beach through the Beach Club area. You can park your cart at the Golf shop and walk through the Beach Club pools.",
+          "category": "Beaches",
+          "section": "Resort Venues"
+        },
+        {
+          "name": "Sand Dollar Beach",
+          "description": "You can access this beach through a hidden path entering the 18th hole at the golf course.",
+          "category": "Beaches",
+          "section": "Resort Venues"
+        },
+        {
+          "name": "Nature and Wildlife",
+          "phone": "787-809-8920",
+          "description": "Landscape of Bahia Beach on foot or bike as you explore four miles of nature trails within the 483-acre gated resort.",
+          "email": "concierge@bahiapr.com",
+          "services": "For nature tours and dog shelter/ cat sanctuary visits.",
+          "category": "Nature and Wildlife",
+          "section": "Resort Venues"
+        },
+        {
+          "name": "St Regis Iridium Spa",
+          "phone": "787-809-8019",
+          "category": "Wellnes",
+          "section": "Resort Venues"
+        }
+      ]
+     }
+  ]
+  

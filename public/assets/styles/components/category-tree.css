@@ -1,0 +1,144 @@
+.category-tree {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: visible;
+    margin-bottom: 1rem;
+    position: relative;
+    z-index: 20;
+    padding: 1rem;
+}
+
+.category-item {
+    border-bottom: 1px solid #eee;
+    position: relative;
+}
+
+.category-item:last-child {
+    border-bottom: none;
+}
+
+.category-header {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    gap: 0.75rem;
+    position: relative;
+    background: #fff;
+    z-index: 2;
+}
+
+.category-header:hover {
+    background-color: #f8f9fa;
+}
+
+.category-header i:first-child {
+    width: 20px;
+    text-align: center;
+    color: #666;
+}
+
+.category-header span {
+    flex: 1;
+    font-weight: 500;
+    color: #333;
+}
+
+.category-header .fa-chevron-down {
+    font-size: 0.75rem;
+    color: #999;
+    transition: transform 0.3s ease;
+}
+
+.category-header.active .fa-chevron-down {
+    transform: rotate(180deg);
+}
+
+.category-header.selected {
+    background-color: #e9ecef;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.category-header.selected i:first-child {
+    color: #007bff;
+}
+
+.subcategories {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease;
+    background-color: #f8f9fa;
+    position: relative;
+    z-index: 1;
+}
+
+/* Asegurar que las subcategorías expandidas sean visibles */
+.category-header.active + .subcategories {
+    height: auto;
+    max-height: none;
+    overflow: visible;
+}
+
+/* Ajuste para el contenedor de búsqueda */
+.search-column {
+    position: relative;
+    z-index: 4;
+}
+
+/* Estilos responsive para subcategorías */
+@media (max-width: 768px) {
+    .subcategories .subcategories {
+        position: static;
+        left: auto;
+        width: 100%;
+        box-shadow: none;
+        border-radius: 0;
+        background-color: #f8f9fa;
+    }
+
+    .level-1 .category-header {
+        padding-left: 1.5rem;
+    }
+
+    .level-2 .category-header {
+        padding-left: 2.5rem;
+    }
+
+    .level-3 .category-header {
+        padding-left: 3.5rem;
+    }
+
+    /* Ajustar la animación para móvil */
+    .subcategories {
+        transition: max-height 0.3s ease-out;
+    }
+
+    .category-header.active + .subcategories {
+        max-height: 1000px; /* Valor alto para asegurar que todo el contenido sea visible */
+    }
+
+    /* Mejorar la visibilidad de la jerarquía */
+    .level-1 {
+        background-color: #f8f9fa;
+    }
+
+    .level-2 {
+        background-color: #f0f0f0;
+    }
+
+    .level-3 {
+        background-color: #e8e8e8;
+    }
+
+    /* Ajustar los íconos para mejor visibilidad */
+    .category-header .fa-chevron-down {
+        transform: rotate(-90deg);
+    }
+
+    .category-header.active .fa-chevron-down {
+        transform: rotate(0deg);
+    }
+}
