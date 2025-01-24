@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location</title>
+    <link rel="stylesheet" href="/public/assets/styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .map-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .map-image {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .back-to-home {
+            padding: 1rem 1.5rem;
+            background-color: #fff;
+            border-radius: 8px;
+            margin-top: 1.5rem;
+            display: inline-block;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .back-to-home:hover {
+            background-color: #f8f8f8;
+            transform: translateY(-2px);
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="property-welcome">
+            <h1 id="propertyTitle">LOCATION</h1>
+            <a href="villaclara.html" class="back-to-home">
+                <i class="fas fa-home"></i>
+                <span>Back to home</span>
+            </a>
+        </div>
+
+        <div class="map-container">
+            <img src="/public/assets/images/map.jpg" alt="Location Map" class="map-image">
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location</title>
+    <link rel="stylesheet" href="/public/assets/styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .map-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .map-image {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .property-welcome {
+            position: relative;
+            min-height: 120px;
+        }
+        .back-to-home {
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            padding: 0.8rem 1.2rem;
+            background-color: #fff;
+            border-radius: 8px;
+            display: inline-flex;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            text-decoration: none;
+            color: #FF9800;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            z-index: 10;
+        }
+        .back-to-home:hover {
+            background-color: #FFF8E1;
+            transform: translateX(-5px);
+        }
+        .back-to-home i {
+            font-size: 1.2rem;
+            margin-right: 0.5rem;
+        }
+        @media (max-width: 768px) {
+            .property-welcome {
+                padding: 4rem 1.2rem 1.2rem 1.2rem;
+                min-height: 100px;
+            }
+            .back-to-home {
+                padding: 0.6rem 1rem;
+                font-size: 0.9rem;
+            }
+            .back-to-home i {
+                font-size: 1rem;
+            }
+            .property-welcome h1 {
+                font-size: 1.8rem;
+            }
+        }
+        @media (max-width: 480px) {
+            .property-welcome h1 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="property-welcome">
+            <h1 id="propertyTitle">LOCATION</h1>
+            <a href="villaclara.html" class="back-to-home">
+                <i class="fas fa-home"></i>
+                <span>Back to home</span>
+            </a>
+        </div>
+
+        <div class="map-container">
+            <img src="/public/assets/images/map.jpg" alt="Location Map" class="map-image">
+        </div>
+    </main>
+</body>
+</html>
