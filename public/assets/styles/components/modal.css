@@ -1,0 +1,66 @@
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    /* Centrado con flexbox */
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    padding: 2rem;
+    border: 1px solid #888;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 8px;
+    max-height: 80vh;
+    overflow-y: auto;
+    /* Quitar margin y usar flexbox del padre */
+    margin: 0;
+    position: relative;
+    /* Sombra suave */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.close {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.close:hover {
+    color: #000;
+}
+
+.info-section {
+    margin: 20px 0;
+}
+
+.warning {
+    background-color: #fff3cd;
+    border: 1px solid #ffeeba;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+.warning-text {
+    color: #856404;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Asegurar que la modal se muestre correctamente */
+.modal.show {
+    display: flex;
+}

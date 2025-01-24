@@ -77,12 +77,6 @@ export const contacts = [
     "section": "Golf Cart"
   },
   {
-    "name": "Golf Cart Services",
-    "phone": "787-809-8000",
-    "category": "Golf Cart",
-    "description": "For maintenance and repairs of the golf cart."
-  },
-  {
     "name": "The Beach Club Restaurant",
     "phone": "787-809-8881",
     "category": "Restaurant",

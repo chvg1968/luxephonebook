@@ -77,12 +77,6 @@ export const contacts = [
     "section": "Golf Cart"
   },
   {
-    "name": "Golf Cart Services",
-    "phone": "787-809-8000",
-    "category": "Golf Cart",
-    "description": "For maintenance and repairs of the golf cart."
-  },
-  {
     "name": "The Beach Club Restaurant",
     "phone": "787-809-8881",
     "category": "Restaurant",
@@ -338,14 +332,14 @@ export const contacts = [
     "name": "Aventureagroup.com",
     "phone": null,
     "category": "Aqua Tours",
-    "description": "Yacht charter",
+    "description": null,
     "section": "Resort activities and adventures"
   },
   {
     "name": "Ricardo Yacht Charters",
     "phone": "787-461-6474",
     "category": "Aqua Tours",
-    "description": "Yacht charter",
+    "description": null,
     "section": "Resort activities and adventures"
   },
   {
@@ -366,7 +360,7 @@ export const contacts = [
     "name": "Laurelyn private tours",
     "phone": "+64-22-064-7615",
     "category": "Scuba Diving Tours",
-    "description": "Scuba Diving",
+    "description": null,
     "section": "Resort activities and adventures"
   },
   {
