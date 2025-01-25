@@ -30,7 +30,6 @@ export class CategoryTree {
             "Tennis Reservations": "fa-table-tennis",
             "Wellness Center": "fa-heart-pulse",
             "Concierge": "fa-bell-concierge",
-            "Concierge Services": "fa-bell-concierge",
             "Transportation": "fa-taxi",
             "Nanny Services": "fa-baby",
             "Professional Photography": "fa-camera",
@@ -40,6 +39,7 @@ export class CategoryTree {
             "Pre-Made Meals and Catering": "fa-plate-wheat",
             "Delivery Services and Personal Grocery Shopping": "fa-shopping-cart",
             "Butler Services": "fa-user-tie",
+            "Concierge Services": "fa-bell-concierge",
             "Shopping": "fa-shopping-bag"
         };
     }

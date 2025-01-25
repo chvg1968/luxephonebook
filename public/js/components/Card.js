@@ -27,12 +27,12 @@ export class Card {
             "Wellness center": "fa-heart-pulse",
             
             // Activities
-            "Tours": "fa-map-location-dot",
             "Scuba Diving Tours": "fa-water",
             "Aqua Tours": "fa-ship",
             "Tennis Reservations": "fa-table-tennis-paddle-ball",
             "Activities Reservations": "fa-person-swimming",
-            "Concierge": "fa-concierge-bell",
+            "Concierge": "fa-bell-concierge",
+            "Concierge Services": "fa-bell-concierge",
             
             // Services
             "Personal Chefs": "👨‍🍳",
@@ -41,8 +41,8 @@ export class Card {
             "Butler Services": "fa-user-tie",
             "Shopping": "fa-shopping-bag",
             "Transportation": "fa-taxi",
-            "Delivery Services and Personal Grocery Shopping": "fa-truck-fast",
-            "Nanny Service": "fa-baby",
+            "Delivery Services": "fa-truck-fast",
+            "Nanny Services": "fa-baby",
             "Professional Photography": "fa-camera",
             "Personal Care and Fitness": "fa-hand-sparkles",
             "Kid's Club": "fa-children",

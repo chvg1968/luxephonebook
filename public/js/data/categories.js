@@ -152,11 +152,6 @@ export const categories = {
         name: 'Off Property',
         icon: 'fas fa-map-marker-alt',
         subcategories: {
-            tours: {
-                id: 'Tours',
-                name: 'Tours/Places to Visit',
-                icon: 'fas fa-map-marked-alt'
-            },
             shopping: {
                 id: 'Shopping',
                 name: 'Shopping',

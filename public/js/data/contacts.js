@@ -457,29 +457,64 @@ export const contacts = [
   {
     "name": "Stephanie Rohena",
     "phone": "787-550-3849",
-    "category": "Delivery Services and Personal Grocery Shopping",
+    "category": "Delivery Services",
     "description": null,
     "section": "Catering/delivery/special services"
   },
   {
     "name": "Naidoa",
     "phone": "787-400-0097",
-    "category": "Delivery Services and Personal Grocery Shopping",
+    "category": "Delivery Services",
     "description": null,
     "section": "Catering/delivery/special services"
   },
   {
     "name": "Elite Errands",
     "phone": "939-339-5063",
-    "category": "Delivery Services and Personal Grocery Shopping",
+    "category": "Delivery Services",
     "description": "(After 5:00 P.M.)",
     "section": "Catering/delivery/special services"
   },
   {
     "name": "Sammy Driver",
     "phone": "787-435-8555",
-    "category": "Delivery Services and Personal Grocery Shopping",
+    "category": "Delivery Services",
     "description": null,
+    "section": "Catering/delivery/special services"
+  },
+  {
+    "name": "Instacart",
+    "phone": null,
+    "category": "Delivery Services",
+    "description": "Grocery delivery service",
+    "section": "Catering/delivery/special services"
+  },
+  {
+    "name": "Uber Eats",
+    "phone": null,
+    "category": "Delivery Services",
+    "description": "Food delivery service",
+    "section": "Catering/delivery/special services"
+  },
+  {
+    "name": "Door Dash",
+    "phone": null,
+    "category": "Delivery Services",
+    "description": "Food delivery service",
+    "section": "Catering/delivery/special services"
+  },
+  {
+    "name": "Uva",
+    "phone": null,
+    "category": "Delivery Services",
+    "description": "Grocery delivery service",
+    "section": "Catering/delivery/special services"
+  },
+  {
+    "name": "Selectos",
+    "phone": null,
+    "category": "Delivery Services",
+    "description": "Grocery delivery service",
     "section": "Catering/delivery/special services"
   },
   {
@@ -604,42 +639,42 @@ export const contacts = [
   {
     "name": "Coral Ayala",
     "phone": "787-400-0097",
-    "category": "Nanny Service",
+    "category": "Nanny Services",
     "description": null,
     "section": "Catering/delivery/special services"
   },
   {
     "name": "Liz Villafañe",
     "phone": "787-710-4330",
-    "category": "Nanny Service",
+    "category": "Nanny Services",
     "description": null,
     "section": "Catering/delivery/special services"
   },
   {
     "name": "Karyan Baez",
     "phone": "939-249-5346",
-    "category": "Nanny Service",
+    "category": "Nanny Services",
     "description": null,
     "section": "Catering/delivery/special services"
   },
   {
     "name": "Jennifer Huertas",
     "phone": "939-275-1580",
-    "category": "Nanny Service",
+    "category": "Nanny Services",
     "description": null,
     "section": "Catering/delivery/special services"
   },
   {
     "name": "Francheska",
     "phone": "787-903-2427",
-    "category": "Nanny Service",
+    "category": "Nanny Services",
     "description": null,
     "section": "Catering/delivery/special services"
   },
   {
     "name": "Sitters for your kids: @sitterskids on IG",
     "phone": null,
-    "category": "Nanny Service",
+    "category": "Nanny Services",
     "description": null,
     "section": "Catering/delivery/special services"
   },
