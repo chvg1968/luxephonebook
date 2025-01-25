@@ -140,5 +140,125 @@ class PropertyPage {
   }
 }
 
+// Funciones para el modal del mapa
+let currentScale = 1;
+let isDragging = false;
+let startX, startY, translateX = 0, translateY = 0;
+
+window.openMapModal = function() {
+  const modal = document.getElementById('mapModal');
+  if (modal) {
+    modal.style.display = 'block';
+    document.body.style.overflow = 'hidden';
+    setupMapInteractions();
+  }
+};
+
+window.closeMapModal = function() {
+  const modal = document.getElementById('mapModal');
+  if (modal) {
+    modal.style.display = 'none';
+    document.body.style.overflow = 'auto';
+    resetMap();
+  }
+};
+
+window.zoomMap = function(factor) {
+  const image = document.getElementById('mapImage');
+  if (image) {
+    currentScale *= factor;
+    // Limitar el zoom entre 0.5 y 4
+    currentScale = Math.min(Math.max(currentScale, 0.5), 4);
+    updateMapTransform();
+  }
+};
+
+window.resetMap = function() {
+  currentScale = 1;
+  translateX = 0;
+  translateY = 0;
+  updateMapTransform();
+};
+
+function updateMapTransform() {
+  const image = document.getElementById('mapImage');
+  if (image) {
+    image.style.transform = `translate(${translateX}px, ${translateY}px) scale(${currentScale})`;
+  }
+}
+
+function setupMapInteractions() {
+  const image = document.getElementById('mapImage');
+  const wrapper = image.parentElement;
+
+  // Manejar arrastre del mapa
+  wrapper.addEventListener('mousedown', startDragging);
+  wrapper.addEventListener('mousemove', drag);
+  wrapper.addEventListener('mouseup', stopDragging);
+  wrapper.addEventListener('mouseleave', stopDragging);
+
+  // Eventos táctiles
+  wrapper.addEventListener('touchstart', handleTouchStart);
+  wrapper.addEventListener('touchmove', handleTouchMove);
+  wrapper.addEventListener('touchend', handleTouchEnd);
+
+  // Zoom con rueda del mouse
+  wrapper.addEventListener('wheel', handleWheel);
+}
+
+function startDragging(e) {
+  if (e.type === 'mousedown') {
+    isDragging = true;
+    startX = e.clientX - translateX;
+    startY = e.clientY - translateY;
+  }
+}
+
+function drag(e) {
+  if (!isDragging) return;
+  e.preventDefault();
+  translateX = e.clientX - startX;
+  translateY = e.clientY - startY;
+  updateMapTransform();
+}
+
+function stopDragging() {
+  isDragging = false;
+}
+
+function handleTouchStart(e) {
+  if (e.touches.length === 1) {
+    isDragging = true;
+    startX = e.touches[0].clientX - translateX;
+    startY = e.touches[0].clientY - translateY;
+  }
+}
+
+function handleTouchMove(e) {
+  if (!isDragging || e.touches.length !== 1) return;
+  e.preventDefault();
+  translateX = e.touches[0].clientX - startX;
+  translateY = e.touches[0].clientY - startY;
+  updateMapTransform();
+}
+
+function handleTouchEnd() {
+  isDragging = false;
+}
+
+function handleWheel(e) {
+  e.preventDefault();
+  const delta = e.deltaY * -0.01;
+  zoomMap(1 + delta);
+}
+
+// Cerrar modal al hacer clic fuera de él
+window.addEventListener('click', function(event) {
+  const modal = document.getElementById('mapModal');
+  if (event.target === modal) {
+    closeMapModal();
+  }
+});
+
 // Initialize the page
 new PropertyPage();
