@@ -6,6 +6,7 @@ export class Card {
         this.data = data;
         this.modal = new Modal('golf-cart-modal');
         this.kidsClubModal = new Modal('kids-club-modal');
+        this.golfRatesModal = new Modal('golf-rates-modal');
         this.icons = {
             // Emergency
             "Emergency": "fa-kit-medical",
@@ -17,6 +18,9 @@ export class Card {
             // Golf Cart
             "Golf Cart": "fa-golf-cart",
             "Golf": "fa-golf-ball-tee",
+            
+            // Golf Rates
+            "Golf Schedule and Rates": "fa-golf-ball-tee",
             
             // Restaurants and venues
             "Restaurant": "fa-utensils",
@@ -76,14 +80,71 @@ export class Card {
         return icon ? `fa-solid ${icon}` : 'fa-solid fa-circle-info';
     }
 
-    async loadModalContent(path) {
+    _getBaseUrl() {
+        // Primero intentar window.location.origin
+        if (window.location.origin) {
+            return window.location.origin;
+        }
+        
+        // Fallback: construir manualmente
+        const port = window.location.port ? `:${window.location.port}` : '';
+        return `${window.location.protocol}//${window.location.hostname}${port}`;
+    }
+
+    async loadModalContent(filename) {
         try {
-            const response = await fetch(`/public/pages/${path}`);
-            const html = await response.text();
-            return html;
+            // Usar URL absoluta con método de respaldo
+            const baseUrl = this._getBaseUrl();
+            const fullPath = `${baseUrl}/public/pages/${filename}`;
+            console.log(`🔍 Attempting to load modal content from: ${fullPath}`);
+            
+            const controller = new AbortController();
+            const timeoutId = setTimeout(() => controller.abort(), 5000); // 5 segundos de timeout
+            
+            const response = await fetch(fullPath, { 
+                signal: controller.signal,
+                headers: {
+                    'Cache-Control': 'no-cache',
+                    'Pragma': 'no-cache'
+                }
+            });
+            
+            clearTimeout(timeoutId);
+            
+            if (!response.ok) {
+                console.error(`❌ Fetch failed with status: ${response.status}`);
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            
+            const content = await response.text();
+            console.log('✅ Loaded modal content:', content.substring(0, 500) + '...');
+            
+            // Verificar si el contenido está vacío o contiene solo etiquetas HTML vacías
+            const trimmedContent = content.replace(/\s|<[^>]*>/g, '');
+            if (!content || trimmedContent === '') {
+                console.error(`❌ No meaningful content found in file: ${filename}`);
+                return `
+                    <div class="property-content error-content">
+                        <h2>Content Not Available</h2>
+                        <p>We apologize, but the content for ${filename} could not be loaded.</p>
+                        <p>The file appears to be empty or contains no readable content.</p>
+                    </div>
+                `;
+            }
+            
+            return content;
         } catch (error) {
-            console.error('Error loading modal content:', error);
-            return '<p>Error loading content. Please try again later.</p>';
+            console.error(`❌ Error loading modal content from ${filename}:`, error);
+            
+            // Fallback content con detalles del error
+            return `
+                <div class="property-content error-content">
+                    <h2>Content Loading Error</h2>
+                    <p>We apologize, but the requested content could not be loaded.</p>
+                    <p>Error details: ${error.message}</p>
+                    <p>Filename: ${filename}</p>
+                </div>
+            `;
         }
     }
 
@@ -96,7 +157,8 @@ export class Card {
         
         let descriptionHtml = '';
         if (this.data.description) {
-            if (this.data.category === 'Golf Cart') {
+            // Solo agregar enlace de información para tarjetas específicas
+            if (this.data.name === 'Golf Cart') {
                 descriptionHtml = `
                     <p class="description">
                         ${this.data.description}
@@ -108,7 +170,17 @@ export class Card {
                         ${this.data.description}
                         <a href="#" class="info-link">View Kids Club details</a>
                     </p>`;
+            } else if (this.data.name === 'Golf Schedule and Rates') {
+                descriptionHtml = `
+                    <p class="description">
+                        ${this.data.description}
+                        <a href="#" class="info-link">See Golf Schedule and Rates</a>
+                    </p>`;
+            } else if (this.data.name === 'Golf Shop' || this.data.category === 'Golf Shop') {
+                // Eliminar completamente el enlace de modal para Golf Shop
+                descriptionHtml = `<p class="description">${this.data.description}</p>`;
             } else {
+                // Para todas las demás tarjetas, solo mostrar descripción sin enlace
                 descriptionHtml = `<p class="description">${this.data.description}</p>`;
             }
         }
@@ -127,15 +199,57 @@ export class Card {
             </div>
         `;
 
-        // Agregar event listeners para los modales
+        // Agregar eventos para modales solo para tarjetas específicas
+        if (this.data.name === 'Golf Schedule and Rates') {
+            const infoLink = card.querySelector('.info-link');
+            if (infoLink) {
+                infoLink.addEventListener('click', async (e) => {
+                    e.preventDefault();
+                    try {
+                        console.log('Golf Rates modal: Loading content...');
+                        const content = await this.loadModalContent('golfrates.html');
+                        console.log('Golf Rates modal: Content loaded, setting modal...');
+                        this.golfRatesModal.setContent(content);
+                        console.log('Golf Rates modal: Showing modal...');
+                        this.golfRatesModal.show();
+                    } catch (error) {
+                        console.error('Error in Golf Rates modal:', error);
+                        this.golfRatesModal.setContent(`
+                            <div class="property-content">
+                                <h2>Error Loading Golf Rates</h2>
+                                <p>We apologize, but the golf rates could not be loaded.</p>
+                                <p>Error: ${error.message}</p>
+                            </div>
+                        `);
+                        this.golfRatesModal.show();
+                    }
+                });
+            }
+        }
+
         if (this.data.category === 'Golf Cart') {
             const infoLink = card.querySelector('.info-link');
             if (infoLink) {
                 infoLink.addEventListener('click', async (e) => {
                     e.preventDefault();
-                    const content = await this.loadModalContent('golfcart.html');
-                    this.modal.setContent(content);
-                    this.modal.show();
+                    try {
+                        console.log('Golf Cart modal: Loading content...');
+                        const content = await this.loadModalContent('golfcart.html');
+                        console.log('Golf Cart modal: Content loaded, setting modal...');
+                        this.modal.setContent(content);
+                        console.log('Golf Cart modal: Showing modal...');
+                        this.modal.show();
+                    } catch (error) {
+                        console.error('Error in Golf Cart modal:', error);
+                        this.modal.setContent(`
+                            <div class="property-content">
+                                <h2>Error Loading Golf Cart Information</h2>
+                                <p>We apologize, but the golf cart information could not be loaded.</p>
+                                <p>Error: ${error.message}</p>
+                            </div>
+                        `);
+                        this.modal.show();
+                    }
                 });
             }
         } else if (this.data.name === "St Regis Kid's Club") {
@@ -143,9 +257,24 @@ export class Card {
             if (infoLink) {
                 infoLink.addEventListener('click', async (e) => {
                     e.preventDefault();
-                    const content = await this.loadModalContent('tortuga.html');
-                    this.kidsClubModal.setContent(content);
-                    this.kidsClubModal.show();
+                    try {
+                        console.log('Kids Club modal: Loading content...');
+                        const content = await this.loadModalContent('tortuga.html');
+                        console.log('Kids Club modal: Content loaded, setting modal...');
+                        this.kidsClubModal.setContent(content);
+                        console.log('Kids Club modal: Showing modal...');
+                        this.kidsClubModal.show();
+                    } catch (error) {
+                        console.error('Error in Kids Club modal:', error);
+                        this.kidsClubModal.setContent(`
+                            <div class="property-content">
+                                <h2>Error Loading Kids Club Information</h2>
+                                <p>We apologize, but the Kids Club information could not be loaded.</p>
+                                <p>Error: ${error.message}</p>
+                            </div>
+                        `);
+                        this.kidsClubModal.show();
+                    }
                 });
             }
         }

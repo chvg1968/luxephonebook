@@ -98,7 +98,7 @@ class PropertyPage {
       return;
     }
 
-    if (this.state.filters.section === 'Emergency' || this.state.filters.section === 'Golf Cart') {
+    if (this.state.filters.section === 'Emergency' || this.state.filters.section === 'Golf') {
       this.state.menuResults = this.state.contacts.filter(contact => 
         contact.section === this.state.filters.section
       );

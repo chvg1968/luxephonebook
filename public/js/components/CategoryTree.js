@@ -69,7 +69,7 @@ export class CategoryTree {
                 isSpecial: true,
                 categories: []
             },
-            "Golf Cart": {
+            "Golf": {
                 isSpecial: true,
                 categories: []
             },

@@ -7,10 +7,10 @@ export const contacts = [
     "section": "Emergency"
   },
   {
-    "name": "Ambulancias Medina",
+    "name": "Emergency Ambulance",
     "phone": "787-930-1717",
     "category": "Emergency",
-    "description": null,
+    "description": "Ambulancias Medina",
     "section": "Emergency"
   },
   {
@@ -59,7 +59,7 @@ export const contacts = [
     "name": "Security",
     "phone": "787-809-8940",
     "category": "Emergency",
-    "description": null,
+    "description": "Bahia Beach Security",
     "section": "Emergency"
   },
   {
@@ -73,15 +73,22 @@ export const contacts = [
     "name": "Golf shop",
     "phone": "787-809-8950",
     "category": "Golf Cart",
-    "description": null,
-    "section": "Golf Cart"
+    "description": "Golf reservations",
+    "section": "Golf"
   },
   {
     "name": "Golf Cart Services",
     "phone": "787-809-8000",
     "category": "Golf Cart",
     "description": "For maintenance and repairs of the golf cart.",
-    "section": "Golf Cart"  
+    "section": "Golf"  
+  },
+  {
+    "name": "Golf Schedule and Rates",
+    "phone": null,
+    "category": "Golf Cart",
+    "description": "See Schedule and Rates table",
+    "section": "Golf"  
   },
   {
     "name": "The Beach Club Restaurant",

@@ -65,63 +65,180 @@ export class Modal {
     }
 
     extractContent(htmlContent) {
+        console.log('🔍 Extracting content from HTML:', htmlContent ? 'Content received' : 'No content');
+        
+        // Verificar si el contenido HTML está vacío o es undefined
+        if (!htmlContent) {
+            console.error('❌ HTML content is empty or undefined');
+            return 'No content available';
+        }
+
         const div = document.createElement('div');
         div.innerHTML = htmlContent;
 
         // Remover elementos innecesarios
-        const elementsToRemove = div.querySelectorAll('head, script, link, a.back-to-home, #propertyTitle');
+        const elementsToRemove = div.querySelectorAll('head, script, link, style, a.back-to-home, #propertyTitle');
         elementsToRemove.forEach(el => el.remove());
 
-        // Obtener el contenido relevante
-        const propertyContent = div.querySelector('.property-content');
-        return propertyContent ? propertyContent.innerHTML : div.innerHTML;
+        // Intentar varios selectores para encontrar contenido, con prioridad
+        const contentSelectors = [
+            // Selectores específicos de Golf Rates
+            '#golf-rates-table',
+            '.golf-rates-content',
+            
+            // Selectores generales
+            '.property-content',
+            'main',
+            'article',
+            'section',
+            'table',
+            'body > div',
+            'body',
+            'div',
+            'html'
+        ];
+
+        let content = null;
+        for (const selector of contentSelectors) {
+            content = div.querySelector(selector);
+            if (content) {
+                console.log(`✅ Content found using selector: ${selector}`);
+                break;
+            } else {
+                console.log(`❌ No content found with selector: ${selector}`);
+            }
+        }
+
+        // Si no encuentra contenido, usar todo el HTML
+        const extractedContent = content ? content.innerHTML : div.innerHTML;
+        
+        // Limpiar contenido de scripts y estilos adicionales
+        const cleanedContent = extractedContent
+            .replace(/<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi, '')
+            .replace(/<style\b[^<]*(?:(?!<\/style>)<[^<]*)*<\/style>/gi, '');
+        
+        console.log('📊 Extracted content details:', {
+            length: cleanedContent.length,
+            firstChars: cleanedContent.substring(0, 500)
+        });
+        
+        return cleanedContent || 'No content available';
     }
 
     setContent(content) {
+        console.log('Setting modal content (raw):', content);
+        
+        // Verificar si el contenido es undefined o null
+        if (content === undefined || content === null) {
+            console.error('Attempted to set undefined or null content');
+            content = 'No content available';
+        }
+
         const modalBody = this.container.querySelector('.modal-body');
         const cleanContent = this.extractContent(content);
-        modalBody.innerHTML = cleanContent;
+        
+        console.log('Clean content:', cleanContent);
+        
+        // Establecer contenido HTML con mejoras de legibilidad y scroll
+        modalBody.innerHTML = `
+            <div class="modal-content-wrapper">
+                ${cleanContent}
+            </div>
+        `;
 
         // Establecer título basado en el ID del modal
         let title = '';
-        if (this.id === 'golf-cart-modal') {
-            title = 'Golf Cart Information';
-            // Eliminar el título dentro del contenido para Golf Cart
-            const contentTitle = modalBody.querySelector('h1');
-            if (contentTitle) {
-                contentTitle.remove();
-            }
-        } else if (this.id === 'kids-club-modal') {
-            title = "Kid's Club Information";
+        switch(this.id) {
+            case 'golf-cart-modal':
+                title = 'Golf Cart Information';
+                break;
+            case 'kids-club-modal':
+                title = "Kid's Club Information";
+                break;
+            case 'golf-rates-modal':
+                title = 'Golf Rates and Schedule';
+                break;
+            default:
+                title = 'Information';
         }
         
         this.container.querySelector('.modal-title').textContent = title;
 
-        // Centrar contenido
-        modalBody.style.textAlign = 'center';
-        modalBody.style.padding = '2rem';
+        // Mejoras de estilo para legibilidad y scroll
+        modalBody.style.textAlign = 'left';
+        modalBody.style.padding = '1rem';
+        modalBody.style.maxWidth = '100%';
+        modalBody.style.margin = '0 auto';
+        modalBody.style.overflowX = 'auto';
+        modalBody.style.WebkitOverflowScrolling = 'touch';
+
+        // Añadir estilos para mejorar legibilidad
+        const styleTag = document.createElement('style');
+        styleTag.textContent = `
+            .modal-content-wrapper {
+                font-size: 16px;
+                line-height: 1.6;
+                color: #333;
+                max-width: 900px;
+                margin: 0 auto;
+            }
+            .modal-content-wrapper table {
+                width: 100%;
+                min-width: 800px;
+                border-collapse: collapse;
+                overflow-x: auto;
+                display: block;
+            }
+            .modal-content-wrapper table th,
+            .modal-content-wrapper table td {
+                border: 1px solid #ddd;
+                padding: 8px;
+                text-align: center;
+                white-space: nowrap;
+            }
+            .modal-content-wrapper img {
+                max-width: 100%;
+                height: auto;
+            }
+            .modal-content-wrapper .info-section {
+                margin-bottom: 1rem;
+            }
+        `;
+        modalBody.appendChild(styleTag);
+
+        console.log('Modal content set successfully');
     }
 
     show() {
+        // Asegurar que el contenedor esté visible antes de agregar clases
+        this.container.style.display = 'block';
+        this.container.style.opacity = '1';
+        this.container.style.visibility = 'visible';
+
+        // Ocultar scroll del body
         document.body.style.overflow = 'hidden';
+
+        // Agregar clases para animación
         this.overlay.classList.add('show');
         this.container.classList.add('show');
-        
-        // Asegurar que el contenedor esté visible
-        this.container.style.display = 'block';
         
         // Forzar un reflow para asegurar que las transiciones funcionen
         void this.container.offsetHeight;
     }
 
     hide() {
+        // Restaurar scroll del body
         document.body.style.overflow = '';
+
+        // Remover clases de animación
         this.overlay.classList.remove('show');
         this.container.classList.remove('show');
         
         // Ocultar después de una pequeña transición
         setTimeout(() => {
             this.container.style.display = 'none';
-        }, 200);
+            this.container.style.opacity = '0';
+            this.container.style.visibility = 'hidden';
+        }, 300);
     }
 }
