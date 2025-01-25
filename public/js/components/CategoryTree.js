@@ -241,4 +241,18 @@ export class CategoryTree {
             resultsContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
     }
+
+    collapseAll() {
+        if (this.container) {
+            // Ocultar el árbol
+            this.container.style.display = 'none';
+        }
+    }
+
+    expandAll() {
+        if (this.container) {
+            // Mostrar el árbol
+            this.container.style.display = 'block';
+        }
+    }
 }

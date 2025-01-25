@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/public/assets/styles/components/category-tree.css">
     <link rel="stylesheet" href="/public/assets/styles/components/card.css">
     <link rel="stylesheet" href="/public/assets/styles/components/modal.css">
+    <link rel="stylesheet" href="/public/assets/styles/components/search.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
@@ -86,18 +87,10 @@
 
                 <!-- Columna de búsqueda y categorías -->
                 <div class="search-column">
-                    <section class="search-section">
-                        <div class="search-box">
-                            <input 
-                                type="text" 
-                                id="searchInput" 
-                                class="search-input" 
-                                placeholder="Search by name or description..."
-                                aria-label="Search contacts"
-                            >
-                        </div>
-                        <div id="stats" class="stats"></div>
-                    </section>
+                    <div class="search-container">
+                        <input type="text" id="searchInput" class="search-input" placeholder="Search contacts...">
+                        <div id="stats" class="search-stats"></div>
+                    </div>
 
                     <!-- Árbol de categorías -->
                     <div id="categoryTree" class="category-tree"></div>
