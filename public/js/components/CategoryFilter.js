@@ -13,6 +13,7 @@ export class CategoryFilter {
         this.onFilter = onFilter;
         this.categories = new Set(initialCategories);
         this.activeCategory = '';
+        this.activeSection = '';
         
         this.init(initialCategories);
         this.setupEventListeners();
@@ -42,8 +43,17 @@ export class CategoryFilter {
      */
     setupEventListeners() {
         this.select.addEventListener('change', () => {
-            this.activeCategory = this.select.value;
-            this.onFilter(this.activeCategory);
+            const selectedValue = this.select.value;
+            
+            // Actualizar sección activa si es una sección principal
+            if (selectedValue === 'Resort restaurants and venues' || selectedValue === 'Off property') {
+                this.activeSection = selectedValue;
+                this.activeCategory = '';
+            } else {
+                this.activeCategory = selectedValue;
+            }
+            
+            this.onFilter(this.activeCategory, this.activeSection);
         });
     }
 
@@ -59,8 +69,9 @@ export class CategoryFilter {
 // Usage example:
 /*
 const categoryFilter = new CategoryFilter({
-    onFilter: (category) => {
+    onFilter: (category, section) => {
         console.log('Selected category:', category);
+        console.log('Selected section:', section);
         // Handle filtering logic here
     },
     initialCategories: ['Restaurant', 'Sports', 'Medical', 'Transportation']

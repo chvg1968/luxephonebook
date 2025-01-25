@@ -19,10 +19,11 @@ class PropertyPage {
     // Estado de la aplicación
     this.state = {
       contacts: contacts,
-      filteredContacts: contacts,
+      filteredByCategory: [], // Lista filtrada por categoría
+      filteredBySearch: [], // Lista filtrada por búsqueda
       filters: {
-        category: null,
-        section: null
+        searchTerm: "",
+        category: ""
       }
     };
 
@@ -46,11 +47,19 @@ class PropertyPage {
     // Inicializar árbol de categorías
     if (this.elements.categoryTree) {
       this.categoryTree = new CategoryTree("categoryTree");
-      this.categoryTree.onSelect(({ category, section }) => {
-        console.log("Selection:", { category, section });
+      this.categoryTree.onSelect((category) => {
+        console.log("Category selected:", category);
+        
+        // Limpiar la búsqueda cuando se selecciona una categoría
+        if (this.searchBar) {
+          this.searchBar.clear();
+        }
+        this.state.filters.searchTerm = "";
+        this.state.filteredBySearch = [];
+        
+        // Actualizar la categoría y mostrar resultados
         this.state.filters.category = category;
-        this.state.filters.section = section;
-        this.updateResults();
+        this.updateCategoryResults();
       });
       this.categoryTree.render();
     }
@@ -61,43 +70,37 @@ class PropertyPage {
 
   updateSearchResults() {
     // Limpiar la categoría seleccionada cuando se busca
-    this.state.filters.category = null;
+    this.state.filters.category = "";
     if (this.categoryTree) {
       this.categoryTree.clearSelection();
     }
     
     // Filtrar por término de búsqueda en todos los contactos
-    this.state.filteredContacts = filterContacts(this.state.contacts, {
-      searchTerm: this.state.filters.searchTerm
+    this.state.filteredBySearch = this.state.contacts.filter(contact => {
+      if (!this.state.filters.searchTerm) return false;
+
+      const searchFields = [
+        contact.name,
+        contact.description,
+        contact.phone
+      ].filter(Boolean);
+
+      const term = this.state.filters.searchTerm.toLowerCase().trim();
+      return searchFields.some(field => 
+        field?.toString().toLowerCase().includes(term)
+      );
     });
 
     this.renderResults();
   }
 
-  updateResults() {
-    // Aplicar filtros
-    this.state.filteredContacts = filterContacts(this.state.contacts, {
-      category: this.state.filters.category,
-      section: this.state.filters.section
+  updateCategoryResults() {
+    // Filtrar por categoría
+    this.state.filteredByCategory = filterContacts(this.state.contacts, {
+      category: this.state.filters.category
     });
 
-    // Limpiar el contenedor de resultados
-    this.elements.resultsContainer.innerHTML = '';
-
-    // Mostrar resultados
-    if (this.state.filteredContacts.length === 0) {
-      this.elements.resultsContainer.innerHTML = '<p class="no-results">No se encontraron resultados</p>';
-    } else {
-      this.state.filteredContacts.forEach(contact => {
-        const card = new Card(contact);
-        this.elements.resultsContainer.appendChild(card.render());
-      });
-    }
-
-    // Actualizar contador
-    if (this.elements.resultsCount) {
-      this.elements.resultsCount.textContent = `${this.state.filteredContacts.length} resultados encontrados`;
-    }
+    this.renderResults();
   }
 
   renderResults() {
@@ -105,15 +108,11 @@ class PropertyPage {
 
     // Si hay término de búsqueda, mostrar resultados de búsqueda
     if (this.state.filters.searchTerm) {
-      resultsToShow = this.state.filteredContacts;
+      resultsToShow = this.state.filteredBySearch;
     } 
     // Si hay categoría seleccionada, mostrar resultados de categoría
     else if (this.state.filters.category) {
-      resultsToShow = this.state.filteredContacts;
-    }
-    // Si no hay filtros, mostrar todos los contactos
-    else {
-      resultsToShow = this.state.contacts;
+      resultsToShow = this.state.filteredByCategory;
     }
 
     // Actualizar contador
@@ -186,5 +185,7 @@ class PropertyPage {
   }
 }
 
-// Initialize the page
-new PropertyPage();
+// Inicializar cuando el DOM esté listo
+document.addEventListener('DOMContentLoaded', () => {
+  new PropertyPage();
+});

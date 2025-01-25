@@ -1,69 +1,127 @@
 // Modal.js
 export class Modal {
-    constructor() {
-        this.modal = null;
+    constructor(id = null) {
+        this.id = id;
+        this.overlay = null;
+        this.container = null;
         this.createModal();
     }
 
     createModal() {
-        this.modal = document.createElement('div');
-        this.modal.className = 'modal';
-        this.modal.innerHTML = `
+        // Limpiar modal existente si existe
+        if (this.id) {
+            const existingOverlay = document.getElementById(`${this.id}-overlay`);
+            const existingContainer = document.getElementById(`${this.id}-container`);
+            if (existingOverlay) existingOverlay.remove();
+            if (existingContainer) existingContainer.remove();
+        }
+
+        // Crear overlay
+        this.overlay = document.createElement('div');
+        this.overlay.className = 'modal-overlay';
+        if (this.id) this.overlay.id = `${this.id}-overlay`;
+
+        // Crear contenedor
+        this.container = document.createElement('div');
+        this.container.className = 'modal-container';
+        if (this.id) this.container.id = `${this.id}-container`;
+        
+        this.container.innerHTML = `
+            <div class="modal-header">
+                <button type="button" class="modal-close" aria-label="Close">&times;</button>
+            </div>
+            <h3 class="modal-title"></h3>
             <div class="modal-content">
-                <span class="close">&times;</span>
-                <h2>Golf Cart Information</h2>
-                
-                <div class="info-section">
-                    <h3>Charging Instructions</h3>
-                    <p>The golf cart has a retractable cord on the back for charging. Please make sure to
-                    retract it when in use so it is not hanging loose and gets damaged.</p>
-                </div>
-
-                <div class="info-section">
-                    <h3>Golf Cart Parking</h3>
-                    <p>Park your cart at its designated parking space and appropriate parking at the different resort venues:</p>
-                    <ul>
-                        <li>Wellness Center</li>
-                        <li>Boathouse/ Water Park</li>
-                        <li>Beach Club pools, restaurants, concierge and golf shop</li>
-                        <li>Cocoteros Diner</li>
-                        <li>Sand Dollar Beach</li>
-                        <li>Valet parking at the St. Regis Hotel</li>
-                    </ul>
-                </div>
-
-                <div class="info-section warning">
-                    <h3>Rules and Regulations</h3>
-                    <ul>
-                        <li>It's prohibited for kids and adults with no driver's license to drive the golf cart</li>
-                        <li>Kids aren't allowed to drive, not even with an adult on the side or carrying them on the laps</li>
-                        <li>No excessive speeding, joy riding, golf course or golf course path riding, beach, sand or offroad riding, disregard of traffic signs, or any type of unreasonable activity with the golf cart will be tolerated by the development</li>
-                    </ul>
-                    <p class="warning-text">Local security enforces these restrictions with a fine and you will not be able to use the golf cart for the reminder of the stay.</p>
-                </div>
+                <div class="modal-body"></div>
             </div>
         `;
 
-        document.body.appendChild(this.modal);
+        // Agregar al DOM
+        document.body.appendChild(this.overlay);
+        document.body.appendChild(this.container);
+
         this.setupEventListeners();
     }
 
     setupEventListeners() {
-        const closeBtn = this.modal.querySelector('.close');
-        closeBtn.onclick = () => this.hide();
-        
-        window.onclick = (event) => {
-            if (event.target === this.modal) {
+        // Cerrar con el botón
+        const closeBtn = this.container.querySelector('.modal-close');
+        closeBtn.addEventListener('click', () => this.hide());
+
+        // Cerrar al hacer clic en el overlay
+        this.overlay.addEventListener('click', (e) => {
+            // Solo cerrar si se hizo clic directamente en el overlay
+            if (e.target === this.overlay) {
                 this.hide();
             }
-        };
+        });
+
+        // Cerrar con Escape
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && this.overlay.classList.contains('show')) {
+                this.hide();
+            }
+        });
+    }
+
+    extractContent(htmlContent) {
+        const div = document.createElement('div');
+        div.innerHTML = htmlContent;
+
+        // Remover elementos innecesarios
+        const elementsToRemove = div.querySelectorAll('head, script, link, a.back-to-home, #propertyTitle');
+        elementsToRemove.forEach(el => el.remove());
+
+        // Obtener el contenido relevante
+        const propertyContent = div.querySelector('.property-content');
+        return propertyContent ? propertyContent.innerHTML : div.innerHTML;
+    }
+
+    setContent(content) {
+        const modalBody = this.container.querySelector('.modal-body');
+        const cleanContent = this.extractContent(content);
+        modalBody.innerHTML = cleanContent;
+
+        // Establecer título basado en el ID del modal
+        let title = '';
+        if (this.id === 'golf-cart-modal') {
+            title = 'Golf Cart Information';
+            // Eliminar el título dentro del contenido para Golf Cart
+            const contentTitle = modalBody.querySelector('h1');
+            if (contentTitle) {
+                contentTitle.remove();
+            }
+        } else if (this.id === 'kids-club-modal') {
+            title = "Kid's Club Information";
+        }
+        
+        this.container.querySelector('.modal-title').textContent = title;
+
+        // Centrar contenido
+        modalBody.style.textAlign = 'center';
+        modalBody.style.padding = '2rem';
     }
 
     show() {
-        this.modal.classList.add('show');
+        document.body.style.overflow = 'hidden';
+        this.overlay.classList.add('show');
+        this.container.classList.add('show');
+        
+        // Asegurar que el contenedor esté visible
+        this.container.style.display = 'block';
+        
+        // Forzar un reflow para asegurar que las transiciones funcionen
+        void this.container.offsetHeight;
     }
 
     hide() {
-        this.modal.classList.remove('show');
+        document.body.style.overflow = '';
+        this.overlay.classList.remove('show');
+        this.container.classList.remove('show');
+        
+        // Ocultar después de una pequeña transición
+        setTimeout(() => {
+            this.container.style.display = 'none';
+        }, 200);
     }
 }

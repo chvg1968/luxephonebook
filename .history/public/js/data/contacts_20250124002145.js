@@ -80,8 +80,7 @@ export const contacts = [
     "name": "Golf Cart Services",
     "phone": "787-809-8000",
     "category": "Golf Cart",
-    "description": "For maintenance and repairs of the golf cart.",
-    "section": "Golf Cart"  
+    "description": "For maintenance and repairs of the golf cart."
   },
   {
     "name": "The Beach Club Restaurant",
@@ -710,7 +709,7 @@ export const contacts = [
     "name": "St Regis Kid's Club",
     "phone": "787-809-8000",
     "category": "Kid's Club",
-    "description": "See more info.",
+    "description": null,
     "section": "Catering/delivery/special services"
   },
   {

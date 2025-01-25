@@ -15,6 +15,10 @@
     transition: all 0.3s ease;
 }
 
+.category-section:hover {
+    transform: translateX(4px);
+}
+
 .category-header {
     display: flex;
     align-items: center;
@@ -26,7 +30,11 @@
     z-index: 2;
     border-radius: 8px;
     gap: 12px;
-    width: 100%;
+}
+
+.category-header:hover {
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 .category-header i:first-child {
@@ -40,7 +48,12 @@
     background: #f7fafc;
     border-radius: 6px;
     transition: all 0.3s ease;
-    flex-shrink: 0;
+}
+
+.category-header:hover i:first-child {
+    color: #2b6cb0;
+    transform: scale(1.1);
+    background: #ebf8ff;
 }
 
 .category-header span {
@@ -59,27 +72,29 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-shrink: 0;
 }
 
 .category-list {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease-in-out;
-    padding-left: 2.5rem;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    background: #f8f9fa;
+    margin-left: 1rem;
+    border-left: 2px solid #e2e8f0;
 }
 
-.category-section[data-special="true"] .category-list {
-    max-height: none;
-    overflow: visible;
+.category-list.collapsed {
+    max-height: 0;
 }
 
-.category-section.expanded .category-list {
+.category-list:not(.collapsed) {
     max-height: 500px;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .category-item {
-    padding: 0.75rem 1rem;
+    padding: 0.625rem 1rem;
     cursor: pointer;
     transition: all 0.2s ease;
     display: flex;
@@ -87,7 +102,7 @@
     gap: 12px;
     margin: 0.25rem 0;
     border-radius: 6px;
-    width: 100%;
+    margin-right: 0.5rem;
 }
 
 .category-item i {
@@ -99,13 +114,20 @@
     justify-content: center;
     color: #718096;
     transition: all 0.2s ease;
-    flex-shrink: 0;
 }
 
 .category-item span {
     font-size: 0.875rem;
     color: #4a5568;
-    flex: 1;
+}
+
+.category-item:hover {
+    background-color: #edf2f7;
+    transform: translateX(4px);
+}
+
+.category-item:hover i {
+    color: #2b6cb0;
 }
 
 /* Estilos para elementos seleccionados */
@@ -123,8 +145,13 @@
 }
 
 /* Animación para el icono de toggle */
-.category-header.expanded .toggle-icon {
+.category-header .fa-chevron-up {
     transform: rotate(180deg);
+}
+
+/* Efecto de hover para toda la sección */
+.category-section:hover > .category-header {
+    background-color: #f7fafc;
 }
 
 /* Estilo especial para Emergency */
@@ -148,7 +175,7 @@
 
     .category-header,
     .category-item {
-        padding: 0.75rem;
+        padding: 0.5rem;
     }
 
     .category-item {

@@ -1,0 +1,96 @@
+.category-tree {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: visible;
+    margin-bottom: 1rem;
+    position: relative;
+    z-index: 20;
+    padding: 1rem;
+}
+
+.category-section {
+    margin-bottom: 0.5rem;
+}
+
+.category-header {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    background: #fff;
+    z-index: 2;
+    justify-content: space-between;
+}
+
+.category-header:hover {
+    background-color: #f8f9fa;
+}
+
+.category-header span {
+    flex: 1;
+    font-weight: 500;
+    color: #333;
+}
+
+.category-header i {
+    font-size: 0.75rem;
+    color: #999;
+    transition: transform 0.3s ease;
+}
+
+.category-list {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    background: #f8f9fa;
+}
+
+.category-list.collapsed {
+    max-height: 0;
+}
+
+.category-list:not(.collapsed) {
+    max-height: 500px;
+}
+
+.category-item {
+    padding: 0.5rem 1rem 0.5rem 2rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.category-item:hover {
+    background-color: #edf2f7;
+}
+
+/* Estilos para elementos seleccionados */
+.category-header.selected,
+.category-item.selected {
+    background-color: #e2e8f0;
+    font-weight: 600;
+}
+
+/* Rotación del icono cuando está expandido */
+.category-header i.fa-chevron-up {
+    transform: rotate(180deg);
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .category-tree {
+        margin: 0.5rem;
+        padding: 0.5rem;
+    }
+
+    .category-header,
+    .category-item {
+        padding: 0.5rem;
+    }
+
+    .category-item {
+        padding-left: 2rem;
+    }
+}

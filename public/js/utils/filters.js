@@ -1,82 +1,39 @@
 // filters.js
-export function filterContacts(contacts, { searchTerm = '', category = '' }) {
-    console.log('Filtering with:', { searchTerm, category }); // Debug
-    console.log('Total contacts:', contacts.length); // Debug
 
-    // Mapeo de categorías principales y sus subcategorías
-    const categoryMap = {
-        // Categorías principales
-        'Emergency': ['Emergency'],
-        'Golf Cart': ['Golf Cart'],
-        'Resort Venues': ['Hotel', 'Spa', 'Wellness', 'Bar', 'Restaurant'],
-        'Resort Activities': ['Scuba', 'Aqua', 'Tour', 'Activity', 'Tennis', 'Wellness', 'Concierge'],
-        'Transportation': ['Transportation'],
-        'Special Services': ['Nanny', 'Photography', 'Personal Care', 'Kids Club', 'Chef', 'Catering', 'Delivery', 'Butler', 'Concierge'],
-        'Off Property': ['Tour', 'Shopping', 'Restaurant'],
-
-        // Subcategorías individuales
-        'Hotel': ['Hotel'],
-        'Spa': ['Spa'],
-        'Wellness Center': ['Wellness'],
-        'Bar': ['Bar'],
-        'Restaurant': ['Restaurant'],
-        'Scuba Diving Tours': ['Scuba'],
-        'Aqua Tours': ['Aqua'],
-        'Tours': ['Tour'],
-        'Activities Reservations': ['Activity'],
-        'Tennis Reservations': ['Tennis'],
-        'Concierge': ['Concierge'],
-        'Nanny Services': ['Nanny'],
-        'Professional Photography': ['Photography'],
-        'Personal Care and Fitness': ['Personal Care'],
-        "Kid's Club": ['Kids Club'],
-        'Personal Chefs': ['Chef'],
-        'Pre-Made Meals and Catering': ['Catering'],
-        'Delivery Services': ['Delivery'],
-        'Butler Services': ['Butler'],
-        'Concierge Services': ['Concierge'],
-        'Shopping': ['Shopping']
+export function filterContacts(contacts, filters) {
+    // Mapeo de categorías antiguas a nuevas
+    const categoryMapping = {
+        "Personal Chefs": "Personal Chefs and Catering",
+        "Pre-Made Meals and Catering": "Personal Chefs and Catering",
+        "Delivery Services and Personal Grocery Shopping": "Delivery Services",
+        "Nanny Service": "Nanny Services"
     };
 
     return contacts.filter(contact => {
-        let matchesCategory = true;
-        let matchesSearch = true;
+        // Si no hay filtros, mostrar todos los contactos
+        if (!filters.category && !filters.section) {
+            return true;
+        }
 
-        // Verificar la categoría si está presente
-        if (category) {
-            const mappedCategories = categoryMap[category];
-            if (!mappedCategories) {
-                console.log('No mapping found for category:', category);
-                return false;
+        // Si solo hay sección, filtrar por sección
+        if (filters.section && !filters.category) {
+            return contact.section === filters.section;
+        }
+
+        // Si hay categoría y sección, filtrar por ambos
+        if (filters.category && filters.section) {
+            // Caso especial para Wellness Center que aparece en múltiples secciones
+            if (filters.category === "Wellness Center") {
+                return contact.category === filters.category && contact.section === filters.section;
             }
 
-            const contactCategory = (contact.category || '').toLowerCase();
-            matchesCategory = mappedCategories.some(mappedCat => 
-                contactCategory.includes(mappedCat.toLowerCase())
-            );
+            // Normalizar la categoría del contacto usando el mapeo
+            const normalizedCategory = categoryMapping[contact.category] || contact.category;
+            
+            // Filtrar usando la categoría normalizada
+            return normalizedCategory === filters.category && contact.section === filters.section;
         }
 
-        // Verificar el término de búsqueda si está presente
-        if (searchTerm) {
-            const searchFields = [
-                contact.name,
-                contact.description,
-                contact.phone
-            ].filter(Boolean);
-
-            const term = searchTerm.toLowerCase().trim();
-            matchesSearch = searchFields.some(field => 
-                field?.toString().toLowerCase().includes(term)
-            );
-        }
-
-        // Si no hay categoría ni término de búsqueda, no mostrar nada
-        if (!category && !searchTerm) {
-            return false;
-        }
-
-        // El contacto debe coincidir con la categoría (si hay una seleccionada)
-        // Y con el término de búsqueda (si hay uno)
-        return (category ? matchesCategory : true) && (searchTerm ? matchesSearch : true);
+        return false;
     });
 }

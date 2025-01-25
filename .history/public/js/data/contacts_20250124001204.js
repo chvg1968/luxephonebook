@@ -80,8 +80,7 @@ export const contacts = [
     "name": "Golf Cart Services",
     "phone": "787-809-8000",
     "category": "Golf Cart",
-    "description": "For maintenance and repairs of the golf cart.",
-    "section": "Golf Cart"  
+    "description": "For maintenance and repairs of the golf cart."
   },
   {
     "name": "The Beach Club Restaurant",
@@ -220,28 +219,28 @@ export const contacts = [
     "name": "Zip line Toro Verde",
     "phone": null,
     "category": "Tours",
-    "description": "toroverdepr.com",
+    "description": ": toroverdepr.com",
     "section": "Resort activities and adventures"
   },
   {
     "name": "Bayside Fishing Tours",
     "phone": "787-696-4222",
     "category": "Tours",
-    "description": "San Juan: baysidefishingcharters.com",
+    "description": "(San Juan): baysidefishingcharters.com",
     "section": "Resort activities and adventures"
   },
   {
     "name": "Puerto Rico Bio Bay Tours",
     "phone": "787-888-2887",
     "category": "Tours",
-    "description": "Fajardo: puertoricobiobaytours.com",
+    "description": "(Kayak Tour in Fajardo): puertoricobiobaytours.com",
     "section": "Resort activities and adventures"
   },
   {
     "name": "Kayaking PR",
     "phone": "787-245-4545",
     "category": "Tours",
-    "description": "Snorkeling & Bio Bay Tours: kayakingpuertorico.com",
+    "description": "(Snorkeling & Bio Bay Tours): kayakingpuertorico.com",
     "section": "Resort activities and adventures"
   },
   {
@@ -710,7 +709,7 @@ export const contacts = [
     "name": "St Regis Kid's Club",
     "phone": "787-809-8000",
     "category": "Kid's Club",
-    "description": "See more info.",
+    "description": null,
     "section": "Catering/delivery/special services"
   },
   {
