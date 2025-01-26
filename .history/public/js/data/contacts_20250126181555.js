@@ -206,7 +206,7 @@ export const contacts = [
     "name": "Aquavento",
     "phone": "808-283-5357 & 787-664-9175",
     "category": "Water Park and Water Sports",
-    "description": "🌊 **Have thrilling experiences** at the beach with family adventures and unique ways to stay fit:\n\n- 🪁 **Kite Surfing**\n- 🌬️ **Windsurfing**\n- 🏄‍♂️ **Ocean Paddle Boarding**\n- 🚣‍♀️ **Ocean Kayaking**\n- 🏐 **Beach Volleyball**\n\n🎓 **Rentals and lessons are available upon request!** 📞 Call us now to book your experience.",
+    "description": null,
     "section": "Resort activities and adventures"
   },
   {

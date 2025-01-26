@@ -88,11 +88,11 @@ export class CategoryTree {
                 categories: [
                     "Golf",
                     "Nature and Wildlife",
-                    "Tennis",
-                    "Water Park and Water Sports",
                     "Scuba Diving Tours",
                     "Aqua Tours",
-                    "Tours",    
+                    "Tours",
+                    "Activities Reservations",
+                    "Tennis",
                     "Wellness Center",
                 ]
             },

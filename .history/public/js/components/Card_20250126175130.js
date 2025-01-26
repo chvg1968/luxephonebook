@@ -13,8 +13,6 @@ export class Card {
             this.modalInstances['golf-rates-modal'] = new Modal('golf-rates-modal');
         } else if (this.data.name === "St Regis Kid's Club") {
             this.modalInstances['kids-club-modal'] = new Modal('kids-club-modal');
-        } else if (this.data.name === "Tennis Reservations") {
-            this.modalInstances['tennis-modal'] = new Modal('tennis-modal');
         }
         
         this.icons = {
@@ -167,40 +165,41 @@ export class Card {
         const icon = this.getIconClass(this.data.name, this.data.category);
         const isEmoji = icon && !icon.startsWith('fa-');
         
-        console.log('Rendering card for:', this.data.name);
-        console.log('Card data:', this.data);
-        console.log('Modal instances:', this.modalInstances);
-
         let descriptionHtml = '';
-        if (this.data.name === 'Golf Cart Services') {
-            descriptionHtml = `
-                <p class="description">
-                    ${this.data.description}
-                    <a href="#" class="info-link">Important information about Golf Cart</a>
-                </p>`;
-        } else if (this.data.name === "St Regis Kid's Club") {
-            descriptionHtml = `
-                <p class="description">
-                    ${this.data.description}
-                    <a href="#" class="info-link">View Kids Club details</a>
-                </p>`;
-        } else if (this.data.name === 'Golf Schedule and Rates') {
-            descriptionHtml = `
-                <p class="description">
-                    ${this.data.description}
-                    <a href="#" class="info-link">See Golf Schedule and Rates</a>
-                </p>`;
-        } else if (this.data.name === 'Tennis Reservations') {
-            descriptionHtml = `
-                <p class="description">
-                    ${this.data.description || ''}
-                    <a href="#" class="info-link">See Tennis Info.</a>
-                </p>`;
-        } else {
-            // Para todas las demás tarjetas, solo mostrar descripción sin enlace
-            descriptionHtml = `<p class="description">${this.data.description}</p>`;
+        if (this.data.description) {
+            // Solo agregar enlace de información para tarjetas específicas
+            if (this.data.name === 'Golf Cart Services') {
+                descriptionHtml = `
+                    <p class="description">
+                        ${this.data.description}
+                        <a href="#" class="info-link">Important information about Golf Cart</a>
+                    </p>`;
+            } else if (this.data.name === "St Regis Kid's Club") {
+                descriptionHtml = `
+                    <p class="description">
+                        ${this.data.description}
+                        <a href="#" class="info-link">View Kids Club details</a>
+                    </p>`;
+            } else if (this.data.name === 'Golf Schedule and Rates') {
+                descriptionHtml = `
+                    <p class="description">
+                        ${this.data.description}
+                        <a href="#" class="info-link">See Golf Schedule and Rates</a>
+                    </p>`;
+            } 
+            else if (this.data.name === 'Tennis Reservations') {
+                descriptionHtml = `
+                    <p class="description">
+                        ${this.data.description}
+                        <a href="#" class="info-link">See Tennis Info.</a>
+                    </p>`;
+            } 
+            else {
+                // Para todas las demás tarjetas, solo mostrar descripción sin enlace
+                descriptionHtml = `<p class="description">${this.data.description}</p>`;
+            }
         }
-
+        
         card.innerHTML = `
             <div class="card-header">
                 ${isEmoji ? 
@@ -239,29 +238,6 @@ export class Card {
                     }
                 });
             }
-        } else if (this.data.name === "St Regis Kid's Club") {
-            const infoLink = card.querySelector('.info-link');
-            if (infoLink) {
-                infoLink.addEventListener('click', async (e) => {
-                    e.preventDefault();
-                    try {
-                        const modal = this.modalInstances['kids-club-modal'];
-                        const content = await this.loadModalContent('tortuga.html');
-                        modal.setContent(content);
-                        modal.show();
-                    } catch (error) {
-                        console.error('Error in Kids Club modal:', error);
-                        this.modalInstances['kids-club-modal'].setContent(`
-                            <div class="property-content">
-                                <h2>Error Loading Kids Club Information</h2>
-                                <p>We apologize, but the content could not be loaded.</p>
-                                <p>Error: ${error.message}</p>
-                            </div>
-                        `);
-                        this.modalInstances['kids-club-modal'].show();
-                    }
-                });
-            }
         } else if (this.data.name === 'Golf Schedule and Rates') {
             const infoLink = card.querySelector('.info-link');
             if (infoLink) {
@@ -285,22 +261,37 @@ export class Card {
                     }
                 });
             }
-        } else if (this.data.name === "Tennis Reservations") {
-            console.log('Adding event listener for Tennis Reservations');
+        } else if (this.data.name === "St Regis Kid's Club") {
             const infoLink = card.querySelector('.info-link');
-            console.log('Info link:', infoLink);
-            
             if (infoLink) {
                 infoLink.addEventListener('click', async (e) => {
                     e.preventDefault();
-                    console.log('Tennis Reservations link clicked');
-                    console.log('Tennis modal instance:', this.modalInstances['tennis-modal']);
-                    
+                    try {
+                        const modal = this.modalInstances['kids-club-modal'];
+                        const content = await this.loadModalContent('tortuga.html');
+                        modal.setContent(content);
+                        modal.show();
+                    } catch (error) {
+                        console.error('Error in Kids Club modal:', error);
+                        this.modalInstances['kids-club-modal'].setContent(`
+                            <div class="property-content">
+                                <h2>Error Loading Kids Club Information</h2>
+                                <p>We apologize, but the content could not be loaded.</p>
+                                <p>Error: ${error.message}</p>
+                            </div>
+                        `);
+                        this.modalInstances['kids-club-modal'].show();
+                    }
+                });
+            }
+        } else if (this.data.name === "Tennis Reservations") {
+            const infoLink = card.querySelector('.info-link');
+            if (infoLink) {
+                infoLink.addEventListener('click', async (e) => {
+                    e.preventDefault();
                     try {
                         const modal = this.modalInstances['tennis-modal'];
                         const content = await this.loadModalContent('tennis.html');
-                        console.log('Tennis modal content:', content);
-                        
                         modal.setContent(content);
                         modal.show();
                     } catch (error) {
@@ -315,11 +306,8 @@ export class Card {
                         this.modalInstances['tennis-modal'].show();
                     }
                 });
-            } else {
-                console.warn('No info link found for Tennis Reservations');
             }
         }
-
         return card;
     }
 }

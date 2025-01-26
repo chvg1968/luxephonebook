@@ -198,15 +198,15 @@ export const contacts = [
   {
     "name": "Boathouse Waterpark",
     "phone": "787-809-8823",
-    "category": "Water Park and Water Sports",
-    "description": "🌟 **Enjoy Complimentary Activities**:\n- 🎯 **Obstacle Course**\n- 🎣 **Fishing Gear**\n- 🚣‍♂️ **Kayaks**\n- 🏄‍♂️ **Paddle Boards**\n- 🚴‍♀️ **Trail Bikes**\n\n📞 **Reserve now!**",
+    "category": "Activities Reservations",
+    "description": null,
     "section": "Resort activities and adventures"
   },
   {
     "name": "Aquavento",
     "phone": "808-283-5357 & 787-664-9175",
-    "category": "Water Park and Water Sports",
-    "description": "🌊 **Have thrilling experiences** at the beach with family adventures and unique ways to stay fit:\n\n- 🪁 **Kite Surfing**\n- 🌬️ **Windsurfing**\n- 🏄‍♂️ **Ocean Paddle Boarding**\n- 🚣‍♀️ **Ocean Kayaking**\n- 🏐 **Beach Volleyball**\n\n🎓 **Rentals and lessons are available upon request!** 📞 Call us now to book your experience.",
+    "category": "Activities Reservations",
+    "description": null,
     "section": "Resort activities and adventures"
   },
   {
