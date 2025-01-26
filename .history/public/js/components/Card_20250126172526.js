@@ -201,7 +201,7 @@ export class Card {
                 <h3>${this.data.name}</h3>
             </div>
             <div class="card-body">
-                <p class="phone"> 📞 ${this.data.phone || 'No phone number available'}</p>
+                <p class="phone"> ✆ ${this.data.phone || 'No phone number available'}</p>
                 ${descriptionHtml}
             </div>
         `;

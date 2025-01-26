@@ -29,7 +29,7 @@ export class CategoryTree {
             "Aqua Tours": "fa-ship",
             "Tours": "fa-map-marked-alt",
             "Activities Reservations": "fa-calendar-check",
-            "Tennis": "fa-table-tennis",
+            "Tennis Reservations": "fa-table-tennis",
             "Wellness Center": "fa-heart-pulse",
             "Concierge": "fa-bell-concierge",
             "Concierge Services": "fa-bell-concierge",
@@ -87,13 +87,13 @@ export class CategoryTree {
                 isSpecial: false,
                 categories: [
                     "Golf",
-                    "Nature and Wildlife",
                     "Scuba Diving Tours",
                     "Aqua Tours",
                     "Tours",
                     "Activities Reservations",
                     "Tennis Reservations",
                     "Wellness Center",
+                    "Nature and Wildlife"
                 ]
             },
             "Transportation/Transfer": {

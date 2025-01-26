@@ -177,7 +177,7 @@ export const contacts = [
   {
     "name": "Nature and Wildlife",
     "phone": "787-809-8920",
-    "category": "Nature and Wildlife",
+    "category": "Concierge",
     "description": "<p>🌿 <span style='color: green;'>Lose yourself exploring the lush tropical landscape</span> of Bahia Beach on foot or bike as you enjoy four miles of nature trails within the <span style='color: blue;'>483-acre gated resort</span>.</p><p>🌺 A perfect way to reconnect with nature and all its beauty.</p><p>📞 <span style='color: purple;'>Please contact concierge:</span></p><ul><li>📱 <span style='color: teal;'>Phone:</span> <a href='tel:7878098920' style='color: teal;'>787-809-8920</a></li><li>📧 <span style='color: teal;'>Email:</span> <a href='mailto:concierge@bahiapr.com' style='color: teal;'>concierge@bahiapr.com</a></li></ul><p>🐕🐈 For nature tours and visits to the <span style='color: darkorange;'>dog shelter</span> or <span style='color: darkorange;'>cat sanctuary</span>.</p>",
     "section": "Resort activities and adventures"
   },
@@ -189,9 +189,9 @@ export const contacts = [
     "section": "Resort activities and adventures"
   },
   {
-    "name": "Tennis Reservations",
+    "name": "Wellness Center",
     "phone": "787-809-8877",
-    "category": "Tennis",
+    "category": "Tennis Reservations",
     "description": null,
     "section": "Resort activities and adventures"
   },

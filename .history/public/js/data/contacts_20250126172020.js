@@ -189,9 +189,9 @@ export const contacts = [
     "section": "Resort activities and adventures"
   },
   {
-    "name": "Tennis Reservations",
+    "name": "Wellness Center",
     "phone": "787-809-8877",
-    "category": "Tennis",
+    "category": "Tennis Reservations",
     "description": null,
     "section": "Resort activities and adventures"
   },

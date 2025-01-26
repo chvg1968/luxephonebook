@@ -46,7 +46,6 @@ export const categories = {
                 icon: 'fas fa-umbrella-beach'
             },
         },
-    },
     resortActivities: {
         id: 'Resort activities and adventures',
         name: 'Resort Activities and Adventures',
