@@ -210,10 +210,21 @@ export class Modal {
     }
 
     show() {
-        // Asegurar que el contenedor esté visible antes de agregar clases
+        console.log('Modal show method called');
+        console.log('Container:', this.container);
+        console.log('Overlay:', this.overlay);
+
+        // Forzar visibilidad
         this.container.style.display = 'block';
         this.container.style.opacity = '1';
         this.container.style.visibility = 'visible';
+        this.container.style.zIndex = '9999';
+
+        // Asegurar que el overlay también sea visible
+        this.overlay.style.display = 'block';
+        this.overlay.style.opacity = '1';
+        this.overlay.style.visibility = 'visible';
+        this.overlay.style.zIndex = '9998';
 
         // Ocultar scroll del body
         document.body.style.overflow = 'hidden';
@@ -224,9 +235,13 @@ export class Modal {
         
         // Forzar un reflow para asegurar que las transiciones funcionen
         void this.container.offsetHeight;
+
+        console.log('Modal show method finished');
     }
 
     hide() {
+        console.log('Modal hide method called');
+        
         // Restaurar scroll del body
         document.body.style.overflow = '';
 
@@ -234,11 +249,17 @@ export class Modal {
         this.overlay.classList.remove('show');
         this.container.classList.remove('show');
         
-        // Ocultar después de una pequeña transición
-        setTimeout(() => {
-            this.container.style.display = 'none';
-            this.container.style.opacity = '0';
-            this.container.style.visibility = 'hidden';
-        }, 300);
+        // Ocultar modal y overlay
+        this.container.style.display = 'none';
+        this.container.style.opacity = '0';
+        this.container.style.visibility = 'hidden';
+        this.container.style.zIndex = '-1';
+
+        this.overlay.style.display = 'none';
+        this.overlay.style.opacity = '0';
+        this.overlay.style.visibility = 'hidden';
+        this.overlay.style.zIndex = '-1';
+
+        console.log('Modal hide method finished');
     }
 }
