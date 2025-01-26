@@ -112,10 +112,10 @@ export const contacts = [
     "section": "Resort restaurants and venues"
   },
   {
-    "name": "Boathouse Bar",
-    "phone": "787-809-8823",
-    "category": "Bar",
-    "description": "12:00 P.M.- 4:00 P.M.",
+    "name": "BaBeach Club Pool Bar ",
+    "phone": "787-303-0722",
+    "category": "Restaurant",
+    "description": "Daily 7:30 A.M.- 4:00 Р.М.) Breakfast and lunch",
     "section": "Resort restaurants and venues"
   },
   {
