@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golf Rates</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-orange: #FF6B35;
+            --primary-black: #333333;
+            --primary-white: #FFFFFF;
+            --light-gray: #F5F5F5;
+            --shadow-color: rgba(0, 0, 0, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            background-color: var(--primary-white);
+            color: var(--primary-black);
+            padding: 2rem;
+        }
+
+        .property-content {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: var(--primary-white);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px var(--shadow-color);
+        }
+
+        .table-responsive {
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        table {
+            width: 100%;
+            min-width: 800px;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            background-color: var(--primary-white);
+            box-shadow: 0 2px 5px var(--shadow-color);
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: var(--primary-orange);
+            text-align: center;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--primary-orange);
+        }
+
+        th, td {
+            border: 1px solid #E0E0E0;
+            padding: 12px;
+            text-align: center;
+            white-space: nowrap;
+        }
+
+        th {
+            background-color: var(--light-gray);
+            color: var(--primary-black);
+            font-weight: 600;
+        }
+
+        tr:nth-child(even) {
+            background-color: #FAFAFA;
+        }
+
+        @media (max-width: 900px) {
+            .property-content {
+                padding: 1rem;
+            }
+            table {
+                min-width: 100%;
+            }
+        }
+
+        .back-to-home {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--primary-orange);
+            text-decoration: none;
+            margin: 1rem 0;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .back-to-home:hover {
+            color: var(--primary-black);
+        }
+
+        .back-to-home i {
+            font-size: 1.2rem;
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const backToHomeBtn = document.querySelector('.back-to-home');
+            
+            // Retrieve the original navigation context from localStorage
+            const navigationContext = JSON.parse(localStorage.getItem('navigationContext') || '{}');
+            
+            backToHomeBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                
+                // If we have a stored navigation context, use it
+                if (navigationContext.category) {
+                    // Clear the navigation context after using it
+                    localStorage.removeItem('navigationContext');
+                    
+                    // Construct the URL with the stored category
+                    window.location.href = `/public/pages/villaclara.html?category=${encodeURIComponent(navigationContext.category)}`;
+                } else {
+                    // Fallback to villaclara.html
+                    window.location.href = '/public/pages/villaclara.html';
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="property-content">
+        <a href="#" class="back-to-home" data-category="Golf" data-section="Resort activities and adventures">
+            <i class="fas fa-arrow-left"></i>
+            Back to Golf Services
+        </a>
+        <div class="table-responsive">
+            <table>
+                <caption>GOLF RATES (18 HOLES)</caption>
+                <thead>
+                  <tr>
+                    <th colspan="8">Weekends</th>
+                  </tr>
+                  <tr>
+                    <th></th>
+                    <th></th>
+                    <th>Discount Rate for Renters with Day Pass</th>
+                    <th>TOTAL WITH TAXES (11.5%)</th>
+                    <th>Regular Rate</th>
+                    <th>TOTAL WITH TAXES (11.5%)</th>
+                    <th>JUNIORS (Up to 15 years)</th>
+                    <th>TOTAL WITH TAXES (11.5%)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>7:00 AM</th>
+                    <td>10:50 AM</td>
+                    <td>$279.00</td>
+                    <td>$311.09</td>
+                    <td>$295.00</td>
+                    <td>$328.93</td>
+                    <td>Flat Rate $75</td>
+                    <td>$83.63</td>
+                  </tr>
+                  <tr>
+                    <th>11:00 AM</th>
+                    <td>1:50 PM</td>
+                    <td>$189.00</td>
+                    <td>$210.74</td>
+                    <td>$225.00</td>
+                    <td>$250.88</td>
+                    <td>Flat Rate $75</td>
+                    <td>$83.63</td>
+                  </tr>
+                  <tr>
+                    <th>2:00 PM</th>
+                    <td>-</td>
+                    <td>$169.00</td>
+                    <td>$188.54</td>
+                    <td>$195.00</td>
+                    <td>$217.43</td>
+                    <td>Flat Rate $75</td>
+                    <td>$83.63</td>
+                  </tr>
+                </tbody>
+                <thead>
+                  <tr>
+                    <th colspan="8">Weekdays</th>
+                  </tr>
+                  <tr>
+                    <th></th>
+                    <th></th>
+                    <th>Discount Rate</th>
+                    <th>TOTAL WITH TAXES (11.5%)</th>
+                    <th>Regular Rate</th>
+                    <th>TOTAL WITH TAXES (11.5%)</th>
+                    <th>JUNIORS (Up to 15 years)</th>
+                    <th>TOTAL WITH TAXES (11.5%)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>7:00 AM</th>
+                    <td>10:50 AM</td>
+                    <td>$225.00</td>
+                    <td>$250.88</td>
+                    <td>$239.00</td>
+                    <td>$266.49</td>
+                    <td>Flat Rate $75</td>
+                    <td>$83.63</td>
+                  </tr>
+                  <tr>
+                    <th>11:00 AM</th>
+                    <td>1:50 PM</td>
+                    <td>$225.00</td>
+                    <td>$250.88</td>
+                    <td>$239.00</td>
+                    <td>$266.49</td>
+                    <td>Flat Rate $75</td>
+                    <td>$83.63</td>
+                  </tr>
+                  <tr>
+                    <th>2:00 PM</th>
+                    <td>-</td>
+                    <td>$169.00</td>
+                    <td>$188.44</td>
+                    <td>$175.00</td>
+                    <td>$195.13</td>
+                    <td>Flat Rate $75</td>
+                    <td>$83.63</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <td colspan="8">Golf Clubs Rental: $85.00 each (Plus Taxes 11.5%) = $94.78 (TOTAL)</td>
+                  </tr>
+                </tfoot>
+            </table>
+        </div>
+        <p>* Rates are subject to change. Please confirm with the golf pro shop.</p>
+    </div>
+</body>
+</html>

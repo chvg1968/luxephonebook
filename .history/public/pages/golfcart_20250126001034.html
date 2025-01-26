@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golf Cart Information</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-orange: #FF6B35;
+            --primary-black: #333333;
+            --primary-white: #FFFFFF;
+            --light-gray: #F5F5F5;
+            --shadow-color: rgba(0, 0, 0, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            background-color: var(--primary-white);
+            color: var(--primary-black);
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: var(--primary-white);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px var(--shadow-color);
+        }
+
+        h1 {
+            color: var(--primary-orange);
+            text-align: center;
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid var(--primary-orange);
+            padding-bottom: 0.5rem;
+        }
+
+        .info-section {
+            margin-bottom: 1.5rem;
+            background-color: var(--light-gray);
+            padding: 1rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px var(--shadow-color);
+        }
+
+        .info-section h3 {
+            color: var(--primary-orange);
+            margin-bottom: 0.5rem;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 1rem;
+        }
+
+        ul li {
+            margin-bottom: 0.5rem;
+            position: relative;
+        }
+
+        ul li::before {
+            content: '•';
+            color: var(--primary-orange);
+            position: absolute;
+            left: -1rem;
+        }
+
+        .warning {
+            background-color: #FFF3E0;
+            border-left: 4px solid var(--primary-orange);
+        }
+
+        .warning-text {
+            color: var(--primary-black);
+            font-weight: bold;
+            margin-top: 0.5rem;
+        }
+
+        .back-to-home {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--primary-orange);
+            text-decoration: none;
+            margin: 1rem 0;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .back-to-home:hover {
+            color: var(--primary-black);
+        }
+
+        .back-to-home i {
+            font-size: 1.2rem;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 1rem;
+            }
+            .container {
+                padding: 1rem;
+            }
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const backToHomeBtn = document.querySelector('.back-to-home');
+            
+            // Retrieve the original navigation context from localStorage
+            const navigationContext = JSON.parse(localStorage.getItem('navigationContext') || '{}');
+            
+            backToHomeBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                
+                // If we have a stored navigation context, use it
+                if (navigationContext.category) {
+                    // Clear the navigation context after using it
+                    localStorage.removeItem('navigationContext');
+                    
+                    // Construct the URL with the stored category
+                    window.location.href = `/public/pages/villaclara.html?category=${encodeURIComponent(navigationContext.category)}`;
+                } else {
+                    // Fallback to villaclara.html
+                    window.location.href = '/public/pages/villaclara.html';
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <a href="#" class="back-to-home" data-category="Golf" data-section="Resort activities and adventures">
+            <i class="fas fa-arrow-left"></i>
+            Back to Golf Services
+        </a>
+
+        <h1>Golf Cart Information</h1>
+        
+        <div class="info-section">
+            <h3>Charging Instructions</h3>
+            <p>The golf cart has a retractable cord on the back for charging. Please make sure to
+            retract it when in use so it is not hanging loose and gets damaged.</p>
+        </div>
+
+        <div class="info-section">
+            <h3>Golf Cart Parking</h3>
+            <p>Park your cart at its designated parking space and appropriate parking at the different resort venues:</p>
+            <ul>
+                <li>Wellness Center</li>
+                <li>Boathouse/ Water Park</li>
+                <li>Beach Club pools, restaurants, concierge and golf shop</li>
+                <li>Cocoteros Diner</li>
+                <li>Sand Dollar Beach</li>
+                <li>Valet parking at the St. Regis Hotel</li>
+            </ul>
+        </div>
+
+        <div class="info-section warning">
+            <h3>Rules and Regulations</h3>
+            <ul>
+                <li>It's prohibited for kids and adults with no driver's license to drive the golf cart</li>
+                <li>Kids aren't allowed to drive, not even with an adult on the side or carrying them on the laps</li>
+                <li>No excessive speeding, joy riding, golf course or golf course path riding, beach, sand or offroad riding, disregard of traffic signs, or any type of unreasonable activity with the golf cart will be tolerated by the development</li>
+            </ul>
+            <p class="warning-text">Local security enforces these restrictions with a fine and you will not be able to use the golf cart for the reminder of the stay.</p>
+        </div>
+    </div>
+</body>
+</html>

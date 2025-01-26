@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tortuga Kid's Club</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-orange: #FF6B35;
+            --primary-black: #333333;
+            --primary-white: #FFFFFF;
+            --light-gray: #F5F5F5;
+            --shadow-color: rgba(0, 0, 0, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            background-color: var(--primary-white);
+            color: var(--primary-black);
+        }
+
+        .property-welcome {
+            background-color: var(--primary-white);
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0 2px 5px var(--shadow-color);
+        }
+
+        .back-to-home {
+            position: absolute;
+            left: 1rem;
+            top: 1rem;
+            color: var(--primary-orange);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .back-to-home i {
+            font-size: 1.2rem;
+        }
+
+        #propertyTitle {
+            color: var(--primary-orange);
+            margin-top: 0.5rem;
+            border-bottom: 2px solid var(--primary-orange);
+            padding-bottom: 0.5rem;
+        }
+
+        .property-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .property-content {
+            background-color: var(--primary-white);
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 4px 15px var(--shadow-color);
+        }
+
+        .property-hero {
+            margin-bottom: 1.5rem;
+        }
+
+        .property-info {
+            background-color: var(--light-gray);
+            padding: 1rem;
+            border-radius: 5px;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 2px 5px var(--shadow-color);
+        }
+
+        .info-section {
+            margin-bottom: 1rem;
+        }
+
+        .info-section h3 {
+            color: var(--primary-orange);
+            margin-bottom: 0.5rem;
+            border-bottom: 1px solid var(--primary-orange);
+            padding-bottom: 0.25rem;
+        }
+
+        .info-list {
+            list-style-type: none;
+            padding-left: 1rem;
+        }
+
+        .info-list li {
+            margin-bottom: 0.5rem;
+            position: relative;
+        }
+
+        .info-list li::before {
+            content: '•';
+            color: var(--primary-orange);
+            position: absolute;
+            left: -1rem;
+        }
+
+        .info-section.warning {
+            background-color: #FFF3E0;
+            padding: 1rem;
+            border-radius: 5px;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 2px 5px var(--shadow-color);
+        }
+
+        .back-to-home {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--primary-orange);
+            text-decoration: none;
+            margin: 1rem 0;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .back-to-home:hover {
+            color: var(--primary-black);
+        }
+
+        .back-to-home i {
+            font-size: 1.2rem;
+        }
+
+        @media (max-width: 600px) {
+            .property-container {
+                padding: 1rem;
+            }
+            .property-content {
+                padding: 1rem;
+            }
+            .back-to-home {
+                position: static;
+                margin-bottom: 1rem;
+            }
+        }
+    </style>
+    <script>
+        // Restore frozen menu state when the page loads
+        function restoreFrozenMenuState() {
+            const frozenState = localStorage.getItem('frozenMenuState');
+            if (!frozenState) return;
+
+            const categoryTree = document.querySelector('.category-tree');
+            if (!categoryTree) return;
+
+            // Remove freeze class
+            categoryTree.classList.remove('menu-frozen');
+
+            // Parse and restore the stored state
+            const parsedState = JSON.parse(frozenState);
+            parsedState.forEach(state => {
+                const container = categoryTree.querySelector(`.category-container[data-category="${state.category}"]`);
+                if (container) {
+                    if (state.isExpanded) {
+                        container.classList.add('expanded');
+                    } else {
+                        container.classList.remove('expanded');
+                    }
+                }
+            });
+
+            // Clear the stored state
+            localStorage.removeItem('frozenMenuState');
+        }
+
+        // Guardar la posición de desplazamiento antes de navegar
+        function saveScrollPosition() {
+            sessionStorage.setItem("scrollPosition", window.scrollY);
+        }
+
+        // Restaurar la posición de desplazamiento al cargar la página
+        window.onload = function () {
+            // Restore scroll position
+            const savedPosition = sessionStorage.getItem("scrollPosition");
+            if (savedPosition) {
+                window.scrollTo(0, parseInt(savedPosition, 10));
+                sessionStorage.removeItem("scrollPosition"); // Limpiar después de usar
+            }
+
+            // Restore frozen menu state
+            restoreFrozenMenuState();
+        };
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const backToHomeBtn = document.querySelector('.back-to-home');
+            
+            // Retrieve the original navigation context from localStorage
+            const navigationContext = JSON.parse(localStorage.getItem('navigationContext') || '{}');
+            
+            backToHomeBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                
+                // Guardar la posición de desplazamiento antes de navegar
+                saveScrollPosition();
+                
+                // If we have a stored navigation context, use it
+                if (navigationContext.category) {
+                    // Clear the navigation context after using it
+                    localStorage.removeItem('navigationContext');
+                    
+                    // Construct the URL with the stored category
+                    window.location.href = `/public/pages/villaclara.html?category=${encodeURIComponent(navigationContext.category)}`;
+                } else {
+                    // Fallback to villaclara.html
+                    window.location.href = '/public/pages/villaclara.html';
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="property-welcome">
+        <a href="#" class="back-to-home" data-category="Kid's Club" data-section="Catering/delivery/special services">
+            <i class="fas fa-arrow-left"></i>
+            Back to Kid's Club Services
+        </a>
+        <h1 id="propertyTitle">Tortuga Kid's Club</h1>
+    </div>
+
+    <div class="property-container">
+        <div class="property-content">
+            <div class="property-hero">
+                <div class="property-info">
+                    <div class="info-section">
+                        <p>As part of the Family Traditions program at St. Regis, The Tortuga Kid's Club incorporates an educationally based St. Regis children's play center and video games for older children while a separate area offers a variety of stimulating activities for younger children. Children are welcome to access the club with a parent or enroll their children as often as they wish, based on program availability. The Tortuga Kids' Club Programs are available for a half day, full day, or hourly according to our guest's needs. Babysitting services are arranged through the St. Regis Concierge. Tortuga Kid's Club facilities are complimentary, no charges apply while children are accompanied by a guardian.</p>
+                    </div>
+
+                    <div class="info-section">
+                        <h3>Hours of Operation</h3>
+                        <ul class="info-list">
+                            <li>Monday – Sunday</li>
+                            <li>10:00 am - 5:00 pm</li>
+                        </ul>
+                    </div>
+
+                    <div class="info-section">
+                        <h3>Prices</h3>
+                        <ul class="info-list">
+                            <li>One Hour: $30.00 USD per child, plus taxes and gratuity</li>
+                            <li>Two Hours: $45.00 USD per child, plus taxes and gratuity</li>
+                            <li>Half Day: $75.00 USD per child (Snack Included), plus taxes and gratuity</li>
+                            <li>Four Hours: $90.00 USD per child, plus taxes and gratuity</li>
+                            <li>Full Day: $125.00 per child (Lunch and Snack Included), plus taxes and gratuity</li>
+                            <li>Additional Half Hour: $15.00 USD per child, plus taxes and gratuity</li>
+                        </ul>
+                    </div>
+
+                    <div class="info-section warning">
+                        <h3>Important Information</h3>
+                        <ul class="info-list">
+                            <li>Charges apply when children enjoy Tortuga Kid's Club program under recreation attendants' supervised childcare services.</li>
+                            <li>Every Child participating in the program must be at least four (4) years old and no older than twelve (12) years old.</li>
+                            <li>Every child participating in the program must be fully potty trained and must be able to re-dress themselves without assistance.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
