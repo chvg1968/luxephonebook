@@ -4,9 +4,17 @@ import { Modal } from './Modal.js';
 export class Card {
     constructor(data) {
         this.data = data;
-        this.modal = new Modal('golf-cart-modal');
-        this.kidsClubModal = new Modal('kids-club-modal');
-        this.golfRatesModal = new Modal('golf-rates-modal');
+        this.modalInstances = {}; // Initialize modalInstances object
+        
+        // Create modals only when needed
+        if (this.data.name === 'Golf Cart Services') {
+            this.modalInstances['golf-cart-modal'] = new Modal('golf-cart-modal');
+        } else if (this.data.name === 'Golf Schedule and Rates') {
+            this.modalInstances['golf-rates-modal'] = new Modal('golf-rates-modal');
+        } else if (this.data.name === "St Regis Kid's Club") {
+            this.modalInstances['kids-club-modal'] = new Modal('kids-club-modal');
+        }
+        
         this.icons = {
             // Emergency
             "Emergency": "fa-kit-medical",
@@ -150,7 +158,7 @@ export class Card {
 
     render() {
         const card = document.createElement('div');
-        card.className = 'contact-card';
+        card.className = `contact-card ${this.data.category.replace(/\s+/g, '-').toLowerCase()}`;
         
         const icon = this.getIconClass(this.data.name, this.data.category);
         const isEmoji = icon && !icon.startsWith('fa-');
@@ -158,7 +166,7 @@ export class Card {
         let descriptionHtml = '';
         if (this.data.description) {
             // Solo agregar enlace de información para tarjetas específicas
-            if (this.data.name === 'Golf Cart') {
+            if (this.data.name === 'Golf Cart Services') {
                 descriptionHtml = `
                     <p class="description">
                         ${this.data.description}
@@ -176,9 +184,6 @@ export class Card {
                         ${this.data.description}
                         <a href="#" class="info-link">See Golf Schedule and Rates</a>
                     </p>`;
-            } else if (this.data.name === 'Golf Shop' || this.data.category === 'Golf Shop') {
-                // Eliminar completamente el enlace de modal para Golf Shop
-                descriptionHtml = `<p class="description">${this.data.description}</p>`;
             } else {
                 // Para todas las demás tarjetas, solo mostrar descripción sin enlace
                 descriptionHtml = `<p class="description">${this.data.description}</p>`;
@@ -199,56 +204,50 @@ export class Card {
             </div>
         `;
 
-        // Agregar eventos para modales solo para tarjetas específicas
-        if (this.data.name === 'Golf Schedule and Rates') {
+        // Modify modal event listeners
+        if (this.data.name === 'Golf Cart Services') {
             const infoLink = card.querySelector('.info-link');
             if (infoLink) {
                 infoLink.addEventListener('click', async (e) => {
                     e.preventDefault();
                     try {
-                        console.log('Golf Rates modal: Loading content...');
-                        const content = await this.loadModalContent('golfrates.html');
-                        console.log('Golf Rates modal: Content loaded, setting modal...');
-                        this.golfRatesModal.setContent(content);
-                        console.log('Golf Rates modal: Showing modal...');
-                        this.golfRatesModal.show();
+                        const modal = this.modalInstances['golf-cart-modal'];
+                        const content = await this.loadModalContent('golfcart.html');
+                        modal.setContent(content);
+                        modal.show();
                     } catch (error) {
-                        console.error('Error in Golf Rates modal:', error);
-                        this.golfRatesModal.setContent(`
+                        console.error('Error in Golf Cart Services modal:', error);
+                        this.modalInstances['golf-cart-modal'].setContent(`
                             <div class="property-content">
-                                <h2>Error Loading Golf Rates</h2>
-                                <p>We apologize, but the golf rates could not be loaded.</p>
+                                <h2>Error Loading Golf Cart Services Information</h2>
+                                <p>We apologize, but the content could not be loaded.</p>
                                 <p>Error: ${error.message}</p>
                             </div>
                         `);
-                        this.golfRatesModal.show();
+                        this.modalInstances['golf-cart-modal'].show();
                     }
                 });
             }
-        }
-
-        if (this.data.category === 'Golf Cart') {
+        } else if (this.data.name === 'Golf Schedule and Rates') {
             const infoLink = card.querySelector('.info-link');
             if (infoLink) {
                 infoLink.addEventListener('click', async (e) => {
                     e.preventDefault();
                     try {
-                        console.log('Golf Cart modal: Loading content...');
-                        const content = await this.loadModalContent('golfcart.html');
-                        console.log('Golf Cart modal: Content loaded, setting modal...');
-                        this.modal.setContent(content);
-                        console.log('Golf Cart modal: Showing modal...');
-                        this.modal.show();
+                        const modal = this.modalInstances['golf-rates-modal'];
+                        const content = await this.loadModalContent('golfrates.html');
+                        modal.setContent(content);
+                        modal.show();
                     } catch (error) {
-                        console.error('Error in Golf Cart modal:', error);
-                        this.modal.setContent(`
+                        console.error('Error in Golf Rates modal:', error);
+                        this.modalInstances['golf-rates-modal'].setContent(`
                             <div class="property-content">
-                                <h2>Error Loading Golf Cart Information</h2>
-                                <p>We apologize, but the golf cart information could not be loaded.</p>
+                                <h2>Error Loading Golf Rates Information</h2>
+                                <p>We apologize, but the content could not be loaded.</p>
                                 <p>Error: ${error.message}</p>
                             </div>
                         `);
-                        this.modal.show();
+                        this.modalInstances['golf-rates-modal'].show();
                     }
                 });
             }
@@ -258,22 +257,20 @@ export class Card {
                 infoLink.addEventListener('click', async (e) => {
                     e.preventDefault();
                     try {
-                        console.log('Kids Club modal: Loading content...');
+                        const modal = this.modalInstances['kids-club-modal'];
                         const content = await this.loadModalContent('tortuga.html');
-                        console.log('Kids Club modal: Content loaded, setting modal...');
-                        this.kidsClubModal.setContent(content);
-                        console.log('Kids Club modal: Showing modal...');
-                        this.kidsClubModal.show();
+                        modal.setContent(content);
+                        modal.show();
                     } catch (error) {
                         console.error('Error in Kids Club modal:', error);
-                        this.kidsClubModal.setContent(`
+                        this.modalInstances['kids-club-modal'].setContent(`
                             <div class="property-content">
                                 <h2>Error Loading Kids Club Information</h2>
-                                <p>We apologize, but the Kids Club information could not be loaded.</p>
+                                <p>We apologize, but the content could not be loaded.</p>
                                 <p>Error: ${error.message}</p>
                             </div>
                         `);
-                        this.kidsClubModal.show();
+                        this.modalInstances['kids-club-modal'].show();
                     }
                 });
             }
