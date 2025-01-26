@@ -9,7 +9,7 @@ export class CategoryTree {
         this.icons = {
             // Secciones principales
             "Emergency": "fa-kit-medical",
-            "Golf": "fa-golf-ball",
+            "Golf": "fa-golf",
             "Resort restaurants and venues": "fa-utensils",
             "Resort activities and adventures": "fa-umbrella-beach",
             "Transportation/Transfer": "fa-taxi",
@@ -19,8 +19,6 @@ export class CategoryTree {
             // Categorías
             "Hotel": "fa-hotel",
             "Spa": "fa-spa",
-            "Pool":"fa-person-swimming",
-            "Beach": "fa-umbrella-beach",
             "Wellness center": "fa-heart-pulse",
             "Bar": "fa-martini-glass",
             "Resort Restaurant": "fa-utensils",
@@ -37,7 +35,7 @@ export class CategoryTree {
             "Nanny Services": "fa-baby",
             "Professional Photography": "fa-camera",
             "Personal Care and Fitness": "fa-hand-sparkles",
-            "Kid's Club": "fa-child",
+            "Kid's Club": "fa-children",
             "Personal Chefs": "fa-hat-chef",
             "Pre-Made Meals and Catering": "fa-plate-wheat",
             "Delivery Services and Personal Grocery Shopping": "fa-shopping-cart",
@@ -71,14 +69,16 @@ export class CategoryTree {
                 isSpecial: true,
                 categories: []
             },
+            "Golf": {
+                isSpecial: true,
+                categories: []
+            },
             "Resort restaurants and venues": {
                 isSpecial: false,
                 categories: [
                     "Restaurant",
                     "Bar",
                     "Hotel",
-                    "Pool", 
-                    "Beach",
                     "Spa",
                     "Wellness Center",
                 ]
@@ -86,7 +86,6 @@ export class CategoryTree {
             "Resort activities and adventures": {
                 isSpecial: false,
                 categories: [
-                    "Golf",
                     "Scuba Diving Tours",
                     "Aqua Tours",
                     "Tours",

@@ -19,7 +19,7 @@ export class CategoryTree {
             // Categorías
             "Hotel": "fa-hotel",
             "Spa": "fa-spa",
-            "Pool":"fa-person-swimming",
+            "Pool":"fa-pool",
             "Beach": "fa-umbrella-beach",
             "Wellness center": "fa-heart-pulse",
             "Bar": "fa-martini-glass",
@@ -77,8 +77,6 @@ export class CategoryTree {
                     "Restaurant",
                     "Bar",
                     "Hotel",
-                    "Pool", 
-                    "Beach",
                     "Spa",
                     "Wellness Center",
                 ]

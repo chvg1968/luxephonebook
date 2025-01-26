@@ -112,31 +112,10 @@ export const contacts = [
     "section": "Resort restaurants and venues"
   },
   {
-    "name": "Beach Club Pools",
-    "phone": null,
-    "category": "Pool",
-    "description": "Family and Just Adults members’ pools with full service",
-    "section": "Resort restaurants and venues"
-  },
-  {
-    "name": "Veranda’s Pool at Club House ",
-    "phone": null,
-    "category": "Pool",
-    "description": "Self-service grill, kitchenette, pool table and lawn",
-    "section": "Resort restaurants and venues"
-  },
-  {
-    "name": "Beach Club",
-    "phone": null,
-    "category": "Beach",
-    "description": "You can access this beach through the Beach Club area.\n\nYou can park your cart at the Golf shop and walk through the Beach Club pools. ",
-    "section": "Resort restaurants and venues"
-  },
-  {
-    "name": "Sand Dollar Beach",
-    "phone": null,
-    "category": "Beach",
-    "description": "<p>🌴 <span style='color: blue; text-decoration: underline;'>You can access this beach through a hidden path</span> entering the 18th hole at the golf course.</p><p>🤫 <span style='color: green;'>This is a quiet beach with no service.</span></p><p>📖 <span style='color: darkorange;'>An exceptional destination for relaxation and adventure:</span></p><ul><li>📚 <span style='color: purple;'>Read a book under the shade of a palm tree.</span></li><li>✨ <span style='color: teal;'>Delight in the sparkling waters of the Atlantic.</span></li><li>🌅 <span style='color: magenta;'>Take in a breathtaking sunset.</span></li></ul><p>💆‍♀️ Enjoy <span style='color: blue; text-decoration: underline;'>a relaxing oasis</span> away from it all in this private setting.</p>",
+    "name": "Boathouse Bar",
+    "phone": "787-809-8823",
+    "category": "Bar",
+    "description": "(12:00 Р.М.- 4:00 Р.М.)",
     "section": "Resort restaurants and venues"
   },
   {

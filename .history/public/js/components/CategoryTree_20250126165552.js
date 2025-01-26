@@ -77,8 +77,6 @@ export class CategoryTree {
                     "Restaurant",
                     "Bar",
                     "Hotel",
-                    "Pool", 
-                    "Beach",
                     "Spa",
                     "Wellness Center",
                 ]

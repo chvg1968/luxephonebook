@@ -34,18 +34,9 @@ export const categories = {
                 id: 'Restaurant',
                 name: 'Restaurant',
                 icon: 'fas fa-utensils'
-            },
-            pool: {
-                id: 'Pool',
-                name:'Pool',
-                icon: 'fas fa-person-swimming'
-            },
-            beach: {    
-                id: 'Beach',
-                name: 'Beach',
-                icon: 'fas fa-umbrella-beach'
-            },
-        },
+            }
+        }
+    },
     resortActivities: {
         id: 'Resort activities and adventures',
         name: 'Resort Activities and Adventures',

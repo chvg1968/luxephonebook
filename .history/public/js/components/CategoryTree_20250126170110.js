@@ -77,10 +77,10 @@ export class CategoryTree {
                     "Restaurant",
                     "Bar",
                     "Hotel",
-                    "Pool", 
-                    "Beach",
                     "Spa",
                     "Wellness Center",
+                    "Pool", 
+                    "Beach"
                 ]
             },
             "Resort activities and adventures": {
