@@ -1,5 +1,23 @@
 .
 
+// package.json
+{
+  "name": "bahia-directory",
+  "version": "1.0.0",
+  "description": "Phone directory for Bahia Beach Resort",
+  "main": "src/js/main.js",
+  "scripts": {
+    "start": "serve .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "serve": "^14.2.1"
+  }
+}
+
+// README.md
 
 # Bahia Beach Directory
 
