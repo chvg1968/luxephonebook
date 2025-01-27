@@ -150,7 +150,7 @@ export class CategoryTree {
                         subcategories: [
                             "On the way from the airport (more variety)",
                             "Near Bahia Beach",
-                            "Specialty Food, Wine and Liquors Stores",
+                            "Specialty Food, Wine and Liquors Stores", 
                             "Shopping Malls"
                         ]
                     }

@@ -115,8 +115,7 @@ class PropertyPage {
       "45 min West (San Juan)": "Restaurant",
       "On the way from the airport (more variety)": "Shopping",
       "Near Bahia Beach": "Shopping",
-      "Specialty Food": "Shopping",
-      "Wine and Liquors Stores": "Shopping", 
+      "Specialty Food, Wine and Liquors Stores": "Shopping",
       "Shopping Malls": "Shopping"
     };
 
@@ -128,24 +127,15 @@ class PropertyPage {
 
       // Filtrar por categoría o subcategoría
       if (filters.category) {
-        // Verificar si la categoría seleccionada coincide con la categoría o subcategoría del contacto
-        const isExactCategoryMatch = contact.category === filters.category;
+        // Verificar si la categoría seleccionada coincide exactamente con la subcategoría del contacto
+        const isExactSubcategoryMatch = contact.subcategories === filters.category;
         
-        // Verificar si la categoría seleccionada es una subcategoría del contacto
-        const isSubcategoryMatch = contact.subcategories === filters.category;
-        
-        // Verificar si la categoría seleccionada es un padre de la subcategoría del contacto
-        const isCategoryParentOfSubcategory = 
-          subcategoryMapping[filters.category] && 
-          contact.subcategories && 
-          subcategoryMapping[filters.category] === contact.category;
-
-        // Condición especial para "Restaurant" en "Off property"
-        const isOffPropertyRestaurant = 
+        // Condición especial para categorías generales en "Off property"
+        const isOffPropertyGeneralCategory = 
           contact.section === "Off property" && 
-          filters.category === "Restaurant";
+          (filters.category === "Restaurant" || filters.category === "Shopping");
 
-        return isSubcategoryMatch || isCategoryParentOfSubcategory || (isExactCategoryMatch && !isOffPropertyRestaurant);
+        return isExactSubcategoryMatch && !isOffPropertyGeneralCategory;
       }
 
       return true;

@@ -1257,14 +1257,6 @@ export const contacts = [
     "section": "Off property"
   },
   {
-    "name": "Cremaldi(Fajardo)",
-    "phone": "787-801-1770",
-    "subcategories":"Specialty Food, Wine and Liquors Stores",
-    "category": "Shopping",
-    "description": "Ice Cream Shop",
-    "section": "Off property"
-  },
-  {
     "name": "Shopping Malls",
     "phone": null,
     "subcategories": "Shopping Malls",

@@ -1188,7 +1188,7 @@ export const contacts = [
     "name": "Tasca El Pescador",
     "phone": "787-721-0995",
     "subcategories":"45 min West (San Juan)",
-    "category": "Restaurant",
+    "category": "SeaFood",
     "description": "Fresh seafood",
     "section": "Off property"
   },
@@ -1204,7 +1204,7 @@ export const contacts = [
     "name": "Cut butcher Shop",
     "phone": "787-918-8700",
     "subcategories":"Specialty Food, Wine and Liquors Stores",
-    "category": "Shopping",
+    "category": "Butcher Shop",
     "description": "Isla Verde",
     "section": "Off property"
   },
@@ -1212,7 +1212,7 @@ export const contacts = [
     "name": "Alans",
     "phone": "787-273-1178",
     "subcategories":"Specialty Food, Wine and Liquors Stores",
-    "category": "Shopping",
+    "category": "Fish Market",
     "description": "Guaynabo",
     "section": "Off property"
   },
@@ -1220,7 +1220,7 @@ export const contacts = [
     "name": "El Horno de Pan",
     "phone": null,
     "subcategories":"Specialty Food, Wine and Liquors Stores",
-    "category": "Shopping",
+    "category": "Bakery",
     "description": "(Hato Rey): @elhornodepane",
     "section": "Off property"
   },
@@ -1228,48 +1228,15 @@ export const contacts = [
     "name": "Lucia Patisserie",
     "phone": "787-230-0808",
     "subcategories":"Specialty Food, Wine and Liquors Stores",
-    "category": "Shopping",
+    "category": "Bakery",
     "description": "(Miramar)",
     "section": "Off property"
   },
   {
-    "name": "The House Liquor Store (Condado)",
-    "phone": "787-945-5483",
-    "subcategories":"Specialty Food, Wine and Liquors Stores",
-    "category": "Shopping",
-    "description": " ",
-    "section": "Off property"
-  },
-  {
-    "name": "Bodegas Compostela Wine (Condado)",
-    "phone": "787-724-6088",
-    "subcategories":"Specialty Food, Wine and Liquors Stores",
-    "category": "Shopping",
-    "description": " ",
-    "section": "Off property"
-  },
-  {
-    "name": "La Boutique Du Vin (Wine and Liquor): (Hato Rey)",
-    "phone": "787-250-0008",
-    "subcategories":"Specialty Food, Wine and Liquors Stores",
-    "category": "Shopping",
-    "description": " ",
-    "section": "Off property"
-  },
-  {
-    "name": "Cremaldi(Fajardo)",
+    "name": "Cremaldi",
     "phone": "787-801-1770",
-    "subcategories":"Specialty Food, Wine and Liquors Stores",
-    "category": "Shopping",
-    "description": "Ice Cream Shop",
-    "section": "Off property"
-  },
-  {
-    "name": "Shopping Malls",
-    "phone": null,
-    "subcategories": "Shopping Malls",
-    "category": "Shopping",
-    "description": "🛍️ **Explore the best shopping malls nearby:**\n\n- 🏬 **Canóvanas Outlets** (Canóvanas)\n- 🏢 **The Mall of San Juan** (Carolina)\n- 🛒 **Plaza Carolina** (Carolina)\n- 🏙️ **Plaza Las Américas** (Hato Rey)\n\n🛍️ Find everything from luxury stores to local brands!",
+    "category": "Ice-Cream",
+    "description": "Fajardo",
     "section": "Off property"
   }
 ]
