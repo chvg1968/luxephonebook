@@ -54,6 +54,16 @@ export class CategoryFilter {
             }
             
             this.onFilter(this.activeCategory, this.activeSection);
+
+            // Scroll automático al searchbar
+            const searchBar = document.getElementById('searchInput');
+            if (searchBar) {
+                searchBar.scrollIntoView({ 
+                    behavior: 'smooth', 
+                    block: 'start' 
+                });
+                searchBar.focus(); // Opcional: enfoca el input
+            }
         });
     }
 

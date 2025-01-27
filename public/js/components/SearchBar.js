@@ -14,6 +14,23 @@ export class SearchBar {
                 this.onSearch(searchTerm);
             }
         });
+
+        // Agregar evento de enter para scroll automático
+        this.searchInput.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter') {
+                const searchTerm = this.searchInput.value.trim();
+                if (searchTerm) {
+                    // Scroll automático a resultados
+                    const resultsContainer = document.getElementById('resultsContainer');
+                    if (resultsContainer) {
+                        resultsContainer.scrollIntoView({ 
+                            behavior: 'smooth', 
+                            block: 'start' 
+                        });
+                    }
+                }
+            }
+        });
     }
 
     getValue() {
