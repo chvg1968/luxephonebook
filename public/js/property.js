@@ -128,13 +128,24 @@ class PropertyPage {
 
       // Filtrar por categoría o subcategoría
       if (filters.category) {
-        // Si la categoría es una subcategoría, mapearla a su categoría padre
-        const mappedCategory = subcategoryMapping[filters.category] || filters.category;
+        // Verificar si la categoría seleccionada coincide con la categoría o subcategoría del contacto
+        const isExactCategoryMatch = contact.category === filters.category;
         
-        // Verificar si coincide con la categoría, categoría padre o subcategoría
-        return contact.category === filters.category || 
-               contact.category === mappedCategory ||
-               (contact.subcategories && contact.subcategories === filters.category);
+        // Verificar si la categoría seleccionada es una subcategoría del contacto
+        const isSubcategoryMatch = contact.subcategories === filters.category;
+        
+        // Verificar si la categoría seleccionada es un padre de la subcategoría del contacto
+        const isCategoryParentOfSubcategory = 
+          subcategoryMapping[filters.category] && 
+          contact.subcategories && 
+          subcategoryMapping[filters.category] === contact.category;
+
+        // Condición especial para "Restaurant" en "Off property"
+        const isOffPropertyRestaurant = 
+          contact.section === "Off property" && 
+          filters.category === "Restaurant";
+
+        return isSubcategoryMatch || isCategoryParentOfSubcategory || (isExactCategoryMatch && !isOffPropertyRestaurant);
       }
 
       return true;

@@ -955,7 +955,6 @@ export const contacts = [
   {
     "name": "Pimentón Pizza and Pasta",
     "phone": "787-417-2040",
-    "subcategories":"30 min West (Carolina)",
     "category":"Restaurant",
     "description": "(Casual, great food)",
     "section": "Off property"
@@ -963,7 +962,6 @@ export const contacts = [
   {
     "name": "Lala",
     "phone": "787-598-9000",
-    "subcategories":"30 min West (Carolina)",
     "category":"Restaurant",
     "description": "(Upscale international) at the Mall of San Juan",
     "section": "Off property"
@@ -971,7 +969,6 @@ export const contacts = [
   {
     "name": "Pasión por el Fogón",
     "phone": "787-863-3502",
-    "subcategories":"30 min East (Fajardo)",
     "category":"Restaurant",
     "description": "(Casual fine dining)",
     "section": "Off property"
@@ -979,7 +976,6 @@ export const contacts = [
   {
     "name": "El Yate",
     "phone": "787-655-4244",
-    "subcategories":"30 min East (Fajardo)",
     "category":"Restaurant",
     "description": "(Outdoor marina view)",
     "section": "Off property"
@@ -987,7 +983,6 @@ export const contacts = [
   {
     "name": "La Estación",
     "phone": "787-863-4481",
-    "subcategories":"30 min East (Fajardo)",
     "category":"Restaurant",
     "description": "(Outdoor BBQ)",
     "section": "Off property"
@@ -995,7 +990,6 @@ export const contacts = [
   {
     "name": "Butaque",
     "phone": "787-417-7996",
-    "subcategories":"30 min East (Fajardo)",
     "category":"Restaurant",
     "description": "(Tex-Mex)",
     "section": "Off property"
@@ -1003,7 +997,6 @@ export const contacts = [
   {
     "name": "Las Vistas Café",
     "phone": "787-655-7053",
-    "subcategories":"30 min East (Fajardo)",
     "category":"Restaurant",
     "description": "(Breakfast and Brunch) (Thurs-Mon 8:00 AM–2:00 PM, Closed Tues-Wed)",
     "section": "Off property"
@@ -1011,7 +1004,6 @@ export const contacts = [
   {
     "name": "Don Esteban",
     "phone": "787-655-1217",
-    "subcategories":"30 min East (Fajardo)",
     "category":"Restaurant",
     "description": "Wed-Thurs 11:00 AM-9:00 PM, Fri 11:00 AM-10:00 PM, Sat 1:00 PM-9:00 PM, Sun 11:00 AM-9:00 PM, Mon-Tues, Closed",
     "section": "Off property"
@@ -1019,7 +1011,6 @@ export const contacts = [
   {
     "name": "Verde Mesa",
     "phone": null,
-    "subcategories":"45 min West (San Juan)",
     "category":"Restaurant",
     "description": "@verdemesa on IG",
     "section": "Off property"
@@ -1027,7 +1018,6 @@ export const contacts = [
   {
     "name": "Berlingeri",
     "phone": "787-527-3224",
-    "subcategories":"45 min West (San Juan)",
     "category":"Restaurant",
     "description":  " ",
     "section": "Off property"
@@ -1035,7 +1025,6 @@ export const contacts = [
   {
     "name": "Purefood",
     "phone": null,
-    "subcategories":"45 min West (San Juan)",
     "category":"Restaurant",
     "description": "@purefoodpr on IG",
     "section": "Off property"
@@ -1043,7 +1032,6 @@ export const contacts = [
   {
     "name": "La Lanterna",
     "phone": "787-340-8188",
-    "subcategories":"45 min West (San Juan)",
     "category":"Restaurant",
     "description": "Upscale Fine Dining Italian @ Old San Juan",
     "section": "Off property"
@@ -1051,7 +1039,6 @@ export const contacts = [
   {
     "name": "Marmalade",
     "phone": "787-724-3969",
-    "subcategories":"45 min West (San Juan)",
     "category":"Restaurant",
     "description": "Upscale Fine Dining French @ Old San Juan",
     "section": "Off property"
@@ -1059,7 +1046,6 @@ export const contacts = [
   {
     "name": "Ariel",
     "phone": "787-725-7700",
-    "subcategories":"45 min West (San Juan)",
     "category":"Restaurant",
     "description": "Upscale Fine Dining Fusion",
     "section": "Off property"
@@ -1067,7 +1053,6 @@ export const contacts = [
   {
     "name": "1919",
     "phone": "787-724-1919",
-    "subcategories":"45 min West (San Juan)",
     "category":"Restaurant",
     "description": "Upscale Fine Dining Fusion",
     "section": "Off property"
@@ -1075,7 +1060,6 @@ export const contacts = [
   {
     "name": "Cocina al Fondo",
     "phone": "787-469-5527",
-    "subcategories":"45 min West (San Juan)",
     "category":"Restaurant",
     "description": "Award Winning Chef",
     "section": "Off property"
@@ -1083,7 +1067,6 @@ export const contacts = [
   {
     "name": "Yoko",
     "phone": "787-624-6120",
-    "subcategories":"45 min West (San Juan)",
     "category":"Restaurant",
     "description": "Good vibes, cool scene, and great sushi",
     "section": "Off property"
@@ -1091,7 +1074,6 @@ export const contacts = [
   {
     "name": "Vianda",
     "phone": "939-475-1578",
-    "subcategories":"45 min West (San Juan)",
     "category":"Restaurant",
     "description": "Fine Dining Fusion",
     "section": "Off property"
@@ -1099,7 +1081,6 @@ export const contacts = [
   {
     "name": "La Pícara",
     "phone": "787-957-1385",
-    "subcategories":"45 min West (San Juan)",
     "category":"Restaurant",
     "description": "Good vibes, cool scene, and great fusion food",
     "section": "Off property"
@@ -1107,7 +1088,6 @@ export const contacts = [
   {
     "name": "Santaella",
     "phone": "787-725-1611",
-    "subcategories":"45 min West (San Juan)",
     "category":"Restaurant",
     "description": "Good vibes, cool scene, and great local food",
     "section": "Off property"
@@ -1115,7 +1095,6 @@ export const contacts = [
   {
     "name": "Mario Pagan",
     "phone": "787-522-6444",
-    "subcategories":"45 min West (San Juan)",
     "category":"Restaurant",
     "description": "Good vibes, cool scene, and great local food",
     "section": "Off property"
@@ -1123,7 +1102,6 @@ export const contacts = [
   {
     "name": "Raya",
     "phone": "787-705-0820",
-    "subcategories":"45 min West (San Juan)",
     "category":"Restaurant",
     "description": "Upscale Good vibes, cool scene, and great fusion food",
     "section": "Off property"
@@ -1131,7 +1109,6 @@ export const contacts = [
   {
     "name": "La Central by Mario Pagán",
     "phone": "787-566-0505",
-    "subcategories":"45 min West (San Juan)",
     "category":"Restaurant",
     "description": "Puerto Rican Fusion",
     "section": "Off property"
@@ -1139,7 +1116,6 @@ export const contacts = [
   {
     "name": "Pio Pio",
     "phone": "787-306-7792",
-    "subcategories":"45 min West (San Juan)",
     "category":"Restaurant",
     "description": "Good vibes, fusion food @ Old San Juan",
     "section": "Off property"
@@ -1147,7 +1123,6 @@ export const contacts = [
   {
     "name": "Princesa Cocina Cultura",
     "phone": "787-723-7878",
-    "subcategories":"45 min West (San Juan)",
     "category":"Restaurant",
     "description": "Caribbean @ Old San Juan",
     "section": "Off property"
@@ -1155,7 +1130,6 @@ export const contacts = [
   {
     "name": "Casita Miramar",
     "phone": "787-631-8265",
-    "subcategories":"45 min West (San Juan)",
     "category": "Restaurant",
     "description": "Puerto Rican",
     "section": "Off property"
@@ -1163,7 +1137,6 @@ export const contacts = [
   {
     "name": "Tasca El Pescador",
     "phone": "787-721-0995",
-    "subcategories":"45 min West (San Juan)",
     "category": "SeaFood",
     "description": "Fresh seafood",
     "section": "Off property"
@@ -1171,7 +1144,6 @@ export const contacts = [
   {
     "name": "Bottles",
     "phone": "787-775-1210",
-    "subcategories":"45 min West (San Juan)",
     "category": "Restaurant",
     "description": "Good vibes, cool scene, and great international food",
     "section": "Off property"
