@@ -147,17 +147,9 @@ class PropertyPage {
           contact.section === "Off property" && 
           (filters.category === "Restaurant" || filters.category === "Shopping");
 
-        // Condición especial para "Places to Visit" en "Off property"
-        const isPlacesToVisit = 
-          contact.section === "Off property" && 
-          filters.category === "Places to Visit" &&
-          contact.name === "Places to Visit";
-
-        // Para Off Property, solo mostrar subcategorías o categorías especiales
+        // Para Off Property, solo mostrar subcategorías
         if (contact.section === "Off property") {
-          return isSubcategoryMatch || 
-                 !isOffPropertyGeneralCategory && isExactCategoryMatch || 
-                 isPlacesToVisit;
+          return isSubcategoryMatch && !isOffPropertyGeneralCategory;
         }
 
         // Para otras secciones, mostrar categorías y subcategorías

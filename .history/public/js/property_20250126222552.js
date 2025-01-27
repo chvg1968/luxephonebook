@@ -150,8 +150,7 @@ class PropertyPage {
         // Condición especial para "Places to Visit" en "Off property"
         const isPlacesToVisit = 
           contact.section === "Off property" && 
-          filters.category === "Places to Visit" &&
-          contact.name === "Places to Visit";
+          filters.category === "Places to Visit";
 
         // Para Off Property, solo mostrar subcategorías o categorías especiales
         if (contact.section === "Off property") {

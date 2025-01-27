@@ -139,7 +139,7 @@ export class CategoryTree {
                     {
                         name: "Restaurant",
                         subcategories: [
-                            "Near and casual",
+                            "Near and Casual",
                             "30 min West (Carolina)", 
                             "30 min East (Fajardo)", 
                             "45 min West (San Juan)"
