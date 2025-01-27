@@ -618,70 +618,70 @@ export const contacts = [
   {
     "name": "Jose Campís: @paellascampis on IG",
     "phone": "787-423-2298",
-    "category": "Personal Chefs, Catering and Pre-Made Meals",
+    "category": "Personal Chefs and Catering",
     "description": " ",
     "section": "Catering/delivery/special services"
   },
   {
     "name": "Josué Montañez: @chefjosuemontanez on IG",
     "phone": "787-378-2944",
-    "category": "Personal Chefs, Catering and Pre-Made Meals",
+    "category": "Personal Chefs and Catering",
     "description": " ",
     "section": "Catering/delivery/special services"
   },
   {
     "name": "Joaquín Gonzalez: @cultura_culinaria_2020 on IG",
     "phone": "787-587-5623",
-    "category": "Personal Chefs, Catering and Pre-Made Meals",
+    "category": "Personal Chefs and Catering",
     "description": " ",
     "section": "Catering/delivery/special services"
   },
   {
     "name": "Tomás Rosado",
     "phone": "787-210-3494",
-    "category": "Personal Chefs, Catering and Pre-Made Meals",
+    "category": "Personal Chefs and Catering",
     "description": " ",
     "section": "Catering/delivery/special services"
   },
   {
     "name": "Brittany Bennett: @bkcateringPR on IG/",
     "phone": null,
-    "category": "Personal Chefs, Catering and Pre-Made Meals",
+    "category": "Personal Chefs and Catering",
     "description": "bkcatering314.com",
     "section": "Catering/delivery/special services"
   },
   {
     "name": "Lucia and Alejandro Merino: @excellent_food on IG",
     "phone": "787-203-9001",
-    "category": "Personal Chefs, Catering and Pre-Made Meals",
+    "category": "Personal Chefs and Catering",
     "description": " ",
     "section": "Catering/delivery/special services"
   },
   {
     "name": "Josian Hernaiz: Pizza Parties (DI MASSA on Facebook)",
     "phone": "939-451-7749",
-    "category": "Personal Chefs, Catering and Pre-Made Meals",
+    "category": "Personal Chefs and Catering",
     "description": " ",
     "section": "Catering/delivery/special services"
   },
   {
     "name": "Andrea Feria",
     "phone": "787-567-9606",
-    "category":"Personal Chefs, Catering and Pre-Made Meals",
+    "category": "Pre-Made Meals and Catering",
     "description": " ",
     "section": "Catering/delivery/special services"
   },
   {
     "name": "Giovanna Colon",
     "phone": "787-349-2226",
-    "category": "Personal Chefs, Catering and Pre-Made Meals",
+    "category": "Pre-Made Meals and Catering",
     "description": " ",
     "section": "Catering/delivery/special services"
   },
   {
     "name": "Kevin Pellegrino",
     "phone": "314-749-2154",
-    "category": "Personal Chefs, Catering and Pre-Made Meals",
+    "category": "Pre-Made Meals and Catering",
     "description": " ",
     "section": "Catering/delivery/special services"
   },

@@ -674,14 +674,14 @@ export const contacts = [
   {
     "name": "Giovanna Colon",
     "phone": "787-349-2226",
-    "category": "Personal Chefs, Catering and Pre-Made Meals",
+    "category": "Pre-Made Meals and Catering",
     "description": " ",
     "section": "Catering/delivery/special services"
   },
   {
     "name": "Kevin Pellegrino",
     "phone": "314-749-2154",
-    "category": "Personal Chefs, Catering and Pre-Made Meals",
+    "category": "Pre-Made Meals and Catering",
     "description": " ",
     "section": "Catering/delivery/special services"
   },

@@ -27,7 +27,7 @@ export class CategoryTree {
             "Off Property Restaurant": "fa-store",
             "Scuba Diving Tours": "fa-water",
             "Aqua Tours": "fa-ship",
-            "Tours": "fa-route",
+            "Tours": "fa-map-marked-alt",
             "Activities Reservations": "fa-calendar-check",
             "Tennis": "fa-table-tennis",
             "Wellness Center": "fa-heart-pulse",
@@ -109,7 +109,7 @@ export class CategoryTree {
                     "Professional Photography",
                     "Personal Care and Fitness",
                     "Kid's Club",
-                    "Personal Chefs, Catering and Pre-Made Meals",
+                    "Personal Chefs and Catering",
                     "Butler Services",
                     "Concierge Services",
                     "Delivery Services"

@@ -214,56 +214,56 @@ export const contacts = [
     "phone": "787-408-2065",
     "category": "Tours",
     "description": "El Yunque and Old San Juan Tours, Airport transfer",
-    "section": "Off Property Transportation and Airport Transfers"
+    "section": "Resort activities and adventures"
   },
   {
     "name": "Shadow Tours",
     "phone": "787-962-6924",
     "category": "Tours",
     "description": "Shadow Tours",
-    "section": "Off Property Transportation and Airport Transfers"
+    "section": "Resort activities and adventures"
   },
   {
     "name": "Bespoke Lifestyle Management",
     "phone": "787-690-8040",
     "category": "Tours",
     "description": null,
-    "section": "Off Property Transportation and Airport Transfers"
+    "section": "Resort activities and adventures"
   },
   {
     "name": "Flavors Food Tours",
     "phone": "787-964-2447",
     "category": "Tours",
     "description": null,
-    "section": "Off Property Transportation and Airport Transfers"
+    "section": "Transportation/Transfer"
   },
   {
     "name": "Hacienda Chocolat PR",
     "phone": "787-637-5666",
     "category": "Tours",
     "description": "Cacao Farm Tours and Chocolate Tasting): Haciendachocolat.com",
-    "section": "Off Property Transportation and Airport Transfers"
+    "section": "Resort activities and adventures"
   },
   {
     "name": "PRHS Tours",
     "phone": "787-671-8492",
     "category": "Tours",
     "description": "Puerto Rico Historic Building Drawings Society, San Juan): Karen & Andy: prhbds.org",
-    "section": "Off Property Transportation and Airport Transfers"
+    "section": "Resort activities and adventures"
   },
   {
     "name": "Carabalí Rainforest Adventure Park",
     "phone": "787-889-4954, 787-889-2682, 787-889-5820",
     "category": "Tours",
     "description": "(ATVs, UTVs, Horseback riding, Karts)",
-    "section": "Off Property Transportation and Airport Transfers"
+    "section": "Resort activities and adventures"
   },
   {
     "name": "Rainforest Zipline | El Yunque National Rain Forest Ziplining",
     "phone": null,
     "category": "Tours",
     "description": "rainforestzipline.com",
-    "section": "Off Property Transportation and Airport Transfers"
+    "section": "Resort activities and adventures"
   },
   {
     "name": "Zip line Toro Verde",
@@ -277,209 +277,209 @@ export const contacts = [
     "phone": "787-696-4222",
     "category": "Tours",
     "description": "San Juan: baysidefishingcharters.com",
-    "section": "Off Property Transportation and Airport Transfers"
+    "section": "Resort activities and adventures"
   },
   {
     "name": "Puerto Rico Bio Bay Tours",
     "phone": "787-888-2887",
     "category": "Tours",
     "description": "Fajardo: puertoricobiobaytours.com",
-    "section": "Off Property Transportation and Airport Transfers"
+    "section": "Resort activities and adventures"
   },
   {
     "name": "Kayaking PR",
     "phone": "787-245-4545",
     "category": "Tours",
     "description": "Snorkeling & Bio Bay Tours: kayakingpuertorico.com",
-    "section": "Off Property Transportation and Airport Transfers"
+    "section": "Resort activities and adventures"
   },
   {
     "name": "Bioluminescent Bay Tours (Gaby)",
     "phone": "787-462-9129",
     "category": "Tours",
     "description": "puertoricoecotour.com",
-    "section": "Off Property Transportation and Airport Transfers"
+    "section": "Resort activities and adventures"
   },
   {
     "name": "Gringo Jet Ski Rentals",
     "phone": "787-362-9982",
     "category": "Tours",
     "description": " ",
-    "section": "Off Property Transportation and Airport Transfers"
+    "section": "Resort activities and adventures"
   },
   {
     "name": "PR Jet Skis",
     "phone": "787-397-3342",
     "category": "Tours",
     "description": " ",
-    "section": "Off Property Transportation and Airport Transfers"
+    "section": "Resort activities and advetures"
   },
   {
     "name": "East Island Excursions",
     "phone": "787-860-3434",
     "category": "Aqua Tours",
     "description": "eastislandpr.com",
-    "section": "Off Property Transportation and Airport Transfers"
+    "section": "Resort activities and adventures"
   },
   {
     "name": "Salty Dog",
     "phone": "787-717-6378",
     "category": "Aqua Tours",
     "description": " ",
-    "section": "Off Property Transportation and Airport Transfers"
+    "section": "Resort activities and adventures"
   },
   {
     "name": "Spread Eagle II",
     "phone": "787-887-8821",
     "category": "Aqua Tours",
     "description": " ",
-    "section": "Off Property Transportation and Airport Transfers"
+    "section": "Resort activities and adventures"
   },
   {
     "name": "Sail Getaways",
     "phone": "787-860-7327",
     "category": "Aqua Tours",
     "description": " ",
-    "section": "Off Property Transportation and Airport Transfers"
+    "section": "Resort activities and adventures"
   },
   {
     "name": "Culebravipeastpr.com",
     "phone": null,
     "category": "Aqua Tours",
     "description": "Boat Charter",
-    "section": "Off Property Transportation and Airport Transfers"
+    "section": "Resort activities and adventures"
   },
   {
     "name": "Palomino Yachts Charters",
     "phone": "787-215-5303",
     "category": "Aqua Tours",
     "description": "palominoyacht.com",
-    "section": "Off Property Transportation and Airport Transfers"
+    "section": "Resort activities and adventures"
   },
   {
     "name": "12knots.com",
     "phone": null,
     "category": "Aqua Tours",
     "description": "Yacht charter",
-    "section": "Off Property Transportation and Airport Transfers"
+    "section": "Resort activities and adventures"
   },
   {
     "name": "salymartours.com",
     "phone": null,
     "category": "Aqua Tours",
     "description": "Yacht charter",
-    "section": "Off Property Transportation and Airport Transfers"
+    "section": "Resort activities and adventures"
   },
   {
     "name": "Sailo.com",
     "phone": null,
     "category": "Aqua Tours",
     "description": "Yacht charter",
-    "section": "Off Property Transportation and Airport Transfers"
+    "section": "Resort activities and adventures"
   },
   {
     "name": "Captain Alberto Nazario",
     "phone": "787-594-6360",
     "category": "Aqua Tours",
     "description": "gonefishingpr@gmail.com",
-    "section": "Off Property Transportation and Airport Transfers"
+    "section": "Resort activities and adventures"
   },
   {
     "name": "Aventureagroup.com",
     "phone": null,
     "category": "Aqua Tours",
     "description": "Yacht charter",
-    "section": "Off Property Transportation and Airport Transfers"
+    "section": "Resort activities and adventures"
   },
   {
     "name": "Ricardo Yacht Charters",
     "phone": "787-461-6474",
     "category": "Aqua Tours",
     "description": "Yacht charter",
-    "section": "Off Property Transportation and Airport Transfers"
+    "section": "Resort activities and adventures"
   },
   {
     "name": "Sea Ventures",
     "phone": "787-863-3483",
     "category": "Scuba Diving Tours",
     "description": "divepuertorico.com",
-    "section": "Off Property Transportation and Airport Transfers"
+    "section": "Resort activities and adventures"
   },
   {
     "name": "Aqua Adventure Puerto Rico",
     "phone": "787-636-8811",
     "category": "Scuba Diving Tours",
     "description": "scubadivingpuertorico.net",
-    "section": "Off Property Transportation and Airport Transfers"
+    "section": "Resort activities and adventures"
   },
   {
     "name": "Laurelyn private tours",
     "phone": "+64-22-064-7615",
     "category": "Scuba Diving Tours",
     "description": "Scuba Diving",
-    "section": "Off Property Transportation and Airport Transfers"
+    "section": "Resort activities and adventures"
   },
   {
     "name": "Samy Transportation",
     "phone": "787-435-8555",
     "category": "Transportation",
-    "description": " ",
-    "section": "Off Property Transportation and Airport Transfers"
+    "description": null,
+    "section": "Transportation/Transfer"
   },
   {
     "name": "Rio Grande Taxis",
     "phone": "939-272-7777",
     "category": "Transportation",
     "description": "www.riograndetaxi.com",
-    "section": "Off Property Transportation and Airport Transfers"
+    "section": "Transportation/Transfer"
   },
   {
     "name": "Many Transportation",
     "phone": "787-315-8716",
     "category": "Transportation",
-    "description": " ",
-    "section": "Off Property Transportation and Airport Transfers"
+    "description": null,
+    "section": "Transportation/Transfer"
   },
   {
     "name": "Shadow Transportation",
     "phone": "787-962-6924 & 787-800-4379",
     "category": "Transportation",
-    "description": " ",
-    "section": "Off Property Transportation and Airport Transfers"
+    "description": null,
+    "section": "Transportation/Transfer"
   },
   {
     "name": "Ricardo Pacheco",
     "phone": "787-667-1289",
     "category": "Off-Property Transportation",
-    "description": " ",
-    "section": "Off Property Transportation and Airport Transfers"
+    "description": null,
+    "section": "Transportation/Transfer"
   },
   {
     "name": "Nicky Tours",
     "phone": "787-408-2065",
     "category": "Transportation",
-    "description": " ",
-    "section": "Off Property Transportation and Airport Transfers"
+    "description": null,
+    "section": "Transportation/Transfer"
   },
   {
     "name": "Alvir Transportation",
     "phone": "787-435-9666",
     "category": "Transportation",
-    "description": " ",
-    "section": "Off Property Transportation and Airport Transfers"
+    "description": null,
+    "section": "Transportation/Transfer"
   },
   {
     "name": "Limo Service Bahia",
     "phone": "939-334-5949 & 787-809-8889",
     "category": "Transportation",
     "description": "limo@bahiapr.com",
-    "section": "Off Property Transportation and Airport Transfers"
+    "section": "Transportation/Transfer"
   },
   {
     "name": "Stephanie Rohena",
     "phone": "787-550-3849",
     "category": "Concierge Services",
-    "description": " ",
+    "description": null,
     "section": "Catering/delivery/special services"
   },
   {
@@ -493,28 +493,28 @@ export const contacts = [
     "name": "Guillo",
     "phone": "787-925-6398",
     "category": "Butler Services",
-    "description": " ",
+    "description": null,
     "section": "Catering/delivery/special services"
   },
   {
     "name": "Francheska",
     "phone": "787-903-2427",
     "category": "Butler Services",
-    "description": " ",
+    "description": null,
     "section": "Catering/delivery/special services"
   },
   {
     "name": "Stephanie Rohena",
     "phone": "787-550-3849",
     "category": "Delivery Services",
-    "description": " ",
+    "description": null,
     "section": "Catering/delivery/special services"
   },
   {
     "name": "Naidoa",
     "phone": "787-400-0097",
     "category": "Delivery Services",
-    "description": " ",
+    "description": null,
     "section": "Catering/delivery/special services"
   },
   {
@@ -528,7 +528,7 @@ export const contacts = [
     "name": "Sammy Driver",
     "phone": "787-435-8555",
     "category": "Delivery Services",
-    "description": " ",
+    "description": null,
     "section": "Catering/delivery/special services"
   },
   {
@@ -570,21 +570,21 @@ export const contacts = [
     "name": "Pizza Marco's",
     "phone": "787-331-1192",
     "category": "Restaurant",
-    "description":  " ",
+    "description": null,
     "section": "Off property"
   },
   {
     "name": "Pizza Willy's",
     "phone": "787-887-7880",
     "category": "Restaurant",
-    "description":  " ",
+    "description": null,
     "section": "Off property"
   },
   {
     "name": "Sushipin",
     "phone": "787-629-7567",
     "category": "Restaurant",
-    "description":  " ",
+    "description": null,
     "section": "Off property"
   },
   {
@@ -612,133 +612,133 @@ export const contacts = [
     "name": "Birthday Cakes and Desserts: Sweet Drops by Fanny",
     "phone": "787-206-074",
     "category": "In Advance Delivery Services",
-    "description": " ",
+    "description": null,
     "section": "Catering/delivery/special services"
   },
   {
     "name": "Jose Campís: @paellascampis on IG",
     "phone": "787-423-2298",
-    "category": "Personal Chefs, Catering and Pre-Made Meals",
-    "description": " ",
+    "category": "Personal Chefs and Catering",
+    "description": null,
     "section": "Catering/delivery/special services"
   },
   {
     "name": "Josué Montañez: @chefjosuemontanez on IG",
     "phone": "787-378-2944",
-    "category": "Personal Chefs, Catering and Pre-Made Meals",
-    "description": " ",
+    "category": "Personal Chefs and Catering",
+    "description": null,
     "section": "Catering/delivery/special services"
   },
   {
     "name": "Joaquín Gonzalez: @cultura_culinaria_2020 on IG",
     "phone": "787-587-5623",
-    "category": "Personal Chefs, Catering and Pre-Made Meals",
-    "description": " ",
+    "category": "Personal Chefs and Catering",
+    "description": null,
     "section": "Catering/delivery/special services"
   },
   {
     "name": "Tomás Rosado",
     "phone": "787-210-3494",
-    "category": "Personal Chefs, Catering and Pre-Made Meals",
-    "description": " ",
+    "category": "Personal Chefs and Catering",
+    "description": null,
     "section": "Catering/delivery/special services"
   },
   {
     "name": "Brittany Bennett: @bkcateringPR on IG/",
     "phone": null,
-    "category": "Personal Chefs, Catering and Pre-Made Meals",
+    "category": "Personal Chefs and Catering",
     "description": "bkcatering314.com",
     "section": "Catering/delivery/special services"
   },
   {
     "name": "Lucia and Alejandro Merino: @excellent_food on IG",
     "phone": "787-203-9001",
-    "category": "Personal Chefs, Catering and Pre-Made Meals",
-    "description": " ",
+    "category": "Personal Chefs and Catering",
+    "description": null,
     "section": "Catering/delivery/special services"
   },
   {
     "name": "Josian Hernaiz: Pizza Parties (DI MASSA on Facebook)",
     "phone": "939-451-7749",
-    "category": "Personal Chefs, Catering and Pre-Made Meals",
-    "description": " ",
+    "category": "Personal Chefs and Catering",
+    "description": null,
     "section": "Catering/delivery/special services"
   },
   {
     "name": "Andrea Feria",
     "phone": "787-567-9606",
-    "category":"Personal Chefs, Catering and Pre-Made Meals",
-    "description": " ",
+    "category": "Pre-Made Meals and Catering",
+    "description": null,
     "section": "Catering/delivery/special services"
   },
   {
     "name": "Giovanna Colon",
     "phone": "787-349-2226",
-    "category": "Personal Chefs, Catering and Pre-Made Meals",
-    "description": " ",
+    "category": "Pre-Made Meals and Catering",
+    "description": null,
     "section": "Catering/delivery/special services"
   },
   {
     "name": "Kevin Pellegrino",
     "phone": "314-749-2154",
-    "category": "Personal Chefs, Catering and Pre-Made Meals",
-    "description": " ",
+    "category": "Pre-Made Meals and Catering",
+    "description": null,
     "section": "Catering/delivery/special services"
   },
   {
     "name": "Coral Ayala",
     "phone": "787-400-0097",
     "category": "Nanny Services",
-    "description": " ",
+    "description": null,
     "section": "Catering/delivery/special services"
   },
   {
     "name": "Liz Villafañe",
     "phone": "787-710-4330",
     "category": "Nanny Services",
-    "description": " ",
+    "description": null,
     "section": "Catering/delivery/special services"
   },
   {
     "name": "Karyan Baez",
     "phone": "939-249-5346",
     "category": "Nanny Services",
-    "description": " ",
+    "description": null,
     "section": "Catering/delivery/special services"
   },
   {
     "name": "Jennifer Huertas",
     "phone": "939-275-1580",
     "category": "Nanny Services",
-    "description": " ",
+    "description": null,
     "section": "Catering/delivery/special services"
   },
   {
     "name": "Francheska",
     "phone": "787-903-2427",
     "category": "Nanny Services",
-    "description": " ",
+    "description": null,
     "section": "Catering/delivery/special services"
   },
   {
     "name": "Sitters for your kids: @sitterskids on IG",
     "phone": null,
     "category": "Nanny Services",
-    "description": " ",
+    "description": null,
     "section": "Catering/delivery/special services"
   },
   {
     "name": "Carolina Bustamante/ Picture Perfect @pictureperfectpr",
     "phone": "787-365-2266",
     "category": "Professional Photography",
-    "description": " ",
+    "description": null,
     "section": "Catering/delivery/special services"
   },
   {
     "name": "Michael Germosen",
     "phone": "787-648-5259",
     "category": "Professional Photography",
-    "description": " ",
+    "description": null,
     "section": "Catering/delivery/special services"
   },
   {
@@ -801,21 +801,21 @@ export const contacts = [
     "name": "Supermax Isla Verde",
     "phone": "787-728-2050",
     "category": "Shopping",
-    "description": " ",
+    "description": null,
     "section": "Off property"
   },
   {
     "name": "Pueblo Isla Verde",
     "phone": "787-791-6633",
     "category": "Shopping",
-    "description": " ",
+    "description": null,
     "section": "Off property"
   },
   {
     "name": "Costco",
     "phone": "787-999-7230",
     "category": "Shopping",
-    "description": " ",
+    "description": null,
     "section": "Off property"
   },
   {
@@ -864,7 +864,7 @@ export const contacts = [
     "name": "Carabalí Bar and Grill",
     "phone": "787-889-4954, 787-889-5820",
     "category":"Restaurant",
-    "description": " ",
+    "description": null,
     "section": "Off property"
   },
   {
@@ -892,7 +892,7 @@ export const contacts = [
     "name": "La Parrilla at Kioskos de Luquillo",
     "phone": "787-889-0590",
     "category":"Restaurant",
-    "description": " ",
+    "description": null,
     "section": "Off property"
   },
   {
@@ -1018,7 +1018,7 @@ export const contacts = [
     "name": "Berlingeri",
     "phone": "787-527-3224",
     "category":"Restaurant",
-    "description":  " ",
+    "description": null,
     "section": "Off property"
   },
   {
