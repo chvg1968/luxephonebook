@@ -52,7 +52,7 @@ export const contacts = [
     "name": "Dr. Jose Castro",
     "phone": "787-306-4231",
     "category": "Emergency",
-    "description": " ",
+    "description": null,
     "section": "Emergency"
   },
   {
@@ -66,7 +66,7 @@ export const contacts = [
     "name": "Gatehouse Reception",
     "phone": "787-809-8895",
     "category": "Emergency",
-    "description": " ",
+    "description": null,
     "section": "Emergency"
   },
   {
@@ -171,7 +171,7 @@ export const contacts = [
     "name": "St Regis Iridium Spa",
     "phone": "787-809-8019",
     "category": "Spa",
-    "description":" ",
+    "description": null,
     "section": "Resort restaurants and venues"
   },
   {
@@ -192,7 +192,7 @@ export const contacts = [
     "name": "Tennis Reservations",
     "phone": "787-809-8877",
     "category": "Tennis",
-    "description": " ",
+    "description": null,
     "section": "Resort activities and adventures"
   },
   {
@@ -227,14 +227,14 @@ export const contacts = [
     "name": "Bespoke Lifestyle Management",
     "phone": "787-690-8040",
     "category": "Tours",
-    "description": " ",
+    "description": null,
     "section": "Off Property Transportation and Airport Transfers"
   },
   {
     "name": "Flavors Food Tours",
     "phone": "787-964-2447",
     "category": "Tours",
-    "description": " ",
+    "description": null,
     "section": "Off Property Transportation and Airport Transfers"
   },
   {
