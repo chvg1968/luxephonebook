@@ -807,7 +807,7 @@ export const contacts = [
   {
     "name": "Off-Property Places to Visit",
     "phone": "787-728-2050",
-    "category": "Places to visit",
+    "category": "Places",
     "description": "🌟 **Explore these amazing off-property destinations:**\n\n- 🌊 **Las Pailas** (River with Natural Slides)\n- 🏞️ **Charco Frio** (River)\n- 🏖️ **Seven Seas** (Beach)\n- 🛑 **Hidden Beach** (Adults Only)\n- 🍴 **Las Croabas** (Oceanfront Restaurants)\n- 🏄‍♂️ **La Pared Beach in Luquillo**\n\n📞 **Contact us** for directions or more information!",
     "section": "Off property"
   },

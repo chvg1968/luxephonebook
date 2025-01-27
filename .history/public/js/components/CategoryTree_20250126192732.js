@@ -118,7 +118,7 @@ export class CategoryTree {
             "Off property": {
                 isSpecial: false,
                 categories: [
-                    "Places to visit",
+                    "Places to visit"
                     "Restaurant",
                     "Shopping"
                 ]
