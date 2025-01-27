@@ -786,7 +786,7 @@ export const contacts = [
   {
     "name": "Off-Property Places to Visit",
     "phone": "787-728-2050",
-    "category": "Places to Visit",
+    "category": "Places to visit",
     "description": "🌟 **Explore these amazing off-property destinations:**\n\n- 🌊 **Las Pailas** (River with Natural Slides)\n- 🏞️ **Charco Frio** (River)\n- 🏖️ **Seven Seas** (Beach)\n- 🛑 **Hidden Beach** (Adults Only)\n- 🍴 **Las Croabas** (Oceanfront Restaurants)\n- 🏄‍♂️ **La Pared Beach in Luquillo**\n\n📞 **Contact us** for directions or more information!",
     "section": "Off property"
   },
@@ -835,10 +835,9 @@ export const contacts = [
   {
     "name": "Finca Agrícola Neo- Jibairo",
     "phone": "787-598-0240",
-    "subcategories":"Near and casual",
-    "description": "(Bar and Pizza: Thu-Sun 3:00 PM)",
     "category":"Restaurant",
-    "section": "Off property"
+    "description": "(Bar and Pizza: Thu-Sun 3:00 PM)",
+    "section": "Off propery restaurant"
   },
   {
     "name": "Ekelekua",

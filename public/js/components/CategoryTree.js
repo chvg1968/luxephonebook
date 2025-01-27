@@ -42,7 +42,18 @@ export class CategoryTree {
             "Pre-Made Meals and Catering": "fa-plate-wheat",
             "Delivery Services and Personal Grocery Shopping": "fa-shopping-cart",
             "Butler Services": "fa-user-tie",
-            "Shopping": "fa-shopping-bag"
+            "Shopping": "fa-shopping-bag",
+            
+            // Subcategorías de Restaurant en Off Property
+            "Near Casual": "fa-coffee",
+            "30 min West (Carolina)": "fa-map-marker-alt",
+            "30 min East (Fajardo)": "fa-map-marker-alt", 
+            "45 min West (San Juan)": "fa-map-marker-alt",
+            "On the way from the airport (more variety)": "fa-road",
+            "Near Bahia Beach": "fa-umbrella-beach",
+            "Specialty Food": "fa-shopping-basket",
+            "Wine and Liquors Stores": "fa-wine-glass-alt", 
+            "Shopping Malls": "fa-store"
         };
     }
 
@@ -62,6 +73,9 @@ export class CategoryTree {
     }
 
     render() {
+        // Limpiar cualquier contenido previo
+        this.container.innerHTML = '';
+
         const tree = document.createElement('div');
         tree.className = 'category-tree';
 
@@ -80,7 +94,7 @@ export class CategoryTree {
                     "Pool", 
                     "Beach",
                     "Spa",
-                    "Wellness Center",
+                    "Wellness Center"
                 ]
             },
             "Resort activities and adventures": {
@@ -90,7 +104,7 @@ export class CategoryTree {
                     "Nature and Wildlife",
                     "Tennis",
                     "Water Park and Water Sports",  
-                    "Wellness Center",
+                    "Wellness Center"
                 ]
             },
             "Off Property Transportation and Airport Transfers": {
@@ -100,7 +114,7 @@ export class CategoryTree {
                     "Aqua Tours",
                     "Tours", 
                     "Transportation"
-            ]
+                ]
             },
             "Catering/delivery/special services": {
                 isSpecial: false,
@@ -118,9 +132,29 @@ export class CategoryTree {
             "Off property": {
                 isSpecial: false,
                 categories: [
-                    "Places to visit",
-                    "Restaurant",
-                    "Shopping"
+                    {
+                        name: "Places to Visit",
+                        subcategories: []
+                    },
+                    {
+                        name: "Restaurant",
+                        subcategories: [
+                            "Near Casual",
+                            "30 min West (Carolina)", 
+                            "30 min East (Fajardo)", 
+                            "45 min West (San Juan)"
+                        ]
+                    },
+                    {
+                        name: "Shopping",
+                        subcategories: [
+                            "On the way from the airport (more variety)",
+                            "Near Bahia Beach",
+                            "Specialty Food",
+                            "Wine and Liquors Stores", 
+                            "Shopping Malls"
+                        ]
+                    }
                 ]
             }
         };
@@ -145,6 +179,14 @@ export class CategoryTree {
             title.textContent = section;
             header.appendChild(title);
 
+            // Añadir indicador de expansión solo si hay categorías
+            if (config.categories.length > 0 && !config.isSpecial) {
+                const expandIndicator = document.createElement('span');
+                expandIndicator.className = 'expand-indicator';
+                expandIndicator.innerHTML = '▼';
+                header.appendChild(expandIndicator);
+            }
+
             sectionEl.appendChild(header);
 
             // Crear lista de categorías
@@ -152,7 +194,8 @@ export class CategoryTree {
                 const list = document.createElement('div');
                 list.className = 'category-list collapsed';
 
-                config.categories.forEach(category => {
+                config.categories.forEach(categoryItem => {
+                    const category = typeof categoryItem === 'string' ? categoryItem : categoryItem.name;
                     const item = document.createElement('div');
                     item.className = 'category-item';
                     
@@ -165,6 +208,29 @@ export class CategoryTree {
                     item.appendChild(text);
                     
                     list.appendChild(item);
+
+                    // Agregar subcategorías si existen
+                    if (typeof categoryItem === 'object' && categoryItem.subcategories && categoryItem.subcategories.length > 0) {
+                        const subList = document.createElement('div');
+                        subList.className = 'subcategory-list collapsed';
+
+                        categoryItem.subcategories.forEach(subcategory => {
+                            const subItem = document.createElement('div');
+                            subItem.className = 'subcategory-item';
+                            
+                            const subIcon = document.createElement('i');
+                            subIcon.className = `fas ${this.getIcon(subcategory)}`;
+                            subItem.appendChild(subIcon);
+                            
+                            const subText = document.createElement('span');
+                            subText.textContent = subcategory;
+                            subItem.appendChild(subText);
+                            
+                            subList.appendChild(subItem);
+                        });
+
+                        list.appendChild(subList);
+                    }
                 });
 
                 sectionEl.appendChild(list);
@@ -173,18 +239,33 @@ export class CategoryTree {
             tree.appendChild(sectionEl);
         });
 
+        // Añadir el árbol al contenedor
         this.container.appendChild(tree);
+
+        // Configurar eventos después de renderizar
         this.setupEventListeners();
     }
 
     setupEventListeners() {
-        // Event listeners para los encabezados
+        // Event listeners para los encabezados de sección
         const headers = this.container.querySelectorAll('.category-header');
         headers.forEach(header => {
             const section = header.parentElement;
             const isSpecial = header.dataset.isSpecial === 'true';
+            const expandIndicator = header.querySelector('.expand-indicator');
             
-            header.addEventListener('click', () => {
+            header.addEventListener('click', (event) => {
+                // Verificar si el clic fue en el indicador de expansión
+                if (event.target === expandIndicator) {
+                    event.stopPropagation();
+                    
+                    // Si ya está abierta, cerrar la sección
+                    const categoryList = section.querySelector('.category-list');
+                    categoryList.classList.add('collapsed');
+                    expandIndicator.innerHTML = '▼';
+                    return;
+                }
+                
                 if (isSpecial) {
                     // Para Emergency y Golf Cart
                     const sectionName = header.querySelector('span').textContent;
@@ -199,37 +280,87 @@ export class CategoryTree {
                         });
                     }
                     this.scrollToResults();
-                } else {
-                    // Para las demás secciones, toggle de la lista
-                    // Cerrar otras secciones expandidas
-                    const otherExpandedSections = this.container.querySelectorAll('.category-section.expanded');
-                    otherExpandedSections.forEach(otherSection => {
-                        if (otherSection !== section) {
-                            otherSection.classList.remove('expanded');
-                            otherSection.querySelector('.category-header').classList.remove('expanded');
+                } else if (expandIndicator) {
+                    // Cerrar todas las secciones abiertas
+                    const openSections = this.container.querySelectorAll('.category-section:not([data-special="true"]) .category-list:not(.collapsed)');
+                    openSections.forEach(openList => {
+                        openList.classList.add('collapsed');
+                        const openHeader = openList.closest('.category-section').querySelector('.category-header .expand-indicator');
+                        if (openHeader) {
+                            openHeader.innerHTML = '▼';
                         }
                     });
-                    
-                    section.classList.toggle('expanded');
-                    header.classList.toggle('expanded');
+
+                    // Alternar la sección actual
+                    const categoryList = section.querySelector('.category-list');
+                    const isCurrentlyClosed = categoryList.classList.contains('collapsed');
+
+                    // Si la sección estaba cerrada, abrirla
+                    if (isCurrentlyClosed) {
+                        categoryList.classList.remove('collapsed');
+                        expandIndicator.innerHTML = '▲';
+                    } else {
+                        // Si ya estaba abierta, cerrarla
+                        categoryList.classList.add('collapsed');
+                        expandIndicator.innerHTML = '▼';
+                    }
                 }
             });
         });
 
-        // Event listeners para los items de categoría
-        const items = this.container.querySelectorAll('.category-item');
-        items.forEach(item => {
-            item.addEventListener('click', () => {
-                const categoryName = item.querySelector('span').textContent;
-                const section = item.closest('.category-section');
-                const sectionName = section.querySelector('.category-header span').textContent;
+        // Event listeners para categorías
+        const categoryItems = this.container.querySelectorAll('.category-item');
+        categoryItems.forEach(item => {
+            const subList = item.nextElementSibling;
 
+            item.addEventListener('click', (event) => {
+                event.stopPropagation();
+                
                 this.clearSelection();
                 item.classList.add('selected');
                 
                 if (this.selectCallback) {
+                    const categoryName = item.querySelector('span:last-child').textContent;
+                    const sectionName = item.closest('.category-section').querySelector('.category-header span').textContent;
+                    
                     this.selectCallback({
                         category: categoryName,
+                        section: sectionName
+                    });
+                }
+                this.scrollToResults();
+
+                // Expandir/contraer subcategorías si existen
+                if (subList && subList.classList.contains('subcategory-list')) {
+                    // Cerrar todas las subcategorías abiertas en esta sección
+                    const openSubLists = item.closest('.category-list').querySelectorAll('.subcategory-list:not(.collapsed)');
+                    openSubLists.forEach(openSubList => {
+                        if (openSubList !== subList) {
+                            openSubList.classList.add('collapsed');
+                        }
+                    });
+
+                    // Alternar la subcategoría actual
+                    subList.classList.toggle('collapsed');
+                }
+            });
+        });
+
+        // Event listeners para subcategorías
+        const subcategoryItems = this.container.querySelectorAll('.subcategory-item');
+        subcategoryItems.forEach(item => {
+            item.addEventListener('click', (event) => {
+                event.stopPropagation();
+                
+                this.clearSelection();
+                item.classList.add('selected');
+                
+                if (this.selectCallback) {
+                    const subcategoryName = item.querySelector('span:last-child').textContent;
+                    const sectionName = item.closest('.category-section').querySelector('.category-header span').textContent;
+                    
+                    this.selectCallback({
+                        category: subcategoryName,
                         section: sectionName
                     });
                 }
@@ -241,7 +372,10 @@ export class CategoryTree {
     scrollToResults() {
         const resultsContainer = document.getElementById('resultsContainer');
         if (resultsContainer) {
-            resultsContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            resultsContainer.scrollIntoView({ 
+                behavior: 'smooth', 
+                block: 'start' 
+            });
         }
     }
 

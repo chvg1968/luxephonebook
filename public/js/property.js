@@ -21,7 +21,8 @@ class PropertyPage {
       filters: {
         searchTerm: '',
         category: null,
-        section: null
+        section: null,
+        parentCategory: null
       }
     };
 
@@ -40,10 +41,8 @@ class PropertyPage {
 
     if (this.elements.categoryTree) {
       this.categoryTree = new CategoryTree("categoryTree");
-      this.categoryTree.onSelect(({ category, section }) => {
-        this.state.filters.category = category;
-        this.state.filters.section = section;
-        this.handleMenuSelection();
+      this.categoryTree.onSelect((selection) => {
+        this.handleMenuSelection(selection);
       });
       this.categoryTree.render();
     }
@@ -86,30 +85,81 @@ class PropertyPage {
     this.displayResults(this.state.searchResults);
   }
 
-  handleMenuSelection() {
-    if (!this.state.filters.category && !this.state.filters.section) {
-      this.state.menuResults = [];
-      // Si no hay selección de menú, mostrar resultados de búsqueda si hay alguno
-      if (this.state.searchResults.length > 0) {
-        this.displayResults(this.state.searchResults);
-      } else {
-        this.clearResults();
+  handleMenuSelection(selection) {
+    // Limpiar resultados anteriores
+    this.clearResults();
+
+    // Actualizar estado de filtros
+    this.state.filters = {
+      searchTerm: '',
+      category: selection.category,
+      section: selection.section
+    };
+
+    // Filtrar contactos
+    const filteredContacts = this.filterContacts();
+
+    // Renderizar resultados
+    this.renderResults(filteredContacts);
+  }
+
+  filterContacts() {
+    const { contacts, filters } = this.state;
+
+    // Mapeo de subcategorías a categorías padre
+    const subcategoryMapping = {
+      "Near Casual": "Restaurant",
+      "Near and casual": "Restaurant",
+      "30 min West (Carolina)": "Restaurant", 
+      "30 min East (Fajardo)": "Restaurant", 
+      "45 min West (San Juan)": "Restaurant",
+      "On the way from the airport (more variety)": "Shopping",
+      "Near Bahia Beach": "Shopping",
+      "Specialty Food": "Shopping",
+      "Wine and Liquors Stores": "Shopping", 
+      "Shopping Malls": "Shopping"
+    };
+
+    return contacts.filter(contact => {
+      // Filtrar por sección
+      if (filters.section && contact.section !== filters.section) {
+        return false;
       }
-      return;
+
+      // Filtrar por categoría o subcategoría
+      if (filters.category) {
+        // Si la categoría es una subcategoría, mapearla a su categoría padre
+        const mappedCategory = subcategoryMapping[filters.category] || filters.category;
+        
+        // Verificar si coincide con la categoría, categoría padre o subcategoría
+        return contact.category === filters.category || 
+               contact.category === mappedCategory ||
+               (contact.subcategories && contact.subcategories === filters.category);
+      }
+
+      return true;
+    });
+  }
+
+  renderResults(contacts) {
+    const resultsContainer = this.elements.resultsContainer;
+    const resultsCount = this.elements.resultsCount;
+
+    // Limpiar resultados anteriores
+    resultsContainer.innerHTML = '';
+
+    if (contacts.length === 0) {
+      resultsContainer.innerHTML = '<p class="no-results">No se encontraron contactos para esta categoría.</p>';
+    } else {
+      contacts.forEach(contact => {
+        const card = new Card(contact);
+        const cardElement = card.render();
+        resultsContainer.appendChild(cardElement);
+      });
     }
 
-    if (this.state.filters.section === 'Emergency' || this.state.filters.section === 'Golf') {
-      this.state.menuResults = this.state.contacts.filter(contact => 
-        contact.section === this.state.filters.section
-      );
-    } else if (this.state.filters.category && this.state.filters.section) {
-      this.state.menuResults = this.state.contacts.filter(contact => 
-        contact.category === this.state.filters.category && 
-        contact.section === this.state.filters.section
-      );
-    }
-
-    this.displayResults(this.state.menuResults);
+    // Actualizar contador de resultados
+    resultsCount.textContent = `${contacts.length} resultado${contacts.length !== 1 ? 's' : ''}`;
   }
 
   displayResults(results) {

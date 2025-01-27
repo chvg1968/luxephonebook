@@ -835,7 +835,7 @@ export const contacts = [
   {
     "name": "Finca Agrícola Neo- Jibairo",
     "phone": "787-598-0240",
-    "subcategories":"Near and casual",
+    "subcategory":"Near and casual",
     "description": "(Bar and Pizza: Thu-Sun 3:00 PM)",
     "category":"Restaurant",
     "section": "Off property"

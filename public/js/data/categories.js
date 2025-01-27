@@ -159,7 +159,7 @@ export const categories = {
         }
     },
     offProperty: {
-        id: 'Off property',
+        id: 'Off Property',
         name: 'Off Property',
         icon: 'fas fa-map-marker-alt',
         subcategories: {
@@ -168,16 +168,65 @@ export const categories = {
                 name: 'Places to Visit',
                 icon: 'fas fa-map'
             },
-            shopping: {
-                id: 'Shopping',
-                name: 'Shopping',
-                icon: 'fas fa-shopping-bag'
-            },
             restaurants: {
                 id: 'Restaurant',
                 name: 'Restaurants',
-                icon: 'fas fa-utensils'
+                icon: 'fas fa-utensils',
+                subcategories: {
+                    nearCasual: {
+                        id: 'Near Casual',
+                        name: 'Near Casual',
+                        icon: 'fas fa-coffee'
+                    },
+                    thirtyMinWest: {
+                        id: '30 min West (Carolina)',
+                        name: '30 min West (Carolina)',
+                        icon: 'fas fa-map-marker-alt'
+                    },
+                    thirtyMinEast: {
+                        id: '30 min East (Fajardo)',
+                        name: '30 min East (Fajardo)',
+                        icon: 'fas fa-map-marker-alt'
+                    },
+                    fortyFiveMinWest: {
+                        id: '45 min West (San Juan)',
+                        name: '45 min West (San Juan)',
+                        icon: 'fas fa-map-marker-alt'
+                    }
+                }
+            },
+            shopping: {
+                id: 'Shopping',
+                name: 'Shopping',
+                icon: 'fas fa-shopping-bag',
+                subcategories: {
+                    airportRoute: {
+                        id: 'On the way from the airport (more variety)',
+                        name: 'On the way from the airport (more variety)',
+                        icon: 'fas fa-road'
+                    },
+                    nearBahiaBeach: {
+                        id: 'Near Bahia Beach',
+                        name: 'Near Bahia Beach',
+                        icon: 'fas fa-umbrella-beach'
+                    },
+                    specialtyFood: {
+                        id: 'Specialty Food',
+                        name: 'Specialty Food',
+                        icon: 'fas fa-shopping-basket'
+                    },
+                    wineAndLiquors: {
+                        id: 'Wine and Liquors Stores',
+                        name: 'Wine and Liquors Stores',
+                        icon: 'fas fa-wine-glass-alt'
+                    },
+                    shoppingMalls: {
+                        id: 'Shopping Malls',
+                        name: 'Shopping Malls',
+                        icon: 'fas fa-store'
+                    }
+                }
             }
         }
-    }
+    },
 }
