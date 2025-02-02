@@ -135,7 +135,40 @@ export class Modal {
             const { filterContacts } = window.filtersModule || { filterContacts: () => [] };
             
             // Mapeo de modales a secciones y categorías
-            
+            const modalSectionMap = {
+                'golf-cart-modal': {
+                    section: 'Golf',
+                    category: 'Golf Cart'
+                },
+                'golf-rates-modal': {
+                    section: 'Golf',
+                    category: 'Golf Schedule and Rates'
+                },
+                'emergency-modal': {
+                    section: 'Emergency',
+                    category: null
+                },
+                'restaurant-modal': {
+                    section: 'Resort Restaurants and Venues',
+                    category: selectedCategory || 'Restaurants'
+                },
+                'kids-club-modal': {
+                    section: 'Resort Activities and Adventures',
+                    category: "Kid's Club"
+                },
+                'tennis-modal': {
+                    section: 'Resort Activities and Adventures',
+                    category: 'Tennis Reservations'
+                },
+                'catering-modal': {
+                    section: 'Catering/Delivery/Special Services',
+                    category: selectedCategory || null
+                },
+                'off-property-modal': {
+                    section: 'Off Property',
+                    category: selectedCategory || null
+                }
+            };
             
             // Obtener la sección y categoría para este modal
             const modalConfig = modalSectionMap[this.id] || {};

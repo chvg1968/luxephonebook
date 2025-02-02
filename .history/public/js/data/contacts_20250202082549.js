@@ -473,56 +473,56 @@ export const contacts = [
     "phone": "787-550-3849",
     "category": "Concierge Services",
     "description": " ",
-    "section": "Catering/Delivery/Special Services"
+    "section": "Catering/delivery/special services"
   },
   {
     "name": "Bespoke Lifestyle Management",
     "phone": "787-690-8040",
     "category": "Concierge Services",
     "description": "bespokeconcierge.com",
-    "section": "Catering/Delivery/Special Services"
+    "section": "Catering/delivery/special services"
   },
   {
     "name": "Guillo",
     "phone": "787-925-6398",
     "category": "Butler Services",
     "description": " ",
-    "section": "Catering/Delivery/Special Services"
+    "section": "Catering/delivery/special services"
   },
   {
     "name": "Francheska",
     "phone": "787-903-2427",
     "category": "Butler Services",
     "description": " ",
-    "section": "Catering/Delivery/Special Services"
+    "section": "Catering/delivery/special services"
   },
   {
     "name": "Stephanie Rohena",
     "phone": "787-550-3849",
     "category": "Delivery Services",
     "description": " ",
-    "section": "Catering/Delivery/Special Services"
+    "section": "Catering/delivery/special services"
   },
   {
     "name": "Naidoa",
     "phone": "787-400-0097",
     "category": "Delivery Services",
     "description": " ",
-    "section": "Catering/Delivery/Special Services"
+    "section": "Catering/delivery/special services"
   },
   {
     "name": "Elite Errands",
     "phone": "939-339-5063",
     "category": "Delivery Services",
     "description": "(After 5:00 P.M.)",
-    "section": "Catering/Delivery/Special Services"
+    "section": "Catering/delivery/special services"
   },
   {
     "name": "Sammy Driver",
     "phone": "787-435-8555",
     "category": "Delivery Services",
     "description": " ",
-    "section": "Catering/Delivery/Special Services"
+    "section": "Catering/delivery/special services"
   },
   {
     "name": "Uber Eats",
@@ -578,154 +578,154 @@ export const contacts = [
     "phone": "787-206-074",
     "category": "In Advance Delivery Services",
     "description": " ",
-    "section": "Catering/Delivery/Special Services"
+    "section": "Catering/delivery/special services"
   },
   {
     "name": "Jose Campís: @paellascampis on IG",
     "phone": "787-423-2298",
     "category": "Personal Chefs, Catering and Pre-Made Meals",
     "description": " ",
-    "section": "Catering/Delivery/Special Services"
+    "section": "Catering/delivery/special services"
   },
   {
     "name": "Josué Montañez: @chefjosuemontanez on IG",
     "phone": "787-378-2944",
     "category": "Personal Chefs, Catering and Pre-Made Meals",
     "description": " ",
-    "section": "Catering/Delivery/Special Services"
+    "section": "Catering/delivery/special services"
   },
   {
     "name": "Joaquín Gonzalez: @cultura_culinaria_2020 on IG",
     "phone": "787-587-5623",
     "category": "Personal Chefs, Catering and Pre-Made Meals",
     "description": " ",
-    "section": "Catering/Delivery/Special Services"
+    "section": "Catering/delivery/special services"
   },
   {
     "name": "Tomás Rosado",
     "phone": "787-210-3494",
     "category": "Personal Chefs, Catering and Pre-Made Meals",
     "description": " ",
-    "section": "Catering/Delivery/Special Services"
+    "section": "Catering/delivery/special services"
   },
   {
     "name": "Brittany Bennett: @bkcateringPR on IG/",
     "phone": null,
     "category": "Personal Chefs, Catering and Pre-Made Meals",
     "description": "bkcatering314.com",
-    "section": "Catering/Delivery/Special Services"
+    "section": "Catering/delivery/special services"
   },
   {
     "name": "Lucia and Alejandro Merino: @excellent_food on IG",
     "phone": "787-203-9001",
     "category": "Personal Chefs, Catering and Pre-Made Meals",
     "description": " ",
-    "section": "Catering/Delivery/Special Services"
+    "section": "Catering/delivery/special services"
   },
   {
     "name": "Josian Hernaiz: Pizza Parties (DI MASSA on Facebook)",
     "phone": "939-451-7749",
     "category": "Personal Chefs, Catering and Pre-Made Meals",
     "description": " ",
-    "section": "Catering/Delivery/Special Services"
+    "section": "Catering/delivery/special services"
   },
   {
     "name": "Andrea Feria",
     "phone": "787-567-9606",
     "category":"Personal Chefs, Catering and Pre-Made Meals",
     "description": " ",
-    "section": "Catering/Delivery/Special Services"
+    "section": "Catering/delivery/special services"
   },
   {
     "name": "Giovanna Colon",
     "phone": "787-349-2226",
     "category": "Personal Chefs, Catering and Pre-Made Meals",
     "description": " ",
-    "section": "Catering/Delivery/Special Services"
+    "section": "Catering/delivery/special services"
   },
   {
     "name": "Kevin Pellegrino",
     "phone": "314-749-2154",
     "category": "Personal Chefs, Catering and Pre-Made Meals",
     "description": " ",
-    "section": "Catering/Delivery/Special Services"
+    "section": "Catering/delivery/special services"
   },
   {
     "name": "Coral Ayala",
     "phone": "787-400-0097",
     "category": "Nanny Services",
     "description": " ",
-    "section": "Catering/Delivery/Special Services"
+    "section": "Catering/delivery/special services"
   },
   {
     "name": "Liz Villafañe",
     "phone": "787-710-4330",
     "category": "Nanny Services",
     "description": " ",
-    "section": "Catering/Delivery/Special Services"
+    "section": "Catering/delivery/special services"
   },
   {
     "name": "Karyan Baez",
     "phone": "939-249-5346",
     "category": "Nanny Services",
     "description": " ",
-    "section": "Catering/Delivery/Special Services"
+    "section": "Catering/delivery/special services"
   },
   {
     "name": "Jennifer Huertas",
     "phone": "939-275-1580",
     "category": "Nanny Services",
     "description": " ",
-    "section": "Catering/Delivery/Special Services"
+    "section": "Catering/delivery/special services"
   },
   {
     "name": "Francheska",
     "phone": "787-903-2427",
     "category": "Nanny Services",
     "description": " ",
-    "section": "Catering/Delivery/Special Services"
+    "section": "Catering/delivery/special services"
   },
   {
     "name": "Sitters for your kids: @sitterskids on IG",
     "phone": null,
     "category": "Nanny Services",
     "description": " ",
-    "section": "Catering/Delivery/Special Services"
+    "section": "Catering/delivery/special services"
   },
   {
     "name": "Carolina Bustamante/ Picture Perfect @pictureperfectpr",
     "phone": "787-365-2266",
     "category": "Professional Photography",
     "description": " ",
-    "section": "Catering/Delivery/Special Services"
+    "section": "Catering/delivery/special services"
   },
   {
     "name": "Michael Germosen",
     "phone": "787-648-5259",
     "category": "Professional Photography",
     "description": " ",
-    "section": "Catering/Delivery/Special Services"
+    "section": "Catering/delivery/special services"
   },
   {
     "name": "Karyn Otero",
     "phone": "787-662-0983",
     "category": "Personal Care and Fitness",
     "description": "Hair, nails, makeup, and reflexology",
-    "section": "Catering/Delivery/Special Services"
+    "section": "Catering/delivery/special services"
   },
   {
     "name": "Priscila Verges",
     "phone": "787-674-2065",
     "category": "Personal Care and Fitness",
     "description": "Massages & Facials",
-    "section": "Catering/Delivery/Special Services"
+    "section": "Catering/delivery/special services"
   },
   {
     "name": "Zorialys",
     "phone": "787-586-0177",
     "category": "Personal Care and Fitness",
     "description": "Massages",
-    "section": "Catering/Delivery/Special Services"
+    "section": "Catering/delivery/special services"
   },
   {
     "name": "Alejandra Soto",
@@ -739,35 +739,35 @@ export const contacts = [
     "phone": "787-388-8521",
     "category": "Personal Care and Fitness",
     "description": "Personal Trainer",
-    "section": "Catering/Delivery/Special Services"
+    "section": "Catering/delivery/special services"
   },
   {
     "name": "Wanda Sanchez",
     "phone": "787-315-1537",
     "category": "Personal Care and Fitness",
     "description": "Yoga",
-    "section": "Catering/Delivery/Special Services"
+    "section": "Catering/delivery/special services"
   },
   {
     "name": "Adalis Fabre",
     "phone": "787-632-4805",
     "category": "Personal Care and Fitness",
     "description": "Yoga",
-    "section": "Catering/Delivery/Special Services"
+    "section": "Catering/delivery/special services"
   },
   {
     "name": "Gabriella Mendiguren",
     "phone": "939-475-7721",
     "category": "Personal Care and Fitness",
     "description": "Yoga",
-    "section": "Catering/Delivery/Special Services"
+    "section": "Catering/delivery/special services"
   },
   {
     "name": "St Regis Kid's Club",
     "phone": "787-809-8000",
     "category": "Kid's Club",
     "description": "See more info.",
-    "section": "Catering/Delivery/Special Services"
+    "section": "Catering/delivery/special services"
   },
 
   {

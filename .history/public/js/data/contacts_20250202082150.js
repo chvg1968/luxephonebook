@@ -473,259 +473,259 @@ export const contacts = [
     "phone": "787-550-3849",
     "category": "Concierge Services",
     "description": " ",
-    "section": "Catering/Delivery/Special Services"
+    "section": "Catering/delivery/special services"
   },
   {
     "name": "Bespoke Lifestyle Management",
     "phone": "787-690-8040",
     "category": "Concierge Services",
     "description": "bespokeconcierge.com",
-    "section": "Catering/Delivery/Special Services"
+    "section": "Catering/delivery/special services"
   },
   {
     "name": "Guillo",
     "phone": "787-925-6398",
     "category": "Butler Services",
     "description": " ",
-    "section": "Catering/Delivery/Special Services"
+    "section": "Catering/delivery/special services"
   },
   {
     "name": "Francheska",
     "phone": "787-903-2427",
     "category": "Butler Services",
     "description": " ",
-    "section": "Catering/Delivery/Special Services"
+    "section": "Catering/delivery/special services"
   },
   {
     "name": "Stephanie Rohena",
     "phone": "787-550-3849",
     "category": "Delivery Services",
     "description": " ",
-    "section": "Catering/Delivery/Special Services"
+    "section": "Catering/delivery/special services"
   },
   {
     "name": "Naidoa",
     "phone": "787-400-0097",
     "category": "Delivery Services",
     "description": " ",
-    "section": "Catering/Delivery/Special Services"
+    "section": "Catering/delivery/special services"
   },
   {
     "name": "Elite Errands",
     "phone": "939-339-5063",
     "category": "Delivery Services",
     "description": "(After 5:00 P.M.)",
-    "section": "Catering/Delivery/Special Services"
+    "section": "Catering/delivery/special services"
   },
   {
     "name": "Sammy Driver",
     "phone": "787-435-8555",
     "category": "Delivery Services",
     "description": " ",
-    "section": "Catering/Delivery/Special Services"
+    "section": "Catering/delivery/special services"
   },
   {
     "name": "Uber Eats",
     "phone": null,
     "category": "Restaurant",
     "description": "Food delivery service",
-    "section": "Off Property"
+    "section": "Off property"
   },
   {
     "name": "Pizza Marco's",
     "phone": "787-331-1192",
     "category": "Restaurant",
     "description":  " ",
-    "section": "Off Property"
+    "section": "Off property"
   },
   {
     "name": "Pizza Willy's",
     "phone": "787-887-7880",
     "category": "Restaurant",
     "description":  " ",
-    "section": "Off Property"
+    "section": "Off property"
   },
   {
     "name": "Sushipin",
     "phone": "787-629-7567",
     "category": "Restaurant",
     "description":  " ",
-    "section": "Off Property"
+    "section": "Off property"
   },
   {
     "name": "Market: puertoricoproduce.com",
     "phone": null,
     "category": "Shopping",
     "description": "usually one day in advance order",
-    "section": "Off Property"
+    "section": "Off property"
   },
   {
     "name": "Seafood Market Alans",
     "phone": "787-273-1178",
     "category": "Shopping",
     "description": "alansmarket.com",
-    "section": "Off Property"
+    "section": "Off property"
   },
   {
     "name": "Wine Shop La Boutique du Vin",
     "phone": "787-250-0008",
     "category": "Shopping",
     "description": "boutiqueduvin.com",
-    "section": "Off Property"
+    "section": "Off property"
   },
   {
     "name": "Birthday Cakes and Desserts: Sweet Drops by Fanny",
     "phone": "787-206-074",
     "category": "In Advance Delivery Services",
     "description": " ",
-    "section": "Catering/Delivery/Special Services"
+    "section": "Catering/delivery/special services"
   },
   {
     "name": "Jose Campís: @paellascampis on IG",
     "phone": "787-423-2298",
     "category": "Personal Chefs, Catering and Pre-Made Meals",
     "description": " ",
-    "section": "Catering/Delivery/Special Services"
+    "section": "Catering/delivery/special services"
   },
   {
     "name": "Josué Montañez: @chefjosuemontanez on IG",
     "phone": "787-378-2944",
     "category": "Personal Chefs, Catering and Pre-Made Meals",
     "description": " ",
-    "section": "Catering/Delivery/Special Services"
+    "section": "Catering/delivery/special services"
   },
   {
     "name": "Joaquín Gonzalez: @cultura_culinaria_2020 on IG",
     "phone": "787-587-5623",
     "category": "Personal Chefs, Catering and Pre-Made Meals",
     "description": " ",
-    "section": "Catering/Delivery/Special Services"
+    "section": "Catering/delivery/special services"
   },
   {
     "name": "Tomás Rosado",
     "phone": "787-210-3494",
     "category": "Personal Chefs, Catering and Pre-Made Meals",
     "description": " ",
-    "section": "Catering/Delivery/Special Services"
+    "section": "Catering/delivery/special services"
   },
   {
     "name": "Brittany Bennett: @bkcateringPR on IG/",
     "phone": null,
     "category": "Personal Chefs, Catering and Pre-Made Meals",
     "description": "bkcatering314.com",
-    "section": "Catering/Delivery/Special Services"
+    "section": "Catering/delivery/special services"
   },
   {
     "name": "Lucia and Alejandro Merino: @excellent_food on IG",
     "phone": "787-203-9001",
     "category": "Personal Chefs, Catering and Pre-Made Meals",
     "description": " ",
-    "section": "Catering/Delivery/Special Services"
+    "section": "Catering/delivery/special services"
   },
   {
     "name": "Josian Hernaiz: Pizza Parties (DI MASSA on Facebook)",
     "phone": "939-451-7749",
     "category": "Personal Chefs, Catering and Pre-Made Meals",
     "description": " ",
-    "section": "Catering/Delivery/Special Services"
+    "section": "Catering/delivery/special services"
   },
   {
     "name": "Andrea Feria",
     "phone": "787-567-9606",
     "category":"Personal Chefs, Catering and Pre-Made Meals",
     "description": " ",
-    "section": "Catering/Delivery/Special Services"
+    "section": "Catering/delivery/special services"
   },
   {
     "name": "Giovanna Colon",
     "phone": "787-349-2226",
     "category": "Personal Chefs, Catering and Pre-Made Meals",
     "description": " ",
-    "section": "Catering/Delivery/Special Services"
+    "section": "Catering/delivery/special services"
   },
   {
     "name": "Kevin Pellegrino",
     "phone": "314-749-2154",
     "category": "Personal Chefs, Catering and Pre-Made Meals",
     "description": " ",
-    "section": "Catering/Delivery/Special Services"
+    "section": "Catering/delivery/special services"
   },
   {
     "name": "Coral Ayala",
     "phone": "787-400-0097",
     "category": "Nanny Services",
     "description": " ",
-    "section": "Catering/Delivery/Special Services"
+    "section": "Catering/delivery/special services"
   },
   {
     "name": "Liz Villafañe",
     "phone": "787-710-4330",
     "category": "Nanny Services",
     "description": " ",
-    "section": "Catering/Delivery/Special Services"
+    "section": "Catering/delivery/special services"
   },
   {
     "name": "Karyan Baez",
     "phone": "939-249-5346",
     "category": "Nanny Services",
     "description": " ",
-    "section": "Catering/Delivery/Special Services"
+    "section": "Catering/delivery/special services"
   },
   {
     "name": "Jennifer Huertas",
     "phone": "939-275-1580",
     "category": "Nanny Services",
     "description": " ",
-    "section": "Catering/Delivery/Special Services"
+    "section": "Catering/delivery/special services"
   },
   {
     "name": "Francheska",
     "phone": "787-903-2427",
     "category": "Nanny Services",
     "description": " ",
-    "section": "Catering/Delivery/Special Services"
+    "section": "Catering/delivery/special services"
   },
   {
     "name": "Sitters for your kids: @sitterskids on IG",
     "phone": null,
     "category": "Nanny Services",
     "description": " ",
-    "section": "Catering/Delivery/Special Services"
+    "section": "Catering/delivery/special services"
   },
   {
     "name": "Carolina Bustamante/ Picture Perfect @pictureperfectpr",
     "phone": "787-365-2266",
     "category": "Professional Photography",
     "description": " ",
-    "section": "Catering/Delivery/Special Services"
+    "section": "Catering/delivery/special services"
   },
   {
     "name": "Michael Germosen",
     "phone": "787-648-5259",
     "category": "Professional Photography",
     "description": " ",
-    "section": "Catering/Delivery/Special Services"
+    "section": "Catering/delivery/special services"
   },
   {
     "name": "Karyn Otero",
     "phone": "787-662-0983",
     "category": "Personal Care and Fitness",
     "description": "Hair, nails, makeup, and reflexology",
-    "section": "Catering/Delivery/Special Services"
+    "section": "Catering/delivery/special services"
   },
   {
     "name": "Priscila Verges",
     "phone": "787-674-2065",
     "category": "Personal Care and Fitness",
     "description": "Massages & Facials",
-    "section": "Catering/Delivery/Special Services"
+    "section": "Catering/delivery/special services"
   },
   {
     "name": "Zorialys",
     "phone": "787-586-0177",
     "category": "Personal Care and Fitness",
     "description": "Massages",
-    "section": "Catering/Delivery/Special Services"
+    "section": "Catering/delivery/special services"
   },
   {
     "name": "Alejandra Soto",
@@ -739,35 +739,35 @@ export const contacts = [
     "phone": "787-388-8521",
     "category": "Personal Care and Fitness",
     "description": "Personal Trainer",
-    "section": "Catering/Delivery/Special Services"
+    "section": "Catering/delivery/special services"
   },
   {
     "name": "Wanda Sanchez",
     "phone": "787-315-1537",
     "category": "Personal Care and Fitness",
     "description": "Yoga",
-    "section": "Catering/Delivery/Special Services"
+    "section": "Catering/delivery/special services"
   },
   {
     "name": "Adalis Fabre",
     "phone": "787-632-4805",
     "category": "Personal Care and Fitness",
     "description": "Yoga",
-    "section": "Catering/Delivery/Special Services"
+    "section": "Catering/delivery/special services"
   },
   {
     "name": "Gabriella Mendiguren",
     "phone": "939-475-7721",
     "category": "Personal Care and Fitness",
     "description": "Yoga",
-    "section": "Catering/Delivery/Special Services"
+    "section": "Catering/delivery/special services"
   },
   {
     "name": "St Regis Kid's Club",
     "phone": "787-809-8000",
     "category": "Kid's Club",
     "description": "See more info.",
-    "section": "Catering/Delivery/Special Services"
+    "section": "Catering/delivery/special services"
   },
 
   {
@@ -775,7 +775,7 @@ export const contacts = [
     "phone": "787-728-2050",
     "category": "Places to Visit",
     "description": "🌟 **Explore these amazing off-property destinations:**\n\n- 🌊 **Las Pailas** (River with Natural Slides)\n- 🏞️ **Charco Frio** (River)\n- 🏖️ **Seven Seas** (Beach)\n- 🛑 **Hidden Beach** (Adults Only)\n- 🍴 **Las Croabas** (Oceanfront Restaurants)\n- 🏄‍♂️ **La Pared Beach in Luquillo**\n\n📞 **Contact us** for directions or more information!",
-    "section": "Off Property"
+    "section": "Off property"
   },
   {
     "name": "Supermax Isla Verde",
@@ -783,7 +783,7 @@ export const contacts = [
     "subcategories":"On the way from the airport (more variety)",
     "category": "Shopping",
     "description": " ",
-    "section": "Off Property"
+    "section": "Off property"
   },
   {
     "name": "Pueblo Isla Verde",
@@ -791,7 +791,7 @@ export const contacts = [
     "subcategories":"On the way from the airport (more variety)",
     "category": "Shopping",
     "description": " ",
-    "section": "Off Property"
+    "section": "Off property"
   },
   {
     "name": "Costco",
@@ -799,7 +799,7 @@ export const contacts = [
     "subcategories":"On the way from the airport (more variety)",
     "category": "Shopping",
     "description": " ",
-    "section": "Off Property"
+    "section": "Off property"
   },
   {
     "name": "FreshMart Carolina ",
@@ -807,7 +807,7 @@ export const contacts = [
     "subcategories":"On the way from the airport (more variety)",
     "category": "Shopping",
     "description": "Vegan, vegetarian and gluten free options",
-    "section": "Off Property"
+    "section": "Off property"
   },
   {
     "name": "Walmart Canóvanas",
@@ -815,7 +815,7 @@ export const contacts = [
     "subcategories":"Near Bahia Beach",
     "category": "Shopping",
     "description": "Curbside Pickup available",
-    "section": "Off Property"
+    "section": "Off property"
   },
   {
     "name": "Ralph's Supermarket",
@@ -823,7 +823,7 @@ export const contacts = [
     "subcategories":"Near Bahia Beach",
     "category": "Shopping",
     "description": "(Mon-Sat 7:00 A.M.- 9:00 P.M. Sun 8:00 A.M.- 8:00 Р.М.)",
-    "section": "Off Property"
+    "section": "Off property"
   },
   {
     "name": "Famcoop Supermarket",
@@ -831,7 +831,7 @@ export const contacts = [
     "subcategories":"Near Bahia Beach",
     "category": "Shopping",
     "description": "(Mon-Sat 7:00 А.М.- 9:00 P.M. Sun 7:00 А.М.- 7:00 Р.М.)",
-    "section": "Off Property"
+    "section": "Off property"
   },
   {
     "name": "Walgreens",
@@ -839,7 +839,7 @@ export const contacts = [
     "subcategories":"Near Bahia Beach",
     "category": "Shopping",
     "description": "(Mon- Sun 8:00 А.М.- 10:00 Р.М.)",
-    "section": "Off Property"
+    "section": "Off property"
   },
   {
     "name": "Econo Canóvanas",
@@ -847,7 +847,7 @@ export const contacts = [
     "subcategories":"Near Bahia Beach",
     "category": "Shopping",
     "description": "Carretera 3 carr 185 Int, Canóvanas, PR 00729",
-    "section": "Off Property"
+    "section": "Off property"
   },
   {
     "name": "Finca Agrícola Neo- Jibairo",
@@ -855,7 +855,7 @@ export const contacts = [
     "subcategories":"Near and Casual",
     "description": "(Bar and Pizza: Thu-Sun 3:00 PM)",
     "category":"Restaurant",
-    "section": "Off Property"
+    "section": "Off property"
   },
   {
     "name": "Ekelekua",
@@ -863,7 +863,7 @@ export const contacts = [
     "subcategories":"Near and Casual",
     "description": "(Brunch, Bar, Tapas) (Mon, Wed-Sun 7:00 AM- 3:00 PM)",
     "category":"Restaurant",
-    "section": "Off Property"
+    "section": "Off property"
   },
   {
     "name": "Carabalí Bar and Grill",
@@ -871,7 +871,7 @@ export const contacts = [
     "subcategories":"Near and Casual",
     "category":"Restaurant",
     "description": " ",
-    "section": "Off Property"
+    "section": "Off property"
   },
   {
     "name": "Pizzeria Trattoria Italiana at Canóvanas",
@@ -879,7 +879,7 @@ export const contacts = [
     "subcategories":"Near and Casual",
     "category":"Restaurant",
     "description": "(Thurs- Sund)",
-    "section": "Off Property"
+    "section": "Off property"
   },
   {
     "name": "Don Pepe",
@@ -887,7 +887,7 @@ export const contacts = [
     "subcategories":"Near and Casual",
     "category":"Restaurant",
     "description": "(Local food)",
-    "section": "Off Property"
+    "section": "Off property"
   },
   {
     "name": "Dos Panzas",
@@ -895,7 +895,7 @@ export const contacts = [
     "subcategories":"Near and Casual",
     "category":"Restaurant",
     "description": "(Mexican)",
-    "section": "Off Property"
+    "section": "Off property"
   },
   {
     "name": "La Parrilla at Kioskos de Luquillo",
@@ -903,7 +903,7 @@ export const contacts = [
     "subcategories":"Near and Casual",
     "category":"Restaurant",
     "description": " ",
-    "section": "Off Property"
+    "section": "Off property"
   },
   {
     "name": "Sama Bistro",
@@ -911,7 +911,7 @@ export const contacts = [
     "subcategories":"Near and Casual",
     "category":"Restaurant",
     "description": "(Coastal Seaside Cuisine) (Wed-Sun)",
-    "section": "Off Property"
+    "section": "Off property"
   },
   {
     "name": "Nectar LLC",
@@ -919,7 +919,7 @@ export const contacts = [
     "subcategories":"Near and Casual",
     "category":"Restaurant",
     "description": "(Local Food) (Wed-Thurs, 5:00 PM-10:00 PM) / (Fri-Sun, 12:00 PM- 10:00 PM): nectarpuertorico.com",
-    "section": "Off Property"
+    "section": "Off property"
   },
   {
     "name": "Water's Edge",
@@ -927,7 +927,7 @@ export const contacts = [
     "subcategories":"Near and Casual",
     "category":"Restaurant",
     "description": "(Breakfast and Dinner Buffets) (Daily, 12:00 PM- 10:00 PM)",
-    "section": "Off Property"
+    "section": "Off property"
   },
   {
     "name": "Prime 787",
@@ -935,7 +935,7 @@ export const contacts = [
     "subcategories":"Near and Casual",
     "category":"Restaurant",
     "description": "(American Steakhouse) (Daily, 6:00 PM-10:30 PM)",
-    "section": "Off Property"
+    "section": "Off property"
   },
   {
     "name": "La Mina Restaurant",
@@ -943,7 +943,7 @@ export const contacts = [
     "subcategories":"Near and Casual",
     "category":"Restaurant",
     "description": "(Local Food) (Daily, 11:00 AM-6:00 PM)",
-    "section": "Off Property"
+    "section": "Off property"
   },
   {
     "name": "Nori Teppanyaki",
@@ -951,7 +951,7 @@ export const contacts = [
     "subcategories":"Near and Casual",
     "category":"Restaurant",
     "description": "(Asian) (Daily, 6:00 PM–10:00 PM)",
-    "section": "Off Property"
+    "section": "Off property"
   },
   {
     "name": "El Oceano En Tu Mesa",
@@ -959,7 +959,7 @@ export const contacts = [
     "subcategories":"Near and Casual",
     "category":"Restaurant",
     "description": "(Foodtruck Seafood) (Thurs-Fri, 2:00 PM-9:00 PM, Sat- Sun, 12:00 PM-9:00 PM, Mon 2:00 PM–9:00 PM)",
-    "section": "Off Property"
+    "section": "Off property"
   },
   {
     "name": "Boss's Brunch",
@@ -967,7 +967,7 @@ export const contacts = [
     "subcategories":"30 min West (Carolina)",
     "category":"Restaurant",
     "description": "(Brunch) (Thurs-Sat): @bossbrunchpr on IG",
-    "section": "Off Property"
+    "section": "Off property"
   },
   {
     "name": "Pimentón Pizza and Pasta",
@@ -975,7 +975,7 @@ export const contacts = [
     "subcategories":"30 min West (Carolina)",
     "category":"Restaurant",
     "description": "(Casual, great food)",
-    "section": "Off Property"
+    "section": "Off property"
   },
   {
     "name": "Lala",
@@ -983,7 +983,7 @@ export const contacts = [
     "subcategories":"30 min West (Carolina)",
     "category":"Restaurant",
     "description": "(Upscale international) at the Mall of San Juan",
-    "section": "Off Property"
+    "section": "Off property"
   },
   {
     "name": "Pasión por el Fogón",
@@ -991,7 +991,7 @@ export const contacts = [
     "subcategories":"30 min East (Fajardo)",
     "category":"Restaurant",
     "description": "(Casual fine dining)",
-    "section": "Off Property"
+    "section": "Off property"
   },
   {
     "name": "El Yate",
@@ -999,7 +999,7 @@ export const contacts = [
     "subcategories":"30 min East (Fajardo)",
     "category":"Restaurant",
     "description": "(Outdoor marina view)",
-    "section": "Off Property"
+    "section": "Off property"
   },
   {
     "name": "La Estación",
@@ -1007,7 +1007,7 @@ export const contacts = [
     "subcategories":"30 min East (Fajardo)",
     "category":"Restaurant",
     "description": "(Outdoor BBQ)",
-    "section": "Off Property"
+    "section": "Off property"
   },
   {
     "name": "Butaque",
@@ -1015,7 +1015,7 @@ export const contacts = [
     "subcategories":"30 min East (Fajardo)",
     "category":"Restaurant",
     "description": "(Tex-Mex)",
-    "section": "Off Property"
+    "section": "Off property"
   },
   {
     "name": "Las Vistas Café",
@@ -1023,7 +1023,7 @@ export const contacts = [
     "subcategories":"30 min East (Fajardo)",
     "category":"Restaurant",
     "description": "(Breakfast and Brunch) (Thurs-Mon 8:00 AM–2:00 PM, Closed Tues-Wed)",
-    "section": "Off Property"
+    "section": "Off property"
   },
   {
     "name": "Don Esteban",
@@ -1031,7 +1031,7 @@ export const contacts = [
     "subcategories":"30 min East (Fajardo)",
     "category":"Restaurant",
     "description": "Wed-Thurs 11:00 AM-9:00 PM, Fri 11:00 AM-10:00 PM, Sat 1:00 PM-9:00 PM, Sun 11:00 AM-9:00 PM, Mon-Tues, Closed",
-    "section": "Off Property"
+    "section": "Off property"
   },
   {
     "name": "Verde Mesa",
@@ -1039,7 +1039,7 @@ export const contacts = [
     "subcategories":"45 min West (San Juan)",
     "category":"Restaurant",
     "description": "@verdemesa on IG",
-    "section": "Off Property"
+    "section": "Off property"
   },
   {
     "name": "Berlingeri",
@@ -1047,7 +1047,7 @@ export const contacts = [
     "subcategories":"45 min West (San Juan)",
     "category":"Restaurant",
     "description":  " ",
-    "section": "Off Property"
+    "section": "Off property"
   },
   {
     "name": "Purefood",
@@ -1055,7 +1055,7 @@ export const contacts = [
     "subcategories":"45 min West (San Juan)",
     "category":"Restaurant",
     "description": "@purefoodpr on IG",
-    "section": "Off Property"
+    "section": "Off property"
   },
   {
     "name": "La Lanterna",
@@ -1063,7 +1063,7 @@ export const contacts = [
     "subcategories":"45 min West (San Juan)",
     "category":"Restaurant",
     "description": "Upscale Fine Dining Italian @ Old San Juan",
-    "section": "Off Property"
+    "section": "Off property"
   },
   {
     "name": "Marmalade",
@@ -1071,7 +1071,7 @@ export const contacts = [
     "subcategories":"45 min West (San Juan)",
     "category":"Restaurant",
     "description": "Upscale Fine Dining French @ Old San Juan",
-    "section": "Off Property"
+    "section": "Off property"
   },
   {
     "name": "Ariel",
@@ -1079,7 +1079,7 @@ export const contacts = [
     "subcategories":"45 min West (San Juan)",
     "category":"Restaurant",
     "description": "Upscale Fine Dining Fusion",
-    "section": "Off Property"
+    "section": "Off property"
   },
   {
     "name": "1919",
@@ -1087,7 +1087,7 @@ export const contacts = [
     "subcategories":"45 min West (San Juan)",
     "category":"Restaurant",
     "description": "Upscale Fine Dining Fusion",
-    "section": "Off Property"
+    "section": "Off property"
   },
   {
     "name": "Cocina al Fondo",
@@ -1095,7 +1095,7 @@ export const contacts = [
     "subcategories":"45 min West (San Juan)",
     "category":"Restaurant",
     "description": "Award Winning Chef",
-    "section": "Off Property"
+    "section": "Off property"
   },
   {
     "name": "Yoko",
@@ -1103,7 +1103,7 @@ export const contacts = [
     "subcategories":"45 min West (San Juan)",
     "category":"Restaurant",
     "description": "Good vibes, cool scene, and great sushi",
-    "section": "Off Property"
+    "section": "Off property"
   },
   {
     "name": "Vianda",
@@ -1111,7 +1111,7 @@ export const contacts = [
     "subcategories":"45 min West (San Juan)",
     "category":"Restaurant",
     "description": "Fine Dining Fusion",
-    "section": "Off Property"
+    "section": "Off property"
   },
   {
     "name": "La Pícara",
@@ -1119,7 +1119,7 @@ export const contacts = [
     "subcategories":"45 min West (San Juan)",
     "category":"Restaurant",
     "description": "Good vibes, cool scene, and great fusion food",
-    "section": "Off Property"
+    "section": "Off property"
   },
   {
     "name": "Santaella",
@@ -1127,7 +1127,7 @@ export const contacts = [
     "subcategories":"45 min West (San Juan)",
     "category":"Restaurant",
     "description": "Good vibes, cool scene, and great local food",
-    "section": "Off Property"
+    "section": "Off property"
   },
   {
     "name": "Mario Pagan",
@@ -1135,7 +1135,7 @@ export const contacts = [
     "subcategories":"45 min West (San Juan)",
     "category":"Restaurant",
     "description": "Good vibes, cool scene, and great local food",
-    "section": "Off Property"
+    "section": "Off property"
   },
   {
     "name": "Raya",
@@ -1143,7 +1143,7 @@ export const contacts = [
     "subcategories":"45 min West (San Juan)",
     "category":"Restaurant",
     "description": "Upscale Good vibes, cool scene, and great fusion food",
-    "section": "Off Property"
+    "section": "Off property"
   },
   {
     "name": "La Central by Mario Pagán",
@@ -1151,7 +1151,7 @@ export const contacts = [
     "subcategories":"45 min West (San Juan)",
     "category":"Restaurant",
     "description": "Puerto Rican Fusion",
-    "section": "Off Property"
+    "section": "Off property"
   },
   {
     "name": "Pio Pio",
@@ -1159,7 +1159,7 @@ export const contacts = [
     "subcategories":"45 min West (San Juan)",
     "category":"Restaurant",
     "description": "Good vibes, fusion food @ Old San Juan",
-    "section": "Off Property"
+    "section": "Off property"
   },
   {
     "name": "Princesa Cocina Cultura",
@@ -1167,7 +1167,7 @@ export const contacts = [
     "subcategories":"45 min West (San Juan)",
     "category":"Restaurant",
     "description": "Caribbean @ Old San Juan",
-    "section": "Off Property"
+    "section": "Off property"
   },
   {
     "name": "Casita Miramar",
@@ -1175,7 +1175,7 @@ export const contacts = [
     "subcategories":"45 min West (San Juan)",
     "category": "Restaurant",
     "description": "Puerto Rican",
-    "section": "Off Property"
+    "section": "Off property"
   },
   {
     "name": "Tasca El Pescador",
@@ -1183,7 +1183,7 @@ export const contacts = [
     "subcategories":"45 min West (San Juan)",
     "category": "Restaurant",
     "description": "Fresh seafood",
-    "section": "Off Property"
+    "section": "Off property"
   },
   {
     "name": "Bottles",
@@ -1191,7 +1191,7 @@ export const contacts = [
     "subcategories":"45 min West (San Juan)",
     "category": "Restaurant",
     "description": "Good vibes, cool scene, and great international food",
-    "section": "Off Property"
+    "section": "Off property"
   },
   {
     "name": "Cut butcher Shop",
@@ -1199,7 +1199,7 @@ export const contacts = [
     "subcategories":"Specialty Food, Wine and Liquors Stores",
     "category": "Shopping",
     "description": "Isla Verde",
-    "section": "Off Property"
+    "section": "Off property"
   },
   {
     "name": "Alans",
@@ -1207,7 +1207,7 @@ export const contacts = [
     "subcategories":"Specialty Food, Wine and Liquors Stores",
     "category": "Shopping",
     "description": "Guaynabo",
-    "section": "Off Property"
+    "section": "Off property"
   },
   {
     "name": "El Horno de Pan",
@@ -1215,7 +1215,7 @@ export const contacts = [
     "subcategories":"Specialty Food, Wine and Liquors Stores",
     "category": "Shopping",
     "description": "(Hato Rey): @elhornodepane",
-    "section": "Off Property"
+    "section": "Off property"
   },
   {
     "name": "Lucia Patisserie",
@@ -1223,7 +1223,7 @@ export const contacts = [
     "subcategories":"Specialty Food, Wine and Liquors Stores",
     "category": "Shopping",
     "description": "(Miramar)",
-    "section": "Off Property"
+    "section": "Off property"
   },
   {
     "name": "The House Liquor Store (Condado)",
@@ -1231,7 +1231,7 @@ export const contacts = [
     "subcategories":"Specialty Food, Wine and Liquors Stores",
     "category": "Shopping",
     "description": " ",
-    "section": "Off Property"
+    "section": "Off property"
   },
   {
     "name": "Bodegas Compostela Wine (Condado)",
@@ -1239,7 +1239,7 @@ export const contacts = [
     "subcategories":"Specialty Food, Wine and Liquors Stores",
     "category": "Shopping",
     "description": " ",
-    "section": "Off Property"
+    "section": "Off property"
   },
   {
     "name": "La Boutique Du Vin (Wine and Liquor): (Hato Rey)",
@@ -1247,7 +1247,7 @@ export const contacts = [
     "subcategories":"Specialty Food, Wine and Liquors Stores",
     "category": "Shopping",
     "description": " ",
-    "section": "Off Property"
+    "section": "Off property"
   },
   {
     "name": "Cremaldi(Fajardo)",
@@ -1255,7 +1255,7 @@ export const contacts = [
     "subcategories":"Specialty Food, Wine and Liquors Stores",
     "category": "Shopping",
     "description": "Ice Cream Shop",
-    "section": "Off Property"
+    "section": "Off property"
   },
   {
     "name": "Shopping Malls",
@@ -1263,6 +1263,6 @@ export const contacts = [
     "subcategories": "Shopping Malls",
     "category": "Shopping",
     "description": "🛍️ **Explore the best shopping malls nearby:**\n\n- 🏬 **Canóvanas Outlets** (Canóvanas)\n- 🏢 **The Mall of San Juan** (Carolina)\n- 🛒 **Plaza Carolina** (Carolina)\n- 🏙️ **Plaza Las Américas** (Hato Rey)\n\n🛍️ Find everything from luxury stores to local brands!",
-    "section": "Off Property"
+    "section": "Off property"
   }
 ]
