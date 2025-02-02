@@ -168,7 +168,7 @@ class PropertyPage {
     resultsContainer.innerHTML = '';
 
     if (contacts.length === 0) {
-      resultsContainer.innerHTML = '<p class="no-results">No se encontraron contactos para esta categoría.</p>';
+      resultsContainer.innerHTML = '<p class="no-results">Don`t find results for this category</p>';
     } else {
       contacts.forEach(contact => {
         const card = new Card(contact);
@@ -185,7 +185,7 @@ class PropertyPage {
     this.elements.resultsContainer.innerHTML = '';
 
     if (results.length === 0) {
-      this.elements.resultsContainer.innerHTML = '<p class="no-results">No se encontraron resultados</p>';
+      this.elements.resultsContainer.innerHTML = '<p class="no-results">Don`t find results</p>';
     } else {
       results.forEach(contact => {
         const card = new Card(contact);
@@ -195,7 +195,7 @@ class PropertyPage {
 
     if (this.elements.resultsCount) {
       if (results.length > 0) {
-        this.elements.resultsCount.textContent = `${results.length} resultados encontrados`;
+        this.elements.resultsCount.textContent = `${results.length} results finded`;
       } else {
         this.elements.resultsCount.textContent = '';
       }
