@@ -53,7 +53,7 @@ class PropertyPage {
   clearResults() {
     this.state.menuResults = [];
     this.state.searchResults = [];
-    this.elements.resultsContainer.innerHTML = '<p class="no-results">Select a category to view contacts</p>';
+    this.elements.resultsContainer.innerHTML = '<p class="no-results">Selecciona una categoría para ver los contactos</p>';
     if (this.elements.resultsCount) {
       this.elements.resultsCount.textContent = '';
     }
