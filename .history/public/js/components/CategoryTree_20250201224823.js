@@ -39,10 +39,12 @@ export class CategoryTree {
         Object.entries(sections).forEach(([section, config]) => {
             const sectionEl = document.createElement('div');
             sectionEl.className = 'category-section';
+            sectionEl.dataset.special = config.isSpecial;
 
             // Crear encabezado de sección
             const header = document.createElement('div');
             header.className = 'category-header';
+            header.dataset.isSpecial = config.isSpecial;
             
             // Agregar icono de la sección
             const sectionIcon = document.createElement('i');
@@ -53,8 +55,38 @@ export class CategoryTree {
             title.textContent = section;
             header.appendChild(title);
 
+            // Añadir evento de clic para abrir modal directamente para 'Unit's Golf Cart'
+            if (section === "Unit's Golf Cart") {
+                header.style.cursor = 'pointer'; // Indicar que es clickeable
+                header.addEventListener('click', async (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    try {
+                        // Crear modal y cargar contenido
+                        const modal = new Modal('golf-cart-modal');
+                        
+                        // Intentar cargar contenido del modal
+                        const modalContent = await modal.loadContent('golfcart.html');
+                        
+                        // Establecer contenido y abrir modal
+                        modal.setContent(modalContent);
+                        
+                        // Verificar que el contenido se estableció correctamente
+                        if (modalContent && modalContent.trim() !== '') {
+                            modal.open(); // Usar open() en lugar de show()
+                        } else {
+                            console.error('Modal content is empty');
+                            alert('No se pudo cargar la información del carrito de golf.');
+                        }
+                    } catch (error) {
+                        console.error('Error opening golf cart modal:', error);
+                        alert('No se pudo cargar la información del carrito de golf. Intente de nuevo más tarde.');
+                    }
+                });
+            }
+
             // Añadir indicador de expansión solo si hay categorías
-            if (config.categories.length > 0) {
+            if (config.categories.length > 0 && !config.isSpecial) {
                 const expandIndicator = document.createElement('span');
                 expandIndicator.className = 'expand-indicator';
                 expandIndicator.innerHTML = '▼';
@@ -121,22 +153,68 @@ export class CategoryTree {
     }
 
     setupEventListeners() {
-        // Función auxiliar para contraer todas las secciones
-        const collapseAllSections = () => {
-            const openSections = this.container.querySelectorAll('.category-section .category-list:not(.collapsed)');
-            openSections.forEach(openList => {
-                openList.classList.add('collapsed');
-                const openHeader = openList.closest('.category-section').querySelector('.category-header .expand-indicator');
-                if (openHeader) {
-                    openHeader.innerHTML = '▼';
-                }
+        // Función auxiliar para encontrar el encabezado de la sección
+        const findSectionHeader = (item) => {
+            const sectionHeaderSelectors = [
+                '.category-section > .category-header span',
+                '.category-header span',
+                '.category-section .category-header span',
+                'span.section-name',
+                // Selector de último recurso
+                '.category-header'
+            ];
+
+            let sectionHeader = null;
+            let closestSection = item.closest('.category-section');
+            
+
+            console.log('Debugging section header search:', {
+                item: item,
+                itemHTML: item.innerHTML,
+                closestSection: closestSection,
+                closestSectionHTML: closestSection?.innerHTML
             });
+
+            if (!closestSection) {
+                console.warn('No closest section found for item');
+                return null;
+            }
+
+            for (const selector of sectionHeaderSelectors) {
+                sectionHeader = closestSection.querySelector(selector);
+                if (sectionHeader) break;
+            }
+
+            // Si no se encuentra el encabezado, intentar otros métodos
+            if (!sectionHeader) {
+                console.warn('Could not find section header', {
+                    item: item,
+                    itemHTML: item.innerHTML,
+                    closestSectionHTML: closestSection.innerHTML,
+                    availableSpans: closestSection.querySelectorAll('span')
+                });
+
+                // Fallback: buscar cualquier span en la sección
+                const allSpans = closestSection.querySelectorAll('span');
+                if (allSpans.length > 0) {
+                    sectionHeader = allSpans[0];
+                    console.warn('Using first available span as section header', {
+                        fallbackSpan: sectionHeader,
+                        spanText: sectionHeader.textContent
+                    });
+                }
+
+                return sectionHeader;
+            }
+
+            return sectionHeader;
         };
 
         // Event listeners para los encabezados de sección
         const headers = this.container.querySelectorAll('.category-header');
         headers.forEach(header => {
             const section = header.parentElement;
+            const isSpecial = header.dataset.isSpecial === 'true';
             const expandIndicator = header.querySelector('.expand-indicator');
             
             header.addEventListener('click', (event) => {
@@ -146,35 +224,46 @@ export class CategoryTree {
                     
                     // Si ya está abierta, cerrar la sección
                     const categoryList = section.querySelector('.category-list');
-                    const isCurrentlyOpen = !categoryList.classList.contains('collapsed');
+                    categoryList.classList.add('collapsed');
+                    expandIndicator.innerHTML = '▼';
+                    return;
+                }
+                
+                if (isSpecial) {
+                    // Para Emergency y Golf Cart
+                    const sectionName = header.querySelector('span').textContent;
                     
-                    // Contraer todas las secciones
-                    collapseAllSections();
+                    this.clearSelection();
+                    header.classList.add('selected');
                     
-                    // Si estaba cerrada, abrirla; si estaba abierta, mantenerla cerrada
-                    if (!isCurrentlyOpen) {
+                    if (this.selectCallback) {
+                        this.selectCallback({
+                            category: sectionName,
+                            section: sectionName
+                        });
+                    }
+                    this.scrollToResults();
+                } else if (expandIndicator) {
+                   // Guardar estado inicial de la sección actual
+                    const categoryList = section.querySelector('.category-list');
+                    const wasCollapsed = categoryList.classList.contains('collapsed');
+
+                    // Cerrar todas las secciones abiertas
+                    const openSections = this.container.querySelectorAll('.category-section:not([data-special="true"]) .category-list:not(.collapsed)');
+                    openSections.forEach(openList => {
+                        openList.classList.add('collapsed');
+                        const openHeader = openList.closest('.category-section').querySelector('.category-header .expand-indicator');
+                        if (openHeader) openHeader.innerHTML = '▼';
+                    });
+
+                    // Abrir la sección actual solo si estaba cerrada inicialmente
+                    if (wasCollapsed) {
                         categoryList.classList.remove('collapsed');
                         expandIndicator.innerHTML = '▲';
                     } else {
                         expandIndicator.innerHTML = '▼';
                     }
-                    
-                    return;
                 }
-                
-                // Obtener el nombre de la sección
-                const sectionName = header.querySelector('span').textContent;
-                
-                this.clearSelection();
-                header.classList.add('selected');
-                
-                if (this.selectCallback) {
-                    this.selectCallback({
-                        category: sectionName,
-                        section: sectionName
-                    });
-                }
-                this.scrollToResults();
             });
         });
 
@@ -194,6 +283,12 @@ export class CategoryTree {
                     
                     // Encontrar el encabezado de la sección de manera robusta
                     const sectionHeader = findSectionHeader(item);
+                    
+                    console.log('Section header search result:', {
+                        categoryName,
+                        sectionHeader,
+                        sectionHeaderText: sectionHeader?.textContent
+                    });
                     
                     if (!sectionHeader) {
                         console.warn('Sección no encontrada');
@@ -264,6 +359,12 @@ export class CategoryTree {
                     // Encontrar el encabezado de la sección de manera robusta
                     const sectionHeader = findSectionHeader(item);
                     
+                    console.log('Section header search result:', {
+                        subcategoryName,
+                        sectionHeader,
+                        sectionHeaderText: sectionHeader?.textContent
+                    });
+                    
                     if (!sectionHeader) {
                         console.error('Sección no encontrada');
                         return;
@@ -304,60 +405,4 @@ export class CategoryTree {
             this.container.style.display = 'block';
         }
     }
-}
-
-function findSectionHeader(item) {
-    const sectionHeaderSelectors = [
-        '.category-section > .category-header span',
-        '.category-header span',
-        '.category-section .category-header span',
-        'span.section-name',
-        // Selector de último recurso
-        '.category-header'
-    ];
-
-    let sectionHeader = null;
-    let closestSection = item.closest('.category-section');
-    
-
-    console.log('Debugging section header search:', {
-        item: item,
-        itemHTML: item.innerHTML,
-        closestSection: closestSection,
-        closestSectionHTML: closestSection?.innerHTML
-    });
-
-    if (!closestSection) {
-        console.warn('No closest section found for item');
-        return null;
-    }
-
-    for (const selector of sectionHeaderSelectors) {
-        sectionHeader = closestSection.querySelector(selector);
-        if (sectionHeader) break;
-    }
-
-    // Si no se encuentra el encabezado, intentar otros métodos
-    if (!sectionHeader) {
-        console.warn('Could not find section header', {
-            item: item,
-            itemHTML: item.innerHTML,
-            closestSectionHTML: closestSection.innerHTML,
-            availableSpans: closestSection.querySelectorAll('span')
-        });
-
-        // Fallback: buscar cualquier span en la sección
-        const allSpans = closestSection.querySelectorAll('span');
-        if (allSpans.length > 0) {
-            sectionHeader = allSpans[0];
-            console.warn('Using first available span as section header', {
-                fallbackSpan: sectionHeader,
-                spanText: sectionHeader.textContent
-            });
-        }
-
-        return sectionHeader;
-    }
-
-    return sectionHeader;
 }
