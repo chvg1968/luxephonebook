@@ -10,7 +10,56 @@ export class CategoryTree {
         this.selectCallback = null;
         
         // Mapeo de iconos para cada categoría y sección
-        this.icons = icons;
+        this.icons = {
+            // Secciones principales
+            "Medical and Security Emergencies": "fa-kit-medical",
+            "Golf": "fa-golf-ball",
+            "Unit's Golf Cart":"fa-golf-cart",
+            "Resort restaurants and venues": "fa-utensils",
+            "Resort activities and adventures": "fa-umbrella-beach",
+            "Transportation/Transfer": "fa-taxi",
+            "Catering/delivery/special services": "fa-concierge-bell",
+            "Off property": "fa-map-location-dot",
+            
+            // Categorías
+            "Hotel": "fa-hotel",
+            "Spa": "fa-spa",
+            "Pool":"fa-person-swimming",
+            "Beach": "fa-umbrella-beach",
+            "Wellness center": "fa-heart-pulse",
+            "Bar": "fa-martini-glass",
+            "Restaurant": "fa-utensils",
+            "Off Property Restaurant": "fa-store",
+            "Scuba Diving Tours": "fa-water",
+            "Aqua Tours": "fa-ship",
+            "Tours": "fa-route",
+            "Activities Reservations": "fa-calendar-check",
+            "Tennis": "fa-table-tennis",
+            "Wellness Center": "fa-heart-pulse",
+            "Concierge": "fa-bell-concierge",
+            "Concierge Services": "fa-bell-concierge",
+            "Transportation": "fa-taxi",
+            "Nanny Services": "fa-baby",
+            "Professional Photography": "fa-camera",
+            "Personal Care and Fitness": "fa-hand-sparkles",
+            "Kid's Club": "fa-child",
+            "Personal Chefs": "fa-hat-chef",
+            "Pre-Made Meals and Catering": "fa-plate-wheat",
+            "Delivery Services and Personal Grocery Shopping": "fa-shopping-cart",
+            "Butler Services": "fa-user-tie",
+            "Shopping": "fa-shopping-bag",
+            
+            // Subcategorías de Restaurant en Off Property
+            "Near Casual": "fa-coffee",
+            "30 min West (Carolina)": "fa-map-marker-alt",
+            "30 min East (Fajardo)": "fa-map-marker-alt", 
+            "45 min West (San Juan)": "fa-map-marker-alt",
+            "On the way from the airport (more variety)": "fa-road",
+            "Near Bahia Beach": "fa-umbrella-beach",
+            "Specialty Food": "fa-shopping-basket",
+            "Wine and Liquors Stores": "fa-wine-glass-alt", 
+            "Shopping Malls": "fa-store"
+        };
     }
 
     onSelect(callback) {
@@ -100,7 +149,7 @@ export class CategoryTree {
                     {
                         name: "Restaurant",
                         subcategories: [
-                            "Near Casual",
+                            "Near and casual",
                             "30 min West (Carolina)", 
                             "30 min East (Fajardo)", 
                             "45 min West (San Juan)"
@@ -111,8 +160,7 @@ export class CategoryTree {
                         subcategories: [
                             "On the way from the airport (more variety)",
                             "Near Bahia Beach",
-                            "Specialty Food",
-                            "Wine and Liquors Stores",
+                            "Specialty Food, Wine and Liquors Stores",
                             "Shopping Malls"
                         ]
                     }
@@ -171,7 +219,7 @@ export class CategoryTree {
             }
 
             // Añadir indicador de expansión solo si hay categorías
-            if (config.categories.length > 0 && !config.isSpecial) {
+            if ((config.categories && config.categories.length > 0) && !config.isSpecial) {
                 const expandIndicator = document.createElement('span');
                 expandIndicator.className = 'expand-indicator';
                 expandIndicator.innerHTML = '▼';
@@ -180,51 +228,26 @@ export class CategoryTree {
 
             sectionEl.appendChild(header);
 
-            // Crear lista de categorías
-            if (config.categories.length > 0) {
+            // Crear lista de categorías solo si hay categorías
+            if (config.categories && config.categories.length > 0) {
                 const list = document.createElement('div');
                 list.className = 'category-list collapsed';
 
                 config.categories.forEach(categoryItem => {
-                    const category = typeof categoryItem === 'string' ? categoryItem : categoryItem.name;
-                    const item = document.createElement('div');
-                    item.className = 'category-item';
-                    
-                    const icon = document.createElement('i');
-                    icon.className = `fas ${this.getIcon(category)}`;
-                    item.appendChild(icon);
-                    
-                    const text = document.createElement('span');
-                    text.textContent = category;
-                    item.appendChild(text);
-                    
-                    list.appendChild(item);
-
-                    // Agregar subcategorías si existen
-                    if (typeof categoryItem === 'object' && categoryItem.subcategories && categoryItem.subcategories.length > 0) {
-                        const subList = document.createElement('div');
-                        subList.className = 'subcategory-list collapsed';
-
-                        categoryItem.subcategories.forEach(subcategory => {
-                            const subItem = document.createElement('div');
-                            subItem.className = 'subcategory-item';
-                            
-                            const subIcon = document.createElement('i');
-                            subIcon.className = `fas ${this.getIcon(subcategory)}`;
-                            subItem.appendChild(subIcon);
-                            
-                            const subText = document.createElement('span');
-                            subText.textContent = subcategory;
-                            subItem.appendChild(subText);
-                            
-                            subList.appendChild(subItem);
-                        });
-
-                        list.appendChild(subList);
-                    }
+                    const categoryEl = document.createElement('div');
+                    categoryEl.className = 'category-item';
+                    categoryEl.textContent = typeof categoryItem === 'object' ? categoryItem.name : categoryItem;
+                    list.appendChild(categoryEl);
                 });
 
                 sectionEl.appendChild(list);
+            }
+
+            if (config.description) {
+                const description = document.createElement('div');
+                description.className = 'category-description';
+                description.textContent = config.description;
+                sectionEl.appendChild(description);
             }
 
             tree.appendChild(sectionEl);

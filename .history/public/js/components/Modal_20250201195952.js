@@ -192,36 +192,40 @@ export class Modal {
             
             console.log('Relevant contacts:', relevantContacts);
             
-            // Usar los iconos importados de config.js
-            const iconClass = (contact) => {
-                // Priorizar categoría sobre sección
-                const iconCategory = icons[contact.category] || icons[contact.section];
+            // Generar HTML para contactos
+            if (relevantContacts.length > 0) {
+                const contactsHTML = relevantContacts.map(contact => {
+                    // Obtener el icono para la categoría o sección del contacto
+                    const icons = window.cardModule?.icons || {};
+                    const iconClass = icons[contact.category] || 
+                                      icons[contact.section] || 
+                                      'fa-phone';
+                    
+                    return `
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas ${iconClass}"></i>
+                            </div>
+                            <div class="contact-details">
+                                <div class="contact-name">${contact.name}</div>
+                                <div class="contact-phone">${contact.phone || 'N/A'}</div>
+                                <div class="contact-description">${contact.description || ''}</div>
+                            </div>
+                        </div>
+                    `;
+                }).join('');
                 
-                // Si no se encuentra un ícono específico, usar un ícono por defecto
-                return iconCategory || 'fa-phone';
-            };
-
-            const contactsHTML = relevantContacts.map(contact => `
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <i class="fas ${iconClass(contact)}"></i>
+                return `
+                    <div class="contacts-section">
+                        <h4>Contactos Relacionados</h4>
+                        <div class="contacts-container">
+                            ${contactsHTML}
+                        </div>
                     </div>
-                    <div class="contact-details">
-                        <div class="contact-name">${contact.name}</div>
-                        <div class="contact-phone">${contact.phone || 'N/A'}</div>
-                        <div class="contact-description">${contact.description || ''}</div>
-                    </div>
-                </div>
-            `).join('');
+                `;
+            }
             
-            return `
-                <div class="contacts-section">
-                    <h4>Contactos Relacionados</h4>
-                    <div class="contacts-container">
-                        ${contactsHTML}
-                    </div>
-                </div>
-            `;
+            return '';
         } catch (error) {
             console.error('Error generating contacts section:', error);
             return '';
