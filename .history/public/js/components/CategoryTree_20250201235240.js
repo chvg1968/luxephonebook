@@ -159,11 +159,9 @@
         
                     collapseOtherSections(section); // Close other sections
         
-                    if (categoryList) { // Solo si tiene lista de categorías
-                        if (!isCurrentlyOpen) {
-                            categoryList.classList.remove('collapsed');
-                        }
-                    }
+                    if (!isCurrentlyOpen) {
+                        categoryList.classList.remove('collapsed');
+                    } 
         
                 });
             });

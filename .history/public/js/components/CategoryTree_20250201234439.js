@@ -121,18 +121,13 @@
         }
 
         setupEventListeners() {
-            const collapseOtherSections = (currentSection) => {
-                const allSections = this.container.querySelectorAll('.category-section'); // Obtiene todas las secciones
-                allSections.forEach(section => {
-                    if (section !== currentSection) { // Colapsa solo si no es la sección actual
-                        const categoryList = section.querySelector('.category-list');
-                        if (categoryList && !categoryList.classList.contains('collapsed')) { // Verifica si existe y no está colapsada
-                            categoryList.classList.add('collapsed');
-                        }
-                    }
+            const collapseAllSections = () => {
+                const openSections = this.container.querySelectorAll('.category-section .category-list:not(.collapsed)');
+                openSections.forEach(openList => {
+                    openList.classList.add('collapsed');
                 });
             };
-
+        
             const headers = this.container.querySelectorAll('.category-header');
             headers.forEach(header => {
                 const section = header.parentElement;
@@ -155,15 +150,13 @@
         
         
                     const categoryList = section.querySelector('.category-list');
-                    const isCurrentlyOpen = categoryList ? !categoryList.classList.contains('collapsed') : false; // Maneja el caso sin subcategorías
+                    const isCurrentlyOpen = !categoryList.classList.contains('collapsed');
         
-                    collapseOtherSections(section); // Close other sections
+                    collapseAllSections(); // Close other sections
         
-                    if (categoryList) { // Solo si tiene lista de categorías
-                        if (!isCurrentlyOpen) {
-                            categoryList.classList.remove('collapsed');
-                        }
-                    }
+                    if (!isCurrentlyOpen) {
+                        categoryList.classList.remove('collapsed');
+                    } 
         
                 });
             });
