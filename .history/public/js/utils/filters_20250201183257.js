@@ -8,8 +8,7 @@ export function filterContacts(contacts, filters) {
         "Delivery Services and Personal Grocery Shopping": "Delivery Services",
         "Nanny Service": "Nanny Services",
         "Restaurant": "Restaurants",
-        "Personal Chefs, Catering and Pre-Made Meals": "Personal Chefs and Catering",
-        "Restaurants": "Restaurants"
+        "Personal Chefs, Catering and Pre-Made Meals": "Personal Chefs and Catering"
     };
 
     // Mapeo de secciones

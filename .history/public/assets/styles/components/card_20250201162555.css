@@ -51,9 +51,7 @@
 
 .card-body {
     display: flex;
-    align-items: flex-start;
-    justify-content: baseline;
-    flex-direction: column;
+    align-items: center;
     padding-left: 2.75rem;
 }
 

@@ -26,7 +26,7 @@ export class CategoryTree {
             "Beach": "fa-umbrella-beach",
             "Wellness center": "fa-heart-pulse",
             "Bar": "fa-martini-glass",
-            "Restaurant": "fa-utensils",
+            "Resort Restaurant": "fa-utensils",
             "Off Property Restaurant": "fa-store",
             "Scuba Diving Tours": "fa-water",
             "Aqua Tours": "fa-ship",
@@ -272,7 +272,7 @@ export class CategoryTree {
 
             let sectionHeader = null;
             let closestSection = item.closest('.category-section');
-            
+            return closestSection?.querySelector('.category-header span');
 
             console.log('Debugging section header search:', {
                 item: item,
@@ -409,6 +409,7 @@ export class CategoryTree {
                     
                     // Mapeo de categorías especiales
                     const specialCategoryMap = {
+                        "Restaurant": "Restaurants",
                         "Bar": "Bar",
                         "Hotel": "Hotel",
                         "Pool": "Pool", 

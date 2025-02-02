@@ -49,14 +49,14 @@ export const contacts = [
     "section": "Medical and Security Emergencies"
   },
   {
-    "name": "👮🏻 Security",
+    "name": "Security",
     "phone": "787-809-8940",
     "category": "Medical and Security Emergencies",
     "description": "Bahia Beach Security",
     "section": "Medical and Security Emergencies"
   },
   {
-    "name": "🛎️ Gatehouse Reception",
+    "name": "Gatehouse Reception",
     "phone": "787-809-8895",
     "category": "Medical and Security Emergencies",
     "description": " ",
@@ -70,11 +70,11 @@ export const contacts = [
     "section": "Resort activities and adventures"
   },
   {
-    "name": "Unit's Golf Cart",
+    "name": "Golf Cart Services",
     "phone": "787-809-8000",
-    "category": "Unit's Golf Cart",
+    "category": "Golf",
     "description": "For maintenance and repairs of the golf cart.",
-    "section": "Unit's Golf Cart"  
+    "section": "Resort activities and adventures"  
   },
   {
     "name": "Golf Schedule and Rates",
@@ -197,7 +197,7 @@ export const contacts = [
   },
   {
     "name": "Aquavento",
-    "phone": "808-283-5357\n787-664-9175",
+    "phone": "808-283-5357 & 787-664-9175",
     "category": "Water Park and Water Sports",
     "description": "🌊 **Have thrilling experiences** at the beach with family adventures and unique ways to stay fit:\n\n- 🪁 **Kite Surfing**\n- 🌬️ **Windsurfing**\n- 🏄‍♂️ **Ocean Paddle Boarding**\n- 🚣‍♀️ **Ocean Kayaking**\n- 🏐 **Beach Volleyball**\n\n🎓 **Rentals and lessons are available upon request!** 📞 Call us now to book your experience.",
     "section": "Resort activities and adventures"
@@ -246,7 +246,7 @@ export const contacts = [
   },
   {
     "name": "Carabalí Rainforest Adventure Park",
-    "phone": "787-889-4954\n787-889-2682\n787-889-5820",
+    "phone": "787-889-4954, 787-889-2682, 787-889-5820",
     "category": "Tours",
     "description": "(ATVs, UTVs, Horseback riding, Karts)",
     "section": "Off Property Transportation and Airport Transfers"
@@ -435,7 +435,7 @@ export const contacts = [
   },
   {
     "name": "Shadow Transportation",
-    "phone": "787-962-6924\n787-800-4379",
+    "phone": "787-962-6924 & 787-800-4379",
     "category": "Transportation",
     "description": " ",
     "section": "Off Property Transportation and Airport Transfers"
@@ -463,7 +463,7 @@ export const contacts = [
   },
   {
     "name": "Limo Service Bahia",
-    "phone": "939-334-5949\n787-809-8889",
+    "phone": "939-334-5949 & 787-809-8889",
     "category": "Transportation",
     "description": "limo@bahiapr.com",
     "section": "Off Property Transportation and Airport Transfers"
@@ -867,7 +867,7 @@ export const contacts = [
   },
   {
     "name": "Carabalí Bar and Grill",
-    "phone": "787-889-4954\n787-889-5820",
+    "phone": "787-889-4954, 787-889-5820",
     "subcategories":"Near and casual",
     "category":"Restaurant",
     "description": " ",
@@ -955,7 +955,7 @@ export const contacts = [
   },
   {
     "name": "El Oceano En Tu Mesa",
-    "phone": "787-218-1403\n939-216-8152",
+    "phone": "787-218-1403 & 939-216-8152",
     "subcategories":"Near and casual",
     "category":"Restaurant",
     "description": "(Foodtruck Seafood) (Thurs-Fri, 2:00 PM-9:00 PM, Sat- Sun, 12:00 PM-9:00 PM, Mon 2:00 PM–9:00 PM)",

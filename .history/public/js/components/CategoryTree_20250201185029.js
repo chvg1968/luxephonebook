@@ -26,7 +26,7 @@ export class CategoryTree {
             "Beach": "fa-umbrella-beach",
             "Wellness center": "fa-heart-pulse",
             "Bar": "fa-martini-glass",
-            "Restaurant": "fa-utensils",
+            "Resort Restaurant": "fa-utensils",
             "Off Property Restaurant": "fa-store",
             "Scuba Diving Tours": "fa-water",
             "Aqua Tours": "fa-ship",
@@ -272,7 +272,6 @@ export class CategoryTree {
 
             let sectionHeader = null;
             let closestSection = item.closest('.category-section');
-            
 
             console.log('Debugging section header search:', {
                 item: item,
@@ -401,7 +400,11 @@ export class CategoryTree {
                     });
                     
                     if (!sectionHeader) {
-                        console.warn('Sección no encontrada');
+                        console.warn('Could not find section header for category', {
+                            categoryName,
+                            itemHTML: item.innerHTML,
+                            closestSectionHTML: item.closest('.category-section')?.innerHTML
+                        });
                         return;
                     }
                     
@@ -409,6 +412,7 @@ export class CategoryTree {
                     
                     // Mapeo de categorías especiales
                     const specialCategoryMap = {
+                        "Restaurant": "Restaurants",
                         "Bar": "Bar",
                         "Hotel": "Hotel",
                         "Pool": "Pool", 
@@ -464,7 +468,7 @@ export class CategoryTree {
                 item.classList.add('selected');
                 
                 if (this.selectCallback) {
-                    const subcategoryName = item.textContent.trim();
+                    const subcategoryName = item.querySelector('span:last-child').textContent;
                     
                     // Encontrar el encabezado de la sección de manera robusta
                     const sectionHeader = findSectionHeader(item);
@@ -476,7 +480,11 @@ export class CategoryTree {
                     });
                     
                     if (!sectionHeader) {
-                        console.error('Sección no encontrada');
+                        console.warn('Could not find section header for subcategory', {
+                            subcategoryName,
+                            itemHTML: item.innerHTML,
+                            closestSectionHTML: item.closest('.category-section')?.innerHTML
+                        });
                         return;
                     }
                     

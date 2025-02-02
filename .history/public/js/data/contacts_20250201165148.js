@@ -70,11 +70,11 @@ export const contacts = [
     "section": "Resort activities and adventures"
   },
   {
-    "name": "Unit's Golf Cart",
+    "name": "Unit’s Golf Cart",
     "phone": "787-809-8000",
-    "category": "Unit's Golf Cart",
+    "category": "Unit´s Golf Cart",
     "description": "For maintenance and repairs of the golf cart.",
-    "section": "Unit's Golf Cart"  
+    "section": "Resort activities and adventures"  
   },
   {
     "name": "Golf Schedule and Rates",
@@ -867,7 +867,7 @@ export const contacts = [
   },
   {
     "name": "Carabalí Bar and Grill",
-    "phone": "787-889-4954\n787-889-5820",
+    "phone": "787-889-4954, 787-889-5820",
     "subcategories":"Near and casual",
     "category":"Restaurant",
     "description": " ",

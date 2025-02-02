@@ -1,16 +1,10 @@
 export const categories = {
-    'Medical and Security Emergencies': {
-        id: 'Medical and Security Emergencies',
-        name: 'Medical and Security Emergencies',
+    'Emergency': {
+        id: 'Emergency',
+        name: 'Emergency',
         icon: 'fas fa-kit-medical'
     },
-
-    'Unit’s Golf Cart':{
-        id: 'Unit’s Golf Cart',
-        name: 'Unit’s Golf Cart',
-        icon: 'fas fa-golf-cart'
-    },
-
+   
     'Resort restaurants and venues': {
         id: 'Resort restaurants and venues',
         name: 'Resort Restaurants and Venues',

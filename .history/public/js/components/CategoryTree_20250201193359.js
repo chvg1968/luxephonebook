@@ -26,7 +26,7 @@ export class CategoryTree {
             "Beach": "fa-umbrella-beach",
             "Wellness center": "fa-heart-pulse",
             "Bar": "fa-martini-glass",
-            "Restaurant": "fa-utensils",
+            "Resort Restaurant": "fa-utensils",
             "Off Property Restaurant": "fa-store",
             "Scuba Diving Tours": "fa-water",
             "Aqua Tours": "fa-ship",

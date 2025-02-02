@@ -1,5 +1,3 @@
-import { Modal } from './Modal.js';
-
 export class CategoryTree {
     constructor(containerId) {
         this.container = document.getElementById(containerId);
@@ -12,7 +10,7 @@ export class CategoryTree {
             // Secciones principales
             "Medical and Security Emergencies": "fa-kit-medical",
             "Golf": "fa-golf-ball",
-            "Unit's Golf Cart":"fa-golf-cart",
+            "Unit’s Golf Cart":"fa-golf-car",
             "Resort restaurants and venues": "fa-utensils",
             "Resort activities and adventures": "fa-umbrella-beach",
             "Transportation/Transfer": "fa-taxi",
@@ -26,7 +24,7 @@ export class CategoryTree {
             "Beach": "fa-umbrella-beach",
             "Wellness center": "fa-heart-pulse",
             "Bar": "fa-martini-glass",
-            "Restaurant": "fa-utensils",
+            "Resort Restaurant": "fa-utensils",
             "Off Property Restaurant": "fa-store",
             "Scuba Diving Tours": "fa-water",
             "Aqua Tours": "fa-ship",
@@ -99,11 +97,6 @@ export class CategoryTree {
                     "Spa",
                     "Wellness Center"
                 ]
-            },
-            "Unit's Golf Cart":{
-                isSpecial: false,
-                categories: [],
-                openModal: true
             },
             "Resort activities and adventures": {
                 isSpecial: false,
@@ -186,38 +179,8 @@ export class CategoryTree {
             title.textContent = section;
             header.appendChild(title);
 
-            // Añadir evento de clic para abrir modal directamente para 'Unit's Golf Cart'
-            if (section === "Unit's Golf Cart") {
-                header.style.cursor = 'pointer'; // Indicar que es clickeable
-                header.addEventListener('click', async (e) => {
-                    e.preventDefault();
-                    e.stopPropagation();
-                    try {
-                        // Crear modal y cargar contenido
-                        const modal = new Modal('golf-cart-modal');
-                        
-                        // Intentar cargar contenido del modal
-                        const modalContent = await modal.loadContent('golfcart.html');
-                        
-                        // Establecer contenido y abrir modal
-                        modal.setContent(modalContent);
-                        
-                        // Verificar que el contenido se estableció correctamente
-                        if (modalContent && modalContent.trim() !== '') {
-                            modal.open(); // Usar open() en lugar de show()
-                        } else {
-                            console.error('Modal content is empty');
-                            alert('No se pudo cargar la información del carrito de golf.');
-                        }
-                    } catch (error) {
-                        console.error('Error opening golf cart modal:', error);
-                        alert('No se pudo cargar la información del carrito de golf. Intente de nuevo más tarde.');
-                    }
-                });
-            }
-
             // Añadir indicador de expansión solo si hay categorías
-            if ((config.categories && config.categories.length > 0) && !config.isSpecial) {
+            if (config.categories.length > 0 && !config.isSpecial) {
                 const expandIndicator = document.createElement('span');
                 expandIndicator.className = 'expand-indicator';
                 expandIndicator.innerHTML = '▼';
@@ -226,26 +189,51 @@ export class CategoryTree {
 
             sectionEl.appendChild(header);
 
-            // Crear lista de categorías solo si hay categorías
-            if (config.categories && config.categories.length > 0) {
+            // Crear lista de categorías
+            if (config.categories.length > 0) {
                 const list = document.createElement('div');
                 list.className = 'category-list collapsed';
 
                 config.categories.forEach(categoryItem => {
-                    const categoryEl = document.createElement('div');
-                    categoryEl.className = 'category-item';
-                    categoryEl.textContent = typeof categoryItem === 'object' ? categoryItem.name : categoryItem;
-                    list.appendChild(categoryEl);
+                    const category = typeof categoryItem === 'string' ? categoryItem : categoryItem.name;
+                    const item = document.createElement('div');
+                    item.className = 'category-item';
+                    
+                    const icon = document.createElement('i');
+                    icon.className = `fas ${this.getIcon(category)}`;
+                    item.appendChild(icon);
+                    
+                    const text = document.createElement('span');
+                    text.textContent = category;
+                    item.appendChild(text);
+                    
+                    list.appendChild(item);
+
+                    // Agregar subcategorías si existen
+                    if (typeof categoryItem === 'object' && categoryItem.subcategories && categoryItem.subcategories.length > 0) {
+                        const subList = document.createElement('div');
+                        subList.className = 'subcategory-list collapsed';
+
+                        categoryItem.subcategories.forEach(subcategory => {
+                            const subItem = document.createElement('div');
+                            subItem.className = 'subcategory-item';
+                            
+                            const subIcon = document.createElement('i');
+                            subIcon.className = `fas ${this.getIcon(subcategory)}`;
+                            subItem.appendChild(subIcon);
+                            
+                            const subText = document.createElement('span');
+                            subText.textContent = subcategory;
+                            subItem.appendChild(subText);
+                            
+                            subList.appendChild(subItem);
+                        });
+
+                        list.appendChild(subList);
+                    }
                 });
 
                 sectionEl.appendChild(list);
-            }
-
-            if (config.description) {
-                const description = document.createElement('div');
-                description.className = 'category-description';
-                description.textContent = config.description;
-                sectionEl.appendChild(description);
             }
 
             tree.appendChild(sectionEl);
@@ -259,63 +247,6 @@ export class CategoryTree {
     }
 
     setupEventListeners() {
-        // Función auxiliar para encontrar el encabezado de la sección
-        const findSectionHeader = (item) => {
-            const sectionHeaderSelectors = [
-                '.category-section > .category-header span',
-                '.category-header span',
-                '.category-section .category-header span',
-                'span.section-name',
-                // Selector de último recurso
-                '.category-header'
-            ];
-
-            let sectionHeader = null;
-            let closestSection = item.closest('.category-section');
-            
-
-            console.log('Debugging section header search:', {
-                item: item,
-                itemHTML: item.innerHTML,
-                closestSection: closestSection,
-                closestSectionHTML: closestSection?.innerHTML
-            });
-
-            if (!closestSection) {
-                console.warn('No closest section found for item');
-                return null;
-            }
-
-            for (const selector of sectionHeaderSelectors) {
-                sectionHeader = closestSection.querySelector(selector);
-                if (sectionHeader) break;
-            }
-
-            // Si no se encuentra el encabezado, intentar otros métodos
-            if (!sectionHeader) {
-                console.warn('Could not find section header', {
-                    item: item,
-                    itemHTML: item.innerHTML,
-                    closestSectionHTML: closestSection.innerHTML,
-                    availableSpans: closestSection.querySelectorAll('span')
-                });
-
-                // Fallback: buscar cualquier span en la sección
-                const allSpans = closestSection.querySelectorAll('span');
-                if (allSpans.length > 0) {
-                    sectionHeader = allSpans[0];
-                    console.warn('Using first available span as section header', {
-                        fallbackSpan: sectionHeader,
-                        spanText: sectionHeader.textContent
-                    });
-                }
-
-                return sectionHeader;
-            }
-
-            return sectionHeader;
-        };
-
         // Event listeners para los encabezados de sección
         const headers = this.container.querySelectorAll('.category-header');
         headers.forEach(header => {
@@ -389,50 +320,11 @@ export class CategoryTree {
                 item.classList.add('selected');
                 
                 if (this.selectCallback) {
-                    const categoryName = item.textContent.trim();
-                    
-                    // Encontrar el encabezado de la sección de manera robusta
-                    const sectionHeader = findSectionHeader(item);
-                    
-                    console.log('Section header search result:', {
-                        categoryName,
-                        sectionHeader,
-                        sectionHeaderText: sectionHeader?.textContent
-                    });
-                    
-                    if (!sectionHeader) {
-                        console.warn('Sección no encontrada');
-                        return;
-                    }
-                    
-                    const sectionName = sectionHeader.textContent;
-                    
-                    // Mapeo de categorías especiales
-                    const specialCategoryMap = {
-                        "Bar": "Bar",
-                        "Hotel": "Hotel",
-                        "Pool": "Pool", 
-                        "Beach": "Beach",
-                        "Spa": "Spa",
-                        "Wellness Center": "Wellness Center",
-                        "Golf": "Golf",
-                        "Nature and Wildlife": "Nature and Wildlife",
-                        "Tennis": "Tennis",
-                        "Water Park and Water Sports": "Water Park and Water Sports",
-                        "Nanny Services": "Nanny Services",
-                        "Professional Photography": "Professional Photography",
-                        "Personal Care and Fitness": "Personal Care and Fitness",
-                        "Kid's Club": "Kid's Club",
-                        "Personal Chefs, Catering and Pre-Made Meals": "Personal Chefs and Catering",
-                        "Butler Services": "Butler Services",
-                        "Concierge Services": "Concierge Services",
-                        "Delivery Services": "Delivery Services"
-                    };
-
-                    const mappedCategory = specialCategoryMap[categoryName] || categoryName;
+                    const categoryName = item.querySelector('span:last-child').textContent;
+                    const sectionName = item.closest('.category-section').querySelector('.category-header span').textContent;
                     
                     this.selectCallback({
-                        category: mappedCategory,
+                        category: categoryName,
                         section: sectionName
                     });
                 }
@@ -464,23 +356,8 @@ export class CategoryTree {
                 item.classList.add('selected');
                 
                 if (this.selectCallback) {
-                    const subcategoryName = item.textContent.trim();
-                    
-                    // Encontrar el encabezado de la sección de manera robusta
-                    const sectionHeader = findSectionHeader(item);
-                    
-                    console.log('Section header search result:', {
-                        subcategoryName,
-                        sectionHeader,
-                        sectionHeaderText: sectionHeader?.textContent
-                    });
-                    
-                    if (!sectionHeader) {
-                        console.error('Sección no encontrada');
-                        return;
-                    }
-                    
-                    const sectionName = sectionHeader.textContent;
+                    const subcategoryName = item.querySelector('span:last-child').textContent;
+                    const sectionName = item.closest('.category-section').querySelector('.category-header span').textContent;
                     
                     this.selectCallback({
                         category: subcategoryName,

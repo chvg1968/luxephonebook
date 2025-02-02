@@ -7,7 +7,7 @@ export class Card {
         this.modalInstances = {}; // Initialize modalInstances object
         
         // Create modals only when needed
-        if (this.data.name === "Unit's Golf Cart") {
+        if (this.data.name === 'Golf Cart Services') {
             this.modalInstances['golf-cart-modal'] = new Modal('golf-cart-modal');
         } else if (this.data.name === 'Golf Schedule and Rates') {
             this.modalInstances['golf-rates-modal'] = new Modal('golf-rates-modal');
@@ -172,10 +172,10 @@ export class Card {
         console.log('Modal instances:', this.modalInstances);
 
         let descriptionHtml = '';
-        if (this.data.name === "Unit's Golf Cart") {
+        if (this.data.name === 'Golf Cart Services') {
             descriptionHtml = `
                 <p class="description">
-                    ${this.data.description || 'Golf cart services available for guests'}
+                    ${this.data.description}
                     <a href="#" class="info-link">Important information about Golf Cart</a>
                 </p>`;
         } else if (this.data.name === "St Regis Kid's Club") {
@@ -218,29 +218,32 @@ export class Card {
                         ${phoneNumbers.map(num => `<span>${num}</span>`).join('')}
                     </div>
                 </div>
-                ${descriptionHtml}
             </div>
+            ${descriptionHtml}
+        </div>
         `;
 
         // Modify modal event listeners
-        if (this.data.name === "Unit's Golf Cart") {
+        if (this.data.name === 'Golf Cart Services') {
             const infoLink = card.querySelector('.info-link');
             if (infoLink) {
                 infoLink.addEventListener('click', async (e) => {
                     e.preventDefault();
                     try {
-                        // Verificar si ya existe una instancia de modal
-                        const modalInstance = this.modalInstances['golf-cart-modal'];
-                        if (modalInstance) {
-                            // Cargar contenido del modal
-                            const modalContent = await this.loadModalContent('golfcart.html');
-                            modalInstance.setContent(modalContent);
-                            modalInstance.open();
-                        } else {
-                            console.error('Modal instance for golf cart not found');
-                        }
+                        const modal = this.modalInstances['golf-cart-modal'];
+                        const content = await this.loadModalContent('golfcart.html');
+                        modal.setContent(content);
+                        modal.show();
                     } catch (error) {
-                        console.error('Error opening golf cart modal:', error);
+                        console.error('Error in Golf Cart Services modal:', error);
+                        this.modalInstances['golf-cart-modal'].setContent(`
+                            <div class="property-content">
+                                <h2>Error Loading Golf Cart Services Information</h2>
+                                <p>We apologize, but the content could not be loaded.</p>
+                                <p>Error: ${error.message}</p>
+                            </div>
+                        `);
+                        this.modalInstances['golf-cart-modal'].show();
                     }
                 });
             }

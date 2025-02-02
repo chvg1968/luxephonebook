@@ -26,7 +26,7 @@ export class CategoryTree {
             "Beach": "fa-umbrella-beach",
             "Wellness center": "fa-heart-pulse",
             "Bar": "fa-martini-glass",
-            "Restaurant": "fa-utensils",
+            "Resort Restaurant": "fa-utensils",
             "Off Property Restaurant": "fa-store",
             "Scuba Diving Tours": "fa-water",
             "Aqua Tours": "fa-ship",
@@ -91,7 +91,7 @@ export class CategoryTree {
             "Resort restaurants and venues": {
                 isSpecial: false,
                 categories: [
-                    "Restaurant",
+                    "Resort Restaurant",
                     "Bar",
                     "Hotel",
                     "Pool", 
@@ -409,6 +409,7 @@ export class CategoryTree {
                     
                     // Mapeo de categorías especiales
                     const specialCategoryMap = {
+                        "Restaurant": "Resort Restaurant",
                         "Bar": "Bar",
                         "Hotel": "Hotel",
                         "Pool": "Pool", 

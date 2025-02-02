@@ -1,3 +1,17 @@
+import { contacts } from './data/contacts.js';
+import { categories } from './data/categories.js';
+import { CategoryTree } from './components/CategoryTree.js';
+import { filterContacts } from './utils/filters.js';
+
+// Crear una instancia de CategoryTree para obtener los iconos
+const categoryTreeInstance = new CategoryTree('category-container');
+
+// Hacer los contactos, categorías e iconos globalmente accesibles
+window.contactsModule = { contacts };
+window.categoriesModule = { categories };
+window.categoryTreeModule = { icons: categoryTreeInstance.icons };
+window.filtersModule = { filterContacts };
+
 const properties = [
     {
         id: 'villaclara',

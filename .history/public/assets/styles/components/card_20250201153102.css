@@ -51,26 +51,8 @@
 
 .card-body {
     display: flex;
-    align-items: flex-start;
-    justify-content: baseline;
-    flex-direction: column;
-    padding-left: 2.75rem;
-}
-
-
-.phone-container {
-    display: flex;
     align-items: center;
-    gap: 8px; /* Espacio entre el icono y los números */
-}
-
-.phone-icon {
-    font-size: 18px; /* Ajusta el tamaño del icono */
-}
-
-.phone-numbers {
-    display: flex;
-    flex-direction: column; /* Asegura que los números estén en líneas separadas */
+    padding-left: 2.75rem;
 }
 
 .phone {

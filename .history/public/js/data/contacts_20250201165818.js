@@ -70,11 +70,11 @@ export const contacts = [
     "section": "Resort activities and adventures"
   },
   {
-    "name": "Unit's Golf Cart",
+    "name": "Unit’s Golf Cart",
     "phone": "787-809-8000",
-    "category": "Unit's Golf Cart",
+    "category": "Unit’s Golf Cart",
     "description": "For maintenance and repairs of the golf cart.",
-    "section": "Unit's Golf Cart"  
+    "section": "Unit´s Golf Cart"  
   },
   {
     "name": "Golf Schedule and Rates",
