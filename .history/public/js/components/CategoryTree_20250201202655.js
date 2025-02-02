@@ -317,7 +317,7 @@ export class CategoryTree {
                         "Professional Photography": "Professional Photography",
                         "Personal Care and Fitness": "Personal Care and Fitness",
                         "Kid's Club": "Kid's Club",
-                        "Personal Chefs, Catering and Pre-Made Meals": "Personal Chefs, Catering and Pre-Made Meals",
+                        "Personal Chefs, Catering and Pre-Made Meals": "Personal Chefs and Catering",
                         "Butler Services": "Butler Services",
                         "Concierge Services": "Concierge Services",
                         "Delivery Services": "Delivery Services"

@@ -1,6 +1,6 @@
 import { Modal } from './Modal.js';
 // En CategoryTree.js y Modal.js
-import { icons, sections } from './config.js';
+import { icons, modalSectionMap } from './config.js';
 
 export class CategoryTree {
     constructor(containerId) {
@@ -34,6 +34,99 @@ export class CategoryTree {
 
         const tree = document.createElement('div');
         tree.className = 'category-tree';
+
+        // Estructura completa del árbol
+        const sections = {
+            "Medical and Security Emergencies": {
+                isSpecial: true,
+                categories: []
+            },
+            "Resort restaurants and venues": {
+                isSpecial: false,
+                categories: [
+                    "Restaurant",
+                    "Bar",
+                    "Hotel",
+                    "Pool", 
+                    "Beach",
+                    "Spa",
+                    "Wellness Center"
+                ]
+            },
+            "Unit's Golf Cart":{
+                isSpecial: false,
+                categories: [],
+                openModal: true
+            },
+            "Resort activities and adventures": {
+                isSpecial: false,
+                categories: [
+                    "Golf",
+                    "Nature and Wildlife",
+                    "Tennis",
+                    "Water Park and Water Sports",  
+                    "Wellness Center"
+                ]
+            },
+            "Off Property Transportation and Airport Transfers": {
+                isSpecial: false,
+                categories: [
+                    "Scuba Diving Tours",
+                    "Aqua Tours",
+                    "Tours", 
+                    "Transportation"
+                ]
+            },
+            "Catering/delivery/special services": {
+                isSpecial: false,
+                categories: [
+                    "Nanny Services",
+                    "Professional Photography",
+                    "Personal Care and Fitness",
+                    "Kid's Club",
+                    "Personal Chefs, Catering and Pre-Made Meals",
+                    "Butler Services",
+                    "Concierge Services",
+                    "Delivery Services"
+                ]
+            },
+            "Off property": {
+                isSpecial: false,
+                categories: [
+                    {
+                        name: "Places to Visit",
+                        isSpecial:false,
+                        categories: []
+                    },
+                    {
+                        name: "Restaurant",
+                        subcategories: [
+                            "Near Casual",
+                            "30 min West (Carolina)", 
+                            "30 min East (Fajardo)", 
+                            "45 min West (San Juan)",
+                            "On the way from the airport (more variety)",
+                            "Near Bahia Beach"
+                        ]
+                    },
+                    {
+                        name: "Shopping",
+                        subcategories: [
+                            "On the way from the airport (more variety)",
+                            "Near Bahia Beach",
+                            "Specialty Food",
+                            "Wine and Liquors Stores",
+                            "Shopping Malls",
+                            "30 min West (Carolina)",
+                            "30 min East (Fajardo)", 
+                            "45 min West (San Juan)"
+                        ]
+                    }
+                ]
+            }
+        };
+
+        console.log('Rendering category tree with sections:', JSON.stringify(sections, null, 2));
 
         // Renderizar el árbol
         Object.entries(sections).forEach(([section, config]) => {
@@ -119,6 +212,8 @@ export class CategoryTree {
                     if (typeof categoryItem === 'object' && categoryItem.subcategories && categoryItem.subcategories.length > 0) {
                         const subList = document.createElement('div');
                         subList.className = 'subcategory-list collapsed';
+
+                        console.log(`Subcategories for ${category}:`, categoryItem.subcategories);
 
                         categoryItem.subcategories.forEach(subcategory => {
                             const subItem = document.createElement('div');
@@ -317,7 +412,7 @@ export class CategoryTree {
                         "Professional Photography": "Professional Photography",
                         "Personal Care and Fitness": "Personal Care and Fitness",
                         "Kid's Club": "Kid's Club",
-                        "Personal Chefs, Catering and Pre-Made Meals": "Personal Chefs, Catering and Pre-Made Meals",
+                        "Personal Chefs, Catering and Pre-Made Meals": "Personal Chefs and Catering",
                         "Butler Services": "Butler Services",
                         "Concierge Services": "Concierge Services",
                         "Delivery Services": "Delivery Services"

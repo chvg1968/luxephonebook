@@ -852,7 +852,7 @@ export const contacts = [
   {
     "name": "Finca Agrícola Neo- Jibairo",
     "phone": "787-598-0240",
-    "subcategories":"Near and Casual",
+    "subcategories":"Near Casual",
     "description": "(Bar and Pizza: Thu-Sun 3:00 PM)",
     "category":"Restaurant",
     "section": "Off property"
@@ -860,7 +860,7 @@ export const contacts = [
   {
     "name": "Ekelekua",
     "phone": "787-953-0303",
-    "subcategories":"Near and Casual",
+    "subcategories":"Near Casual",
     "description": "(Brunch, Bar, Tapas) (Mon, Wed-Sun 7:00 AM- 3:00 PM)",
     "category":"Restaurant",
     "section": "Off property"
@@ -868,7 +868,7 @@ export const contacts = [
   {
     "name": "Carabalí Bar and Grill",
     "phone": "787-889-4954\n787-889-5820",
-    "subcategories":"Near and Casual",
+    "subcategories":"Near Casual",
     "category":"Restaurant",
     "description": " ",
     "section": "Off property"
@@ -876,7 +876,7 @@ export const contacts = [
   {
     "name": "Pizzeria Trattoria Italiana at Canóvanas",
     "phone": "787-688-2647",
-    "subcategories":"Near and Casual",
+    "subcategories":"Near Casual",
     "category":"Restaurant",
     "description": "(Thurs- Sund)",
     "section": "Off property"
@@ -884,7 +884,7 @@ export const contacts = [
   {
     "name": "Don Pepe",
     "phone": "939-221-2034",
-    "subcategories":"Near and Casual",
+    "subcategories":"Near Casual",
     "category":"Restaurant",
     "description": "(Local food)",
     "section": "Off property"
@@ -892,7 +892,7 @@ export const contacts = [
   {
     "name": "Dos Panzas",
     "phone": "787-912-8115",
-    "subcategories":"Near and Casual",
+    "subcategories":"Near Casual",
     "category":"Restaurant",
     "description": "(Mexican)",
     "section": "Off property"
@@ -900,7 +900,7 @@ export const contacts = [
   {
     "name": "La Parrilla at Kioskos de Luquillo",
     "phone": "787-889-0590",
-    "subcategories":"Near and Casual",
+    "subcategories":"Near Casual",
     "category":"Restaurant",
     "description": " ",
     "section": "Off property"
@@ -908,7 +908,7 @@ export const contacts = [
   {
     "name": "Sama Bistro",
     "phone": "787-223-9773",
-    "subcategories":"Near and Casual",
+    "subcategories":"Near Casual",
     "category":"Restaurant",
     "description": "(Coastal Seaside Cuisine) (Wed-Sun)",
     "section": "Off property"
@@ -916,7 +916,7 @@ export const contacts = [
   {
     "name": "Nectar LLC",
     "phone": "787-360-7635",
-    "subcategories":"Near and Casual",
+    "subcategories":"Near Casual",
     "category":"Restaurant",
     "description": "(Local Food) (Wed-Thurs, 5:00 PM-10:00 PM) / (Fri-Sun, 12:00 PM- 10:00 PM): nectarpuertorico.com",
     "section": "Off property"
@@ -924,7 +924,7 @@ export const contacts = [
   {
     "name": "Water's Edge",
     "phone": "787-657-1239",
-    "subcategories":"Near and Casual",
+    "subcategories":"Near Casual",
     "category":"Restaurant",
     "description": "(Breakfast and Dinner Buffets) (Daily, 12:00 PM- 10:00 PM)",
     "section": "Off property"
@@ -932,7 +932,7 @@ export const contacts = [
   {
     "name": "Prime 787",
     "phone": "787-657-1234",
-    "subcategories":"Near and Casual",
+    "subcategories":"Near Casual",
     "category":"Restaurant",
     "description": "(American Steakhouse) (Daily, 6:00 PM-10:30 PM)",
     "section": "Off property"
@@ -940,7 +940,7 @@ export const contacts = [
   {
     "name": "La Mina Restaurant",
     "phone": "787-657-1234",
-    "subcategories":"Near and Casual",
+    "subcategories":"Near Casual",
     "category":"Restaurant",
     "description": "(Local Food) (Daily, 11:00 AM-6:00 PM)",
     "section": "Off property"
@@ -948,7 +948,7 @@ export const contacts = [
   {
     "name": "Nori Teppanyaki",
     "phone": "787-657-1051",
-    "subcategories":"Near and Casual",
+    "subcategories":"Near Casual",
     "category":"Restaurant",
     "description": "(Asian) (Daily, 6:00 PM–10:00 PM)",
     "section": "Off property"
@@ -956,7 +956,7 @@ export const contacts = [
   {
     "name": "El Oceano En Tu Mesa",
     "phone": "787-218-1403\n939-216-8152",
-    "subcategories":"Near and Casual",
+    "subcategories":"Near Casual",
     "category":"Restaurant",
     "description": "(Foodtruck Seafood) (Thurs-Fri, 2:00 PM-9:00 PM, Sat- Sun, 12:00 PM-9:00 PM, Mon 2:00 PM–9:00 PM)",
     "section": "Off property"

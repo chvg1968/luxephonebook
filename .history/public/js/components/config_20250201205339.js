@@ -40,7 +40,7 @@ export const icons = {
         "Shopping": "fa-shopping-bag",
         
         // Subcategorías de Restaurant en Off Property
-        "Near and Casual": "fa-coffee",
+        "Near Casual": "fa-coffee",
         "30 min West (Carolina)": "fa-map-marker-alt",
         "30 min East (Fajardo)": "fa-map-marker-alt", 
         "45 min West (San Juan)": "fa-map-marker-alt",
@@ -150,7 +150,7 @@ export const sections = {
                 {
                     name: "Restaurant",
                     subcategories: [
-                        "Near and Casual",
+                        "Near Casual",
                         "30 min West (Carolina)", 
                         "30 min East (Fajardo)", 
                         "45 min West (San Juan)",

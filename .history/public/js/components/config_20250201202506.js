@@ -40,13 +40,14 @@ export const icons = {
         "Shopping": "fa-shopping-bag",
         
         // Subcategorías de Restaurant en Off Property
-        "Near and Casual": "fa-coffee",
+        "Near Casual": "fa-coffee",
         "30 min West (Carolina)": "fa-map-marker-alt",
         "30 min East (Fajardo)": "fa-map-marker-alt", 
         "45 min West (San Juan)": "fa-map-marker-alt",
         "On the way from the airport (more variety)": "fa-road",
         "Near Bahia Beach": "fa-umbrella-beach",
-        "Specialty Food, Wine and Liquors Stores": "fa-shopping-basket",
+        "Specialty Food": "fa-shopping-basket",
+        "Wine and Liquors Stores": "fa-wine-glass-alt", 
         "Shopping Malls": "fa-store"
     };
 
@@ -150,18 +151,25 @@ export const sections = {
                 {
                     name: "Restaurant",
                     subcategories: [
-                        "Near and Casual",
+                        "Near Casual",
                         "30 min West (Carolina)", 
                         "30 min East (Fajardo)", 
                         "45 min West (San Juan)",
+                        "On the way from the airport (more variety)",
+                        "Near Bahia Beach"
                     ]
                 },
                 {
                     name: "Shopping",
                     subcategories: [
-                        "On the way from the airport (more variety)",
-                        "Specialty Food, Wine and Liquors Stores",
+                        "Specialty Food",
+                        "Wine and Liquors Stores",
                         "Shopping Malls",
+                        "On the way from the airport (more variety)",
+                        "Near Bahia Beach",
+                        "30 min West (Carolina)",
+                        "30 min East (Fajardo)", 
+                        "45 min West (San Juan)"
                     ]
                 }
             ]
