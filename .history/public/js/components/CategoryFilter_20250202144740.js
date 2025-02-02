@@ -76,3 +76,17 @@ export class CategoryFilter {
     }
 }
 
+// Usage example:
+/*
+const categoryFilter = new CategoryFilter({
+    onFilter: (category, section) => {
+        console.log('Selected category:', category);
+        console.log('Selected section:', section);
+        // Handle filtering logic here
+    },
+    initialCategories: ['Restaurant', 'Sports', 'Medical', 'Transportation']
+});
+
+// Get current selection
+const activeCategory = categoryFilter.getValue();
+*/

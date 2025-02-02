@@ -46,7 +46,7 @@ export class CategoryFilter {
             const selectedValue = this.select.value;
             
             // Actualizar sección activa si es una sección principal
-            if (selectedValue === 'Resort Restaurants and Venues' || selectedValue === 'Off Property') {
+            if (selectedValue === 'Resort restaurants and venues' || selectedValue === 'Off property') {
                 this.activeSection = selectedValue;
                 this.activeCategory = '';
             } else {
@@ -76,3 +76,17 @@ export class CategoryFilter {
     }
 }
 
+// Usage example:
+/*
+const categoryFilter = new CategoryFilter({
+    onFilter: (category, section) => {
+        console.log('Selected category:', category);
+        console.log('Selected section:', section);
+        // Handle filtering logic here
+    },
+    initialCategories: ['Restaurant', 'Sports', 'Medical', 'Transportation']
+});
+
+// Get current selection
+const activeCategory = categoryFilter.getValue();
+*/

@@ -67,7 +67,7 @@ export const contacts = [
     "phone": "787-809-8950",
     "category": "Golf",
     "description": "Golf reservations",
-    "section": "Resort Activities and Adventures"
+    "section": "Resort activities and adventures"
   },
   {
     "name": "Unit's Golf Cart",

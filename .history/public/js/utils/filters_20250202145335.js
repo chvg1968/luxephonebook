@@ -99,4 +99,3 @@ export function filterContacts(contacts, filters) {
 
         return matchesSearch && matchesCategory;
     });
-}
