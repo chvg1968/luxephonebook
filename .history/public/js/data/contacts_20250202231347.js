@@ -88,84 +88,84 @@ export const contacts = [
     "phone": "787-809-8881",
     "category": "Restaurants",
     "description": "Wed-Sun 11:00 A.M.- 10:00 P.M.) Lunch and dinner.",
-    "section": "Resort Restaurants and Venues"
+    "section": "Resort Restaurantss and Venues"
   },
   {
     "name": "Cocoteros Diner at the golf course",
     "phone": "787-303-0722",
     "category": "Restaurants",
     "description": "Daily 7:30 A.M.- 4:00 Р.М.) Breakfast and lunch",
-    "section": "Resort Restaurants and Venues"
+    "section": "Resort Restaurantss and Venues"
   },
   {
     "name": "Beach Club Pool Bar",
     "phone": null,
     "category": "Bar",
     "description": "Open daily and has food service (11:00 A.M.- 5:00 P.M.)",
-    "section": "Resort Restaurants and Venues"
+    "section": "Resort Restaurantss and Venues"
   },
   {
     "name": "Boathouse Bar",
     "phone": "787-809-8823",
     "category": "Bar",
     "description": "12:00 P.M.- 4:00 P.M.",
-    "section": "Resort Restaurants and Venues"
+    "section": "Resort Restaurantss and Venues"
   },
   {
     "name": "Sand Dollar Seafood Grill",
     "phone": null,
     "category": "Restaurants",
     "description": "Sat-Sun 11:30 A.M.- 5:00 P.M.",
-    "section": "Resort Restaurants and Venues"
+    "section": "Resort Restaurantss and Venues"
   },
   {
     "name": "Beach Club Pools",
     "phone": null,
     "category": "Pool",
     "description": "Family and Just Adults members’ pools with full service",
-    "section": "Resort Restaurants and Venues"
+    "section": "Resort Restaurantss and Venues"
   },
   {
     "name": "Veranda’s Pool at Club House ",
     "phone": null,
     "category": "Pool",
     "description": "Self-service grill, kitchenette, pool table and lawn",
-    "section": "Resort Restaurants and Venues"
+    "section": "Resort Restaurantss and Venues"
   },
   {
     "name": "Beach Club",
     "phone": null,
     "category": "Beach",
     "description": "You can access this beach through the Beach Club area.\n\nYou can park your cart at the Golf shop and walk through the Beach Club pools. ",
-    "section": "Resort Restaurants and Venues"
+    "section": "Resort Restaurantss and Venues"
   },
   {
     "name": "Sand Dollar Beach",
     "phone": null,
     "category": "Beach",
     "description": "<p>🌴 <span style='color: blue; text-decoration: underline;'>You can access this beach through a hidden path</span> entering the 18th hole at the golf course.</p><p>🤫 <span style='color: green;'>This is a quiet beach with no service.</span></p><p>📖 <span style='color: darkorange;'>An exceptional destination for relaxation and adventure:</span></p><ul><li>📚 <span style='color: purple;'>Read a book under the shade of a palm tree.</span></li><li>✨ <span style='color: teal;'>Delight in the sparkling waters of the Atlantic.</span></li><li>🌅 <span style='color: magenta;'>Take in a breathtaking sunset.</span></li></ul><p>💆‍♀️ Enjoy <span style='color: blue; text-decoration: underline;'>a relaxing oasis</span> away from it all in this private setting.</p>",
-    "section": "Resort Restaurants and Venues"
+    "section": "Resort Restaurantss and Venues"
   },
   {
     "name": "Wellness Center",
     "phone": "787-809-8877",
     "category": "Wellness Center",
     "description": "(8:00 А.М.- 4:00 Р.М.) Coffee, snacks, and shakes is open daily",
-    "section": "Resort Restaurants and Venues"
+    "section": "Resort Restaurantss and Venues"
   },
   {
     "name": "St. Regis Hotel",
     "phone": "787-809-8000",
     "category": "Hotel",
-    "description": "<p>THESE Restaurants ARE <span style='color: blue; text-decoration: underline;'>RESTRICTED JUST FOR ST. REGIS’ GUESTS</span> WHEN THE HOTEL HAS HIGH OCCUPANCY. ASK FOR AVAILABILITY ON THE SAME DAY.</p><ul><li><span style='color: blue; text-decoration: underline;'>Sea Grapes at pool</span> (Daily 7:00 A.M.- 5:00 P.M.) Breakfast and lunch. No reservations needed. Walk-ins accepted.</li><li><span style='color: blue; text-decoration: underline;'>The St. Regis Bar</span> - (Daily 5:00 P.M.- 10:00 P.M.)</li><li><span style='color: blue; text-decoration: underline;'>Paros at the St. Regis</span> - (Daily 6:00 P.M.- 10:00 P.M.) <span style='color: red; text-decoration: underline;'>Dress code: Resort Evening: No shorts, no T-shirts, no flip flops, and no sleeveless shirts for men</span>.</li></ul>",
-    "section": "Resort Restaurants and Venues"
+    "description": "<p>THESE RestaurantsS ARE <span style='color: blue; text-decoration: underline;'>RESTRICTED JUST FOR ST. REGIS’ GUESTS</span> WHEN THE HOTEL HAS HIGH OCCUPANCY. ASK FOR AVAILABILITY ON THE SAME DAY.</p><ul><li><span style='color: blue; text-decoration: underline;'>Sea Grapes at pool</span> (Daily 7:00 A.M.- 5:00 P.M.) Breakfast and lunch. No reservations needed. Walk-ins accepted.</li><li><span style='color: blue; text-decoration: underline;'>The St. Regis Bar</span> - (Daily 5:00 P.M.- 10:00 P.M.)</li><li><span style='color: blue; text-decoration: underline;'>Paros at the St. Regis</span> - (Daily 6:00 P.M.- 10:00 P.M.) <span style='color: red; text-decoration: underline;'>Dress code: Resort Evening: No shorts, no T-shirts, no flip flops, and no sleeveless shirts for men</span>.</li></ul>",
+    "section": "Resort Restaurantss and Venues"
   },
   {
     "name": "St Regis Iridium Spa",
     "phone": "787-809-8019",
     "category": "Spa",
     "description":" ",
-    "section": "Resort Restaurants and Venues"
+    "section": "Resort Restaurantss and Venues"
   },
   {
     "name": "Nature and Wildlife",
@@ -687,9 +687,9 @@ export const contacts = [
   },
   {
     "name": "Sitters for your kids: @sitterskids on IG",
-    "phone": "787-964-4611",
+    "phone": null,
     "category": "Nanny Services",
-    "description": "info@sitters4yourkids.com",
+    "description": " ",
     "section": "Catering/Delivery/Special Services"
   },
   {
@@ -728,14 +728,14 @@ export const contacts = [
     "section": "Catering/Delivery/Special Services"
   },
   {
-    "name": " 💪 Alejandra Soto",
+    "name": "Alejandra Soto",
     "phone": "787-209-9219",
     "category": "Personal Care and Fitness",
     "description": "Personal Trainer and Pilates",
     "section": "Catering/Delivery/Special Services"
   },
   {
-    "name": " 💪 Solimar",
+    "name": "Solimar",
     "phone": "787-388-8521",
     "category": "Personal Care and Fitness",
     "description": "Personal Trainer",
