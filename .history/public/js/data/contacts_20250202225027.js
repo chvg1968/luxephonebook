@@ -878,7 +878,7 @@ export const contacts = [
     "phone": "787-688-2647",
     "subcategories":"Near and Casual",
     "category":"Restaurants",
-    "description": "Thurs- Sund",
+    "description": "(Thurs- Sund",
     "section": "Off Property Restaurants and Shopping"
   },
   {

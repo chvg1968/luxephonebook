@@ -878,7 +878,7 @@ export const contacts = [
     "phone": "787-688-2647",
     "subcategories":"Near and Casual",
     "category":"Restaurants",
-    "description": "Thurs- Sund",
+    "description": "(Thurs- Sund",
     "section": "Off Property Restaurants and Shopping"
   },
   {
@@ -926,7 +926,7 @@ export const contacts = [
     "phone": "787-657-1239",
     "subcategories":"Near and Casual",
     "category":"Restaurants",
-    "description": "Daily, 12:00 PM- 10:00 PM, Breakfast and Dinner Buffets",
+    "description": "(Breakfast and Dinner Buffets) (Daily, 12:00 PM- 10:00 PM)",
     "section": "Off Property Restaurants and Shopping"
   },
   {
@@ -934,7 +934,7 @@ export const contacts = [
     "phone": "787-657-1234",
     "subcategories":"Near and Casual",
     "category":"Restaurants",
-    "description": "Daily, 6:00 PM-10:30 PM, American Steakhouse",
+    "description": "(American Steakhouse) (Daily, 6:00 PM-10:30 PM)",
     "section": "Off Property Restaurants and Shopping"
   },
   {
@@ -942,7 +942,7 @@ export const contacts = [
     "phone": "787-657-1234",
     "subcategories":"Near and Casual",
     "category":"Restaurants",
-    "description": "Daily, 11:00 AM-6:00 PM, Local Food",
+    "description": "(Local Food) (Daily, 11:00 AM-6:00 PM)",
     "section": "Off Property Restaurants and Shopping"
   },
   {
@@ -950,7 +950,7 @@ export const contacts = [
     "phone": "787-657-1051",
     "subcategories":"Near and Casual",
     "category":"Restaurants",
-    "description": "Daily, 6:00 PM–10:00 PM, Asian",
+    "description": "(Asian) (Daily, 6:00 PM–10:00 PM)",
     "section": "Off Property Restaurants and Shopping"
   },
   {
@@ -958,7 +958,7 @@ export const contacts = [
     "phone": "787-218-1403\n939-216-8152",
     "subcategories":"Near and Casual",
     "category":"Restaurants",
-    "description": "Daily, 2:00 PM-9:00 PM, Seafood",
+    "description": "(Foodtruck Seafood) (Thurs-Fri, 2:00 PM-9:00 PM, Sat- Sun, 12:00 PM-9:00 PM, Mon 2:00 PM–9:00 PM)",
     "section": "Off Property Restaurants and Shopping"
   },
   {
@@ -966,7 +966,7 @@ export const contacts = [
     "phone": "787-447-4334",
     "subcategories":"30 min West (Carolina)",
     "category":"Restaurants",
-    "description": "Thurs-Sat: @bossbrunchpr on IG",
+    "description": "(Brunch) (Thurs-Sat): @bossbrunchpr on IG",
     "section": "Off Property Restaurants and Shopping"
   },
   {
@@ -974,7 +974,7 @@ export const contacts = [
     "phone": "787-417-2040",
     "subcategories":"30 min West (Carolina)",
     "category":"Restaurants",
-    "description": "Casual, great food",
+    "description": "(Casual, great food)",
     "section": "Off Property Restaurants and Shopping"
   },
   {
@@ -982,7 +982,7 @@ export const contacts = [
     "phone": "787-598-9000",
     "subcategories":"30 min West (Carolina)",
     "category":"Restaurants",
-    "description": "Upscale international at the Mall of San Juan",
+    "description": "(Upscale international) at the Mall of San Juan",
     "section": "Off Property Restaurants and Shopping"
   },
   {
@@ -990,7 +990,7 @@ export const contacts = [
     "phone": "787-863-3502",
     "subcategories":"30 min East (Fajardo)",
     "category":"Restaurants",
-    "description": "Casual fine dining",
+    "description": "(Casual fine dining)",
     "section": "Off Property Restaurants and Shopping"
   },
   {
@@ -998,7 +998,7 @@ export const contacts = [
     "phone": "787-655-4244",
     "subcategories":"30 min East (Fajardo)",
     "category":"Restaurants",
-    "description": "Outdoor marina view",
+    "description": "(Outdoor marina view)",
     "section": "Off Property Restaurants and Shopping"
   },
   {
@@ -1006,7 +1006,7 @@ export const contacts = [
     "phone": "787-863-4481",
     "subcategories":"30 min East (Fajardo)",
     "category":"Restaurants",
-    "description": "Outdoor BBQ",
+    "description": "(Outdoor BBQ)",
     "section": "Off Property Restaurants and Shopping"
   },
   {
@@ -1014,7 +1014,7 @@ export const contacts = [
     "phone": "787-417-7996",
     "subcategories":"30 min East (Fajardo)",
     "category":"Restaurants",
-    "description": "Tex-Mex",
+    "description": "(Tex-Mex)",
     "section": "Off Property Restaurants and Shopping"
   },
   {
@@ -1022,7 +1022,7 @@ export const contacts = [
     "phone": "787-655-7053",
     "subcategories":"30 min East (Fajardo)",
     "category":"Restaurants",
-    "description": "Thurs-Mon 8:00 AM–2:00 PM, Closed Tues-Wed, Breakfast and Brunch",
+    "description": "(Breakfast and Brunch) (Thurs-Mon 8:00 AM–2:00 PM, Closed Tues-Wed)",
     "section": "Off Property Restaurants and Shopping"
   },
   {

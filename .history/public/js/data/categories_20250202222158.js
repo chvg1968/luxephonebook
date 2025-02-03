@@ -216,10 +216,15 @@ export const categories = {
                         name: 'Near Bahia Beach',
                         icon: 'fas fa-umbrella-beach'
                     },
-                    specialtyFoodWineandLiquors: {
-                        id: 'Specialty Food, Wine and Liquors Stores',
-                        name: 'Specialty Food, Wine and Liquors Stores',
+                    specialtyFood: {
+                        id: 'Specialty Food',
+                        name: 'Specialty Food',
                         icon: 'fas fa-shopping-basket'
+                    },
+                    wineAndLiquors: {
+                        id: 'Wine and Liquors Stores',
+                        name: 'Wine and Liquors Stores',
+                        icon: 'fas fa-wine-glass-alt'
                     },
                     shoppingMalls: {
                         id: 'Shopping Malls',

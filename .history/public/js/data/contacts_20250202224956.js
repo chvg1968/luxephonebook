@@ -878,7 +878,7 @@ export const contacts = [
     "phone": "787-688-2647",
     "subcategories":"Near and Casual",
     "category":"Restaurants",
-    "description": "Thurs- Sund",
+    "description": "(Thurs- Sund",
     "section": "Off Property Restaurants and Shopping"
   },
   {
@@ -1022,7 +1022,7 @@ export const contacts = [
     "phone": "787-655-7053",
     "subcategories":"30 min East (Fajardo)",
     "category":"Restaurants",
-    "description": "Thurs-Mon 8:00 AM–2:00 PM, Closed Tues-Wed, Breakfast and Brunch",
+    "description": "(Breakfast and Brunch) (Thurs-Mon 8:00 AM–2:00 PM, Closed Tues-Wed)",
     "section": "Off Property Restaurants and Shopping"
   },
   {
