@@ -34,7 +34,7 @@ export const icons = {
         "Professional Photography": "fa-camera",
         "Personal Care and Fitness": "fa-hand-sparkles",
         "Kid's Club": "fa-child",
-        "Personal Chefs": "🧑🏻‍🍳",
+        "Personal Chefs": "fa-hat-chef",
         "Pre-Made Meals and Catering": "🧑🏻‍🍳",
         "Delivery Services and Personal Grocery Shopping": "fa-shopping-cart",
         "Butler Services": "fa-user-tie",

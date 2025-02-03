@@ -52,8 +52,8 @@ export class Card {
             
             // Services
             "Personal Chefs": "👨‍🍳",
-            "Personal Chefs, Catering and Pre-Made Meals": "👨‍🍳",
-            "Pre-Made Meals and Catering": "🧑🏻‍🍳",
+            "Personal Chefs and Catering": "👨‍🍳",
+            "Pre-Made Meals and Catering": "fa-plate-wheat",
             "Butler Services": "fa-user-tie",
             "Shopping": "fa-shopping-bag",
             "Transportation": "fa-taxi",

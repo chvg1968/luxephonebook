@@ -333,21 +333,21 @@ export const contacts = [
     "phone": "787-860-7327",
     "category": "Aqua Tours",
     "description": " ",
-    "section": "Off Property Transportation and Airport Transfers"
+    "section": "Off Property Restaurants and Shopping Transportation and Airport Transfers"
   },
   {
     "name": "Culebravipeastpr.com",
     "phone": null,
     "category": "Aqua Tours",
     "description": "Boat Charter",
-    "section": "Off Property Transportation and Airport Transfers"
+    "section": "Off Property Restaurants and Shopping Transportation and Airport Transfers"
   },
   {
     "name": "Palomino Yachts Charters",
     "phone": "787-215-5303",
     "category": "Aqua Tours",
     "description": "palominoyacht.com",
-    "section": "Off Property Transportation and Airport Transfers"
+    "section": "Off Property Restaurants and Shopping Transportation and Airport Transfers"
   },
   {
     "name": "12knots.com",
