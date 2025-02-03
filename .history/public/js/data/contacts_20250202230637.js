@@ -1049,7 +1049,30 @@ export const contacts = [
     "description": "Wed-Thurs 11:00 AM-9:00 PM, Fri 11:00 AM-10:00 PM, Sat 1:00 PM-9:00 PM, Sun 11:00 AM-9:00 PM, Closed",
     "section": "Off Property Restaurants and Shopping"
   },
- 
+  {
+    "name": "Verde Mesa",
+    "phone": null,
+    "subcategories":"San Juan - 45 min West",
+    "category":"Restaurants",
+    "description": "@verdemesa on IG",
+    "section": "Off Property Restaurants and Shopping"
+  },
+  {
+    "name": "Berlingeri",
+    "phone": "787-527-3224",
+    "subcategories":"San Juan - 45 min West",
+    "category":"Restaurants",
+    "description":  " ",
+    "section": "Off Property Restaurants and Shopping"
+  },
+  {
+    "name": "Purefood",
+    "phone": null,
+    "subcategories":"San Juan - 45 min West",
+    "category":"Restaurants",
+    "description": "@purefoodpr on IG",
+    "section": "Off Property Restaurants and Shopping"
+  },
   {
     "name": "La Lanterna",
     "phone": "787-340-8188",
@@ -1184,30 +1207,6 @@ export const contacts = [
     "subcategories":"San Juan - 45 min West",
     "category": "Restaurants",
     "description": "Good vibes, cool scene, and great international food",
-    "section": "Off Property Restaurants and Shopping"
-  },
-  {
-    "name": "Verde Mesa",
-    "phone": "787-390-4662",
-    "subcategories":"San Juan - 45 min West",
-    "category":"Restaurants",
-    "description": "@verdemesa on IG",
-    "section": "Off Property Restaurants and Shopping"
-  },
-  {
-    "name": "Berlingeri",
-    "phone": "787-527-3224",
-    "subcategories":"San Juan - 45 min West",
-    "category":"Restaurants",
-    "description":  " ",
-    "section": "Off Property Restaurants and Shopping"
-  },
-  {
-    "name": "Purefood",
-    "phone": "787-478-5809",
-    "subcategories":"San Juan - 45 min West",
-    "category":"Restaurants",
-    "description": "@purefoodpr on IG",
     "section": "Off Property Restaurants and Shopping"
   },
   {

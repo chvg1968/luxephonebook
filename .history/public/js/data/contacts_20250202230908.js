@@ -1188,7 +1188,7 @@ export const contacts = [
   },
   {
     "name": "Verde Mesa",
-    "phone": "787-390-4662",
+    "phone": null,
     "subcategories":"San Juan - 45 min West",
     "category":"Restaurants",
     "description": "@verdemesa on IG",
@@ -1204,7 +1204,7 @@ export const contacts = [
   },
   {
     "name": "Purefood",
-    "phone": "787-478-5809",
+    "phone": null,
     "subcategories":"San Juan - 45 min West",
     "category":"Restaurants",
     "description": "@purefoodpr on IG",
