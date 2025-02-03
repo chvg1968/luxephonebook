@@ -138,7 +138,6 @@ export const sections = {
                 "Kid's Club",
                 "Personal Chefs, Catering and Pre-Made Meals",
                 "Butler Services",
-                "Food Delivery",
                 "Concierge Services",
                 "Delivery Services",
                 "In Advance Delivery Services"

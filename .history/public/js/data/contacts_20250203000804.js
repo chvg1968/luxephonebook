@@ -527,30 +527,30 @@ export const contacts = [
   {
     "name": "Uber Eats",
     "phone": null,
-    "category": "Food Delivery",
+    "category": "Restaurants",
     "description": "Food delivery service",
-    "section": "Catering/Delivery/Special Services"
+    "section": "Off Property Restaurants and Shopping"
   },
   {
     "name": "Pizza Marco's",
     "phone": "787-331-1192",
-    "category": "Food Delivery",
+    "category": "Restaurants",
     "description":  " ",
-    "section": "Catering/Delivery/Special Services"
+    "section": "Off Property Restaurants and Shopping"
   },
   {
     "name": "Pizza Willy's",
     "phone": "787-887-7880",
-    "category": "Food Delivery",
+    "category": "Restaurants",
     "description":  " ",
-    "section": "Catering/Delivery/Special Services"
+    "section": "Off Property Restaurants and Shopping"
   },
   {
     "name": "Sushipin",
     "phone": "787-629-7567",
-    "category": "Food Delivery",
+    "category": "Restaurants",
     "description":  " ",
-    "section": "Catering/Delivery/Special Services"
+    "section": "Off Property Restaurants and Shopping"
   },
   {
     "name": "Market: puertoricoproduce.com",
