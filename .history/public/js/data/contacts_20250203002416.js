@@ -87,14 +87,14 @@ export const contacts = [
     "name": "The Beach Club Restaurants",
     "phone": "787-809-8881",
     "category": "Restaurants",
-    "description": "Wed-Sun 11:00 A.M.- 10:00 P.M., Lunch and dinner",
+    "description": "Wed-Sun 11:00 A.M.- 10:00 P.M.) Lunch and dinner.",
     "section": "Resort Restaurants and Venues"
   },
   {
     "name": "Cocoteros Diner at the golf course",
     "phone": "787-303-0722",
     "category": "Restaurants",
-    "description": "Daily 7:30 A.M.- 4:00 Р.М., Breakfast and lunch",
+    "description": "Daily 7:30 A.M.- 4:00 Р.М.) Breakfast and lunch",
     "section": "Resort Restaurants and Venues"
   },
   {
@@ -762,11 +762,12 @@ export const contacts = [
     "description": "See more info.",
     "section": "Resort Activities and Adventures"
   },
+
   {
     "name": "Off-Property Places to Visit",
     "phone": "787-728-2050",
     "category": "Places to Visit",
-    "description": "Las Pailas<br>- Charco Frio<br>- Seven Seas<br>- Hidden Beach<br>- Las Croabas<br>- La Pared Beach in Luquillo",
+    "description": "🌟 **Explore these amazing off-property destinations:**\n\n- 🌊 **Las Pailas** (River with Natural Slides)\n- 🏞️ **Charco Frio** (River)\n- 🏖️ **Seven Seas** (Beach)\n- 🛑 **Hidden Beach** (Adults Only)\n- 🍴 **Las Croabas** (Oceanfront Restaurantss)\n- 🏄‍♂️ **La Pared Beach in Luquillo**\n\n📞 **Contact us** for directions or more information!",
     "section": "Off Property Restaurants and Shopping"
   },
   {

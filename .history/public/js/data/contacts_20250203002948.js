@@ -87,14 +87,14 @@ export const contacts = [
     "name": "The Beach Club Restaurants",
     "phone": "787-809-8881",
     "category": "Restaurants",
-    "description": "Wed-Sun 11:00 A.M.- 10:00 P.M., Lunch and dinner",
+    "description": "Wed-Sun 11:00 A.M.- 10:00 P.M.) Lunch and dinner.",
     "section": "Resort Restaurants and Venues"
   },
   {
     "name": "Cocoteros Diner at the golf course",
     "phone": "787-303-0722",
     "category": "Restaurants",
-    "description": "Daily 7:30 A.M.- 4:00 Р.М., Breakfast and lunch",
+    "description": "Daily 7:30 A.M.- 4:00 Р.М.) Breakfast and lunch",
     "section": "Resort Restaurants and Venues"
   },
   {
