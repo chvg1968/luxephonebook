@@ -914,14 +914,6 @@ export const contacts = [
     "section": "Off Property Restaurants and Shopping"
   },
   {
-    "name": "La Parrilla at Kioskos de Luquillo",
-    "phone": "787-889-0590",
-    "subcategories":"Near and Casual",
-    "category":"Restaurants",
-    "description": " ",
-    "section": "Off Property Restaurants and Shopping"
-  },
-  {
     "name": "Sama Bistro",
     "phone": "787-223-9773",
     "subcategories":"Near and Casual",
@@ -980,15 +972,15 @@ export const contacts = [
   {
     "name": "Boss's Brunch",
     "phone": "787-447-4334",
-    "subcategories":"Carolina - 30 min West",
+    "subcategories":"30 min West (Carolina)",
     "category":"Restaurants",
-    "description": "Thur-Sat: @bossbrunchpr on IG",
+    "description": "Thurs-Sat: @bossbrunchpr on IG",
     "section": "Off Property Restaurants and Shopping"
   },
   {
     "name": "Pimentón Pizza and Pasta",
     "phone": "787-417-2040",
-    "subcategories":"Carolina - 30 min West",
+    "subcategories":"30 min West (Carolina)",
     "category":"Restaurants",
     "description": "Casual, great food",
     "section": "Off Property Restaurants and Shopping"
@@ -996,7 +988,7 @@ export const contacts = [
   {
     "name": "Lala",
     "phone": "787-598-9000",
-    "subcategories":"Carolina - 30 min West",
+    "subcategories":"30 min West (Carolina)",
     "category":"Restaurants",
     "description": "Upscale international at the Mall of San Juan",
     "section": "Off Property Restaurants and Shopping"
@@ -1004,7 +996,7 @@ export const contacts = [
   {
     "name": "Pasión por el Fogón",
     "phone": "787-863-3502",
-    "subcategories":"Fajardo - 30 min East",
+    "subcategories":"30 min East (Fajardo)",
     "category":"Restaurants",
     "description": "Casual fine dining",
     "section": "Off Property Restaurants and Shopping"
@@ -1012,7 +1004,7 @@ export const contacts = [
   {
     "name": "El Yate",
     "phone": "787-655-4244",
-    "subcategories":"Fajardo - 30 min East",
+    "subcategories":"30 min East (Fajardo)",
     "category":"Restaurants",
     "description": "Outdoor marina view",
     "section": "Off Property Restaurants and Shopping"
@@ -1020,7 +1012,7 @@ export const contacts = [
   {
     "name": "La Estación",
     "phone": "787-863-4481",
-    "subcategories":"Fajardo - 30 min East",
+    "subcategories":"30 min East (Fajardo)",
     "category":"Restaurants",
     "description": "Outdoor BBQ",
     "section": "Off Property Restaurants and Shopping"
@@ -1028,7 +1020,7 @@ export const contacts = [
   {
     "name": "Butaque",
     "phone": "787-417-7996",
-    "subcategories":"Fajardo - 30 min East",
+    "subcategories":"30 min East (Fajardo)",
     "category":"Restaurants",
     "description": "Tex-Mex",
     "section": "Off Property Restaurants and Shopping"
@@ -1036,7 +1028,7 @@ export const contacts = [
   {
     "name": "Las Vistas Café",
     "phone": "787-655-7053",
-    "subcategories":"Fajardo - 30 min East",
+    "subcategories":"30 min East (Fajardo)",
     "category":"Restaurants",
     "description": "Thurs-Mon 8:00 AM–2:00 PM, Closed Tues-Wed, Breakfast and Brunch",
     "section": "Off Property Restaurants and Shopping"
@@ -1044,7 +1036,7 @@ export const contacts = [
   {
     "name": "Don Esteban",
     "phone": "787-655-1217",
-    "subcategories":"Fajardo - 30 min East",
+    "subcategories":"30 min East (Fajardo)",
     "category":"Restaurants",
     "description": "Wed-Thurs 11:00 AM-9:00 PM, Fri 11:00 AM-10:00 PM, Sat 1:00 PM-9:00 PM, Sun 11:00 AM-9:00 PM, Mon-Tues, Closed",
     "section": "Off Property Restaurants and Shopping"
@@ -1052,7 +1044,7 @@ export const contacts = [
   {
     "name": "Verde Mesa",
     "phone": null,
-    "subcategories":"San Juan - 45 min West",
+    "subcategories":"45 min West (San Juan)",
     "category":"Restaurants",
     "description": "@verdemesa on IG",
     "section": "Off Property Restaurants and Shopping"
@@ -1060,7 +1052,7 @@ export const contacts = [
   {
     "name": "Berlingeri",
     "phone": "787-527-3224",
-    "subcategories":"San Juan - 45 min West",
+    "subcategories":"45 min West (San Juan)",
     "category":"Restaurants",
     "description":  " ",
     "section": "Off Property Restaurants and Shopping"
@@ -1068,7 +1060,7 @@ export const contacts = [
   {
     "name": "Purefood",
     "phone": null,
-    "subcategories":"San Juan - 45 min West",
+    "subcategories":"45 min West (San Juan)",
     "category":"Restaurants",
     "description": "@purefoodpr on IG",
     "section": "Off Property Restaurants and Shopping"
@@ -1076,7 +1068,7 @@ export const contacts = [
   {
     "name": "La Lanterna",
     "phone": "787-340-8188",
-    "subcategories":"San Juan - 45 min West",
+    "subcategories":"45 min West (San Juan)",
     "category":"Restaurants",
     "description": "Upscale Fine Dining Italian @ Old San Juan",
     "section": "Off Property Restaurants and Shopping"
@@ -1084,7 +1076,7 @@ export const contacts = [
   {
     "name": "Marmalade",
     "phone": "787-724-3969",
-    "subcategories":"San Juan - 45 min West",
+    "subcategories":"45 min West (San Juan)",
     "category":"Restaurants",
     "description": "Upscale Fine Dining French @ Old San Juan",
     "section": "Off Property Restaurants and Shopping"
@@ -1100,7 +1092,7 @@ export const contacts = [
   {
     "name": "1919",
     "phone": "787-724-1919",
-    "subcategories":"San Juan - 45 min West",
+    "subcategories":"45 min West (San Juan)",
     "category":"Restaurants",
     "description": "Upscale Fine Dining Fusion",
     "section": "Off Property Restaurants and Shopping"
@@ -1108,7 +1100,7 @@ export const contacts = [
   {
     "name": "Cocina al Fondo",
     "phone": "787-469-5527",
-    "subcategories":"San Juan - 45 min West",
+    "subcategories":"45 min West (San Juan)",
     "category":"Restaurants",
     "description": "Award Winning Chef",
     "section": "Off Property Restaurants and Shopping"
@@ -1116,7 +1108,7 @@ export const contacts = [
   {
     "name": "Yoko",
     "phone": "787-624-6120",
-    "subcategories":"San Juan - 45 min West",
+    "subcategories":"45 min West (San Juan)",
     "category":"Restaurants",
     "description": "Good vibes, cool scene, and great sushi",
     "section": "Off Property Restaurants and Shopping"
@@ -1124,7 +1116,7 @@ export const contacts = [
   {
     "name": "Vianda",
     "phone": "939-475-1578",
-    "subcategories":"San Juan - 45 min West",
+    "subcategories":"45 min West (San Juan)",
     "category":"Restaurants",
     "description": "Fine Dining Fusion",
     "section": "Off Property Restaurants and Shopping"
@@ -1132,7 +1124,7 @@ export const contacts = [
   {
     "name": "La Pícara",
     "phone": "787-957-1385",
-    "subcategories":"San Juan - 45 min West",
+    "subcategories":"45 min West (San Juan)",
     "category":"Restaurants",
     "description": "Good vibes, cool scene, and great fusion food",
     "section": "Off Property Restaurants and Shopping"
@@ -1140,7 +1132,7 @@ export const contacts = [
   {
     "name": "Santaella",
     "phone": "787-725-1611",
-    "subcategories":"San Juan - 45 min West",
+    "subcategories":"45 min West (San Juan)",
     "category":"Restaurants",
     "description": "Good vibes, cool scene, and great local food",
     "section": "Off Property Restaurants and Shopping"
@@ -1164,7 +1156,7 @@ export const contacts = [
   {
     "name": "La Central by Mario Pagán",
     "phone": "787-566-0505",
-    "subcategories":"San Juan - 45 min West",
+    "subcategories":"45 min West (San Juan)",
     "category":"Restaurants",
     "description": "Puerto Rican Fusion",
     "section": "Off Property Restaurants and Shopping"
@@ -1172,7 +1164,7 @@ export const contacts = [
   {
     "name": "Pio Pio",
     "phone": "787-306-7792",
-    "subcategories":"San Juan - 45 min West",
+    "subcategories":"45 min West (San Juan)",
     "category":"Restaurants",
     "description": "Good vibes, fusion food @ Old San Juan",
     "section": "Off Property Restaurants and Shopping"
@@ -1180,7 +1172,7 @@ export const contacts = [
   {
     "name": "Princesa Cocina Cultura",
     "phone": "787-723-7878",
-    "subcategories":"San Juan - 45 min West",
+    "subcategories":"45 min West (San Juan)",
     "category":"Restaurants",
     "description": "Caribbean @ Old San Juan",
     "section": "Off Property Restaurants and Shopping"
@@ -1188,7 +1180,7 @@ export const contacts = [
   {
     "name": "Casita Miramar",
     "phone": "787-631-8265",
-    "subcategories":"San Juan - 45 min West",
+    "subcategories":"45 min West (San Juan)",
     "category": "Restaurants",
     "description": "Puerto Rican",
     "section": "Off Property Restaurants and Shopping"
@@ -1196,7 +1188,7 @@ export const contacts = [
   {
     "name": "Tasca El Pescador",
     "phone": "787-721-0995",
-    "subcategories":"San Juan - 45 min West",
+    "subcategories":"45 min West (San Juan)",
     "category": "Restaurants",
     "description": "Fresh seafood",
     "section": "Off Property Restaurants and Shopping"
@@ -1204,7 +1196,7 @@ export const contacts = [
   {
     "name": "Bottles",
     "phone": "787-775-1210",
-    "subcategories":"San Juan - 45 min West",
+    "subcategories":"45 min West (San Juan)",
     "category": "Restaurants",
     "description": "Good vibes, cool scene, and great international food",
     "section": "Off Property Restaurants and Shopping"
