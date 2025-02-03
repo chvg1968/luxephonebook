@@ -584,28 +584,35 @@ export const contacts = [
     "name": "Jose Campís: @paellascampis on IG",
     "phone": "787-423-2298",
     "category": "Personal Chefs, Catering and Pre-Made Meals",
-    "description": "Personal Chef",
+    "description": " ",
     "section": "Catering/Delivery/Special Services"
   },
   {
     "name": "Josué Montañez: @chefjosuemontanez on IG",
     "phone": "787-378-2944",
     "category": "Personal Chefs, Catering and Pre-Made Meals",
-    "description": "Personal Chef",
+    "description": " ",
     "section": "Catering/Delivery/Special Services"
   },
   {
     "name": "Joaquín Gonzalez: @cultura_culinaria_2020 on IG",
     "phone": "787-587-5623",
     "category": "Personal Chefs, Catering and Pre-Made Meals",
-    "description": "Personal Chef",
+    "description": " ",
     "section": "Catering/Delivery/Special Services"
   },
   {
     "name": "Tomás Rosado",
     "phone": "787-210-3494",
     "category": "Personal Chefs, Catering and Pre-Made Meals",
-    "description": "Personal Chef",
+    "description": " ",
+    "section": "Catering/Delivery/Special Services"
+  },
+  {
+    "name": "Brittany Bennett: @bkcateringPR on IG/",
+    "phone": null,
+    "category": "Personal Chefs, Catering and Pre-Made Meals",
+    "description": "bkcatering314.com",
     "section": "Catering/Delivery/Special Services"
   },
   {
@@ -619,21 +626,21 @@ export const contacts = [
     "name": "Josian Hernaiz: Pizza Parties (DI MASSA on Facebook)",
     "phone": "939-451-7749",
     "category": "Personal Chefs, Catering and Pre-Made Meals",
-    "description": "Personal Chef",
+    "description": " ",
     "section": "Catering/Delivery/Special Services"
   },
   {
     "name": "Andrea Feria",
     "phone": "787-567-9606",
     "category":"Personal Chefs, Catering and Pre-Made Meals",
-    "description": "Personal Chef",
+    "description": " ",
     "section": "Catering/Delivery/Special Services"
   },
   {
     "name": "Giovanna Colon",
     "phone": "787-349-2226",
     "category": "Personal Chefs, Catering and Pre-Made Meals",
-    "description": "Personal Chef",
+    "description": " ",
     "section": "Catering/Delivery/Special Services"
   },
   {

@@ -609,6 +609,13 @@ export const contacts = [
     "section": "Catering/Delivery/Special Services"
   },
   {
+    "name": "Brittany Bennett: @bkcateringPR on IG/",
+    "phone": null,
+    "category": "Personal Chefs, Catering and Pre-Made Meals",
+    "description": "bkcatering314.com",
+    "section": "Catering/Delivery/Special Services"
+  },
+  {
     "name": "Lucia and Alejandro Merino: @excellent_food on IG",
     "phone": "787-203-9001",
     "category": "Personal Chefs, Catering and Pre-Made Meals",
