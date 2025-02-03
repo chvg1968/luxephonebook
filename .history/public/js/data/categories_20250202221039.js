@@ -175,7 +175,7 @@ export const categories = {
                 icon: 'fas fa-map'
             },
             restaurants: {
-                id: 'Restaurants',
+                id: 'Restaurant',
                 name: 'Restaurants',
                 icon: 'fas fa-utensils',
                 subcategories: {

@@ -18,7 +18,7 @@ export const icons = {
         "Beach": "fa-umbrella-beach",
         "Wellness center": "fa-heart-pulse",
         "Bar": "fa-martini-glass",
-        "Restaurants": "fa-utensils",
+        "Restaurant": "fa-utensils",
         "Golf":"fa-golf-ball",
         "Off Property Restaurant": "fa-store",
         "Scuba Diving Tours": "fa-water",
@@ -39,7 +39,6 @@ export const icons = {
         "Delivery Services and Personal Grocery Shopping": "fa-shopping-cart",
         "Butler Services": "fa-user-tie",
         "Shopping": "fa-shopping-bag",
-        "Places to Visit": "fa-map-marker-alt",
         
         // Subcategorías de Restaurant en Off Property
         "Near and Casual": "fa-shirt",

@@ -207,56 +207,56 @@ export const contacts = [
     "phone": "787-408-2065",
     "category": "Tours",
     "description": "El Yunque and Old San Juan Tours, Airport transfer",
-    "section": "Off Property Restaurants and Shopping Transportation and Airport Transfers"
+    "section": "Off Property Transportation and Airport Transfers"
   },
   {
     "name": "Shadow Tours",
     "phone": "787-962-6924",
     "category": "Tours",
     "description": "Shadow Tours",
-    "section": "Off Property Restaurants and Shopping Transportation and Airport Transfers"
+    "section": "Off Property Transportation and Airport Transfers"
   },
   {
     "name": "Bespoke Lifestyle Management",
     "phone": "787-690-8040",
     "category": "Tours",
     "description": " ",
-    "section": "Off Property Restaurants and Shopping Transportation and Airport Transfers"
+    "section": "Off Property Transportation and Airport Transfers"
   },
   {
     "name": "Flavors Food Tours",
     "phone": "787-964-2447",
     "category": "Tours",
     "description": " ",
-    "section": "Off Property Restaurants and Shopping Transportation and Airport Transfers"
+    "section": "Off Property Transportation and Airport Transfers"
   },
   {
     "name": "Hacienda Chocolat PR",
     "phone": "787-637-5666",
     "category": "Tours",
     "description": "Cacao Farm Tours and Chocolate Tasting): Haciendachocolat.com",
-    "section": "Off Property Restaurants and Shopping Transportation and Airport Transfers"
+    "section": "Off Property Transportation and Airport Transfers"
   },
   {
     "name": "PRHS Tours",
     "phone": "787-671-8492",
     "category": "Tours",
     "description": "Puerto Rico Historic Building Drawings Society, San Juan): Karen & Andy: prhbds.org",
-    "section": "Off Property Restaurants and Shopping Transportation and Airport Transfers"
+    "section": "Off Property Transportation and Airport Transfers"
   },
   {
     "name": "Carabalí Rainforest Adventure Park",
     "phone": "787-889-4954\n787-889-2682\n787-889-5820",
     "category": "Tours",
     "description": "(ATVs, UTVs, Horseback riding, Karts)",
-    "section": "Off Property Restaurants and Shopping Transportation and Airport Transfers"
+    "section": "Off Property Transportation and Airport Transfers"
   },
   {
     "name": "Rainforest Zipline | El Yunque National Rain Forest Ziplining",
     "phone": null,
     "category": "Tours",
     "description": "rainforestzipline.com",
-    "section": "Off Property Restaurants and Shopping Transportation and Airport Transfers"
+    "section": "Off Property Transportation and Airport Transfers"
   },
   {
     "name": "Zip line Toro Verde",
@@ -270,203 +270,203 @@ export const contacts = [
     "phone": "787-696-4222",
     "category": "Tours",
     "description": "San Juan: baysidefishingcharters.com",
-    "section": "Off Property Restaurants and Shopping Transportation and Airport Transfers"
+    "section": "Off Property Transportation and Airport Transfers"
   },
   {
     "name": "Puerto Rico Bio Bay Tours",
     "phone": "787-888-2887",
     "category": "Tours",
     "description": "Fajardo: puertoricobiobaytours.com",
-    "section": "Off Property Restaurants and Shopping Transportation and Airport Transfers"
+    "section": "Off Property Transportation and Airport Transfers"
   },
   {
     "name": "Kayaking PR",
     "phone": "787-245-4545",
     "category": "Tours",
     "description": "Snorkeling & Bio Bay Tours: kayakingpuertorico.com",
-    "section": "Off Property Restaurants and Shopping Transportation and Airport Transfers"
+    "section": "Off Property Transportation and Airport Transfers"
   },
   {
     "name": "Bioluminescent Bay Tours (Gaby)",
     "phone": "787-462-9129",
     "category": "Tours",
     "description": "puertoricoecotour.com",
-    "section": "Off Property Restaurants and Shopping Transportation and Airport Transfers"
+    "section": "Off Property Transportation and Airport Transfers"
   },
   {
     "name": "Gringo Jet Ski Rentals",
     "phone": "787-362-9982",
     "category": "Tours",
     "description": " ",
-    "section": "Off Property Restaurants and Shopping Transportation and Airport Transfers"
+    "section": "Off Property Transportation and Airport Transfers"
   },
   {
     "name": "PR Jet Skis",
     "phone": "787-397-3342",
     "category": "Tours",
     "description": " ",
-    "section": "Off Property Restaurants and Shopping Transportation and Airport Transfers"
+    "section": "Off Property Transportation and Airport Transfers"
   },
   {
     "name": "East Island Excursions",
     "phone": "787-860-3434",
     "category": "Aqua Tours",
     "description": "eastislandpr.com",
-    "section": "Off Property Restaurants and Shopping Transportation and Airport Transfers"
+    "section": "Off Property Transportation and Airport Transfers"
   },
   {
     "name": "Salty Dog",
     "phone": "787-717-6378",
     "category": "Aqua Tours",
     "description": " ",
-    "section": "Off Property Restaurants and Shopping Transportation and Airport Transfers"
+    "section": "Off Property Transportation and Airport Transfers"
   },
   {
     "name": "Spread Eagle II",
     "phone": "787-887-8821",
     "category": "Aqua Tours",
     "description": " ",
-    "section": "Off Property Restaurants and Shopping Transportation and Airport Transfers"
+    "section": "Off Property Transportation and Airport Transfers"
   },
   {
     "name": "Sail Getaways",
     "phone": "787-860-7327",
     "category": "Aqua Tours",
     "description": " ",
-    "section": "Off Property Restaurants and Shopping Transportation and Airport Transfers"
+    "section": "Off Property Transportation and Airport Transfers"
   },
   {
     "name": "Culebravipeastpr.com",
     "phone": null,
     "category": "Aqua Tours",
     "description": "Boat Charter",
-    "section": "Off Property Restaurants and Shopping Transportation and Airport Transfers"
+    "section": "Off Property Transportation and Airport Transfers"
   },
   {
     "name": "Palomino Yachts Charters",
     "phone": "787-215-5303",
     "category": "Aqua Tours",
     "description": "palominoyacht.com",
-    "section": "Off Property Restaurants and Shopping Transportation and Airport Transfers"
+    "section": "Off Property Transportation and Airport Transfers"
   },
   {
     "name": "12knots.com",
     "phone": null,
     "category": "Aqua Tours",
     "description": "Yacht charter",
-    "section": "Off Property Restaurants and Shopping Transportation and Airport Transfers"
+    "section": "Off Property Transportation and Airport Transfers"
   },
   {
     "name": "salymartours.com",
     "phone": null,
     "category": "Aqua Tours",
     "description": "Yacht charter",
-    "section": "Off Property Restaurants and Shopping Transportation and Airport Transfers"
+    "section": "Off Property Transportation and Airport Transfers"
   },
   {
     "name": "Sailo.com",
     "phone": null,
     "category": "Aqua Tours",
     "description": "Yacht charter",
-    "section": "Off Property Restaurants and Shopping Transportation and Airport Transfers"
+    "section": "Off Property Transportation and Airport Transfers"
   },
   {
     "name": "Captain Alberto Nazario",
     "phone": "787-594-6360",
     "category": "Aqua Tours",
     "description": "gonefishingpr@gmail.com",
-    "section": "Off Property Restaurants and Shopping Transportation and Airport Transfers"
+    "section": "Off Property Transportation and Airport Transfers"
   },
   {
     "name": "Aventureagroup.com",
     "phone": null,
     "category": "Aqua Tours",
     "description": "Yacht charter",
-    "section": "Off Property Restaurants and Shopping Transportation and Airport Transfers"
+    "section": "Off Property Transportation and Airport Transfers"
   },
   {
     "name": "Ricardo Yacht Charters",
     "phone": "787-461-6474",
     "category": "Aqua Tours",
     "description": "Yacht charter",
-    "section": "Off Property Restaurants and Shopping Transportation and Airport Transfers"
+    "section": "Off Property Transportation and Airport Transfers"
   },
   {
     "name": "Sea Ventures",
     "phone": "787-863-3483",
     "category": "Scuba Diving Tours",
     "description": "divepuertorico.com",
-    "section": "Off Property Restaurants and Shopping Transportation and Airport Transfers"
+    "section": "Off Property Transportation and Airport Transfers"
   },
   {
     "name": "Aqua Adventure Puerto Rico",
     "phone": "787-636-8811",
     "category": "Scuba Diving Tours",
     "description": "scubadivingpuertorico.net",
-    "section": "Off Property Restaurants and Shopping Transportation and Airport Transfers"
+    "section": "Off Property Transportation and Airport Transfers"
   },
   {
     "name": "Laurelyn private tours",
     "phone": "+64-22-064-7615",
     "category": "Scuba Diving Tours",
     "description": "Scuba Diving",
-    "section": "Off Property Restaurants and Shopping Transportation and Airport Transfers"
+    "section": "Off Property Transportation and Airport Transfers"
   },
   {
     "name": "Samy Transportation",
     "phone": "787-435-8555",
     "category": "Transportation",
     "description": " ",
-    "section": "Off Property Restaurants and Shopping Transportation and Airport Transfers"
+    "section": "Off Property Transportation and Airport Transfers"
   },
   {
     "name": "Rio Grande Taxis",
     "phone": "939-272-7777",
     "category": "Transportation",
     "description": "www.riograndetaxi.com",
-    "section": "Off Property Restaurants and Shopping Transportation and Airport Transfers"
+    "section": "Off Property Transportation and Airport Transfers"
   },
   {
     "name": "Many Transportation",
     "phone": "787-315-8716",
     "category": "Transportation",
     "description": " ",
-    "section": "Off Property Restaurants and Shopping Transportation and Airport Transfers"
+    "section": "Off Property Transportation and Airport Transfers"
   },
   {
     "name": "Shadow Transportation",
     "phone": "787-962-6924\n787-800-4379",
     "category": "Transportation",
     "description": " ",
-    "section": "Off Property Restaurants and Shopping Transportation and Airport Transfers"
+    "section": "Off Property Transportation and Airport Transfers"
   },
   {
     "name": "Ricardo Pacheco",
     "phone": "787-667-1289",
     "category": "Off-Property Transportation",
     "description": " ",
-    "section": "Off Property Restaurants and Shopping Transportation and Airport Transfers"
+    "section": "Off Property Transportation and Airport Transfers"
   },
   {
     "name": "Nicky Tours",
     "phone": "787-408-2065",
     "category": "Transportation",
     "description": " ",
-    "section": "Off Property Restaurants and Shopping Transportation and Airport Transfers"
+    "section": "Off Property Transportation and Airport Transfers"
   },
   {
     "name": "Alvir Transportation",
     "phone": "787-435-9666",
     "category": "Transportation",
     "description": " ",
-    "section": "Off Property Restaurants and Shopping Transportation and Airport Transfers"
+    "section": "Off Property Transportation and Airport Transfers"
   },
   {
     "name": "Limo Service Bahia",
     "phone": "939-334-5949\n787-809-8889",
     "category": "Transportation",
     "description": "limo@bahiapr.com",
-    "section": "Off Property Restaurants and Shopping Transportation and Airport Transfers"
+    "section": "Off Property Transportation and Airport Transfers"
   },
   {
     "name": "Stephanie Rohena",
@@ -529,49 +529,49 @@ export const contacts = [
     "phone": null,
     "category": "Restaurants",
     "description": "Food delivery service",
-    "section": "Off Property Restaurants and Shopping"
+    "section": "Off Property"
   },
   {
     "name": "Pizza Marco's",
     "phone": "787-331-1192",
     "category": "Restaurants",
     "description":  " ",
-    "section": "Off Property Restaurants and Shopping"
+    "section": "Off Property"
   },
   {
     "name": "Pizza Willy's",
     "phone": "787-887-7880",
     "category": "Restaurants",
     "description":  " ",
-    "section": "Off Property Restaurants and Shopping"
+    "section": "Off Property"
   },
   {
     "name": "Sushipin",
     "phone": "787-629-7567",
     "category": "Restaurants",
     "description":  " ",
-    "section": "Off Property Restaurants and Shopping"
+    "section": "Off Property"
   },
   {
     "name": "Market: puertoricoproduce.com",
     "phone": null,
     "category": "Shopping",
     "description": "usually one day in advance order",
-    "section": "Off Property Restaurants and Shopping"
+    "section": "Off Property"
   },
   {
     "name": "Seafood Market Alans",
     "phone": "787-273-1178",
     "category": "Shopping",
     "description": "alansmarket.com",
-    "section": "Off Property Restaurants and Shopping"
+    "section": "Off Property"
   },
   {
     "name": "Wine Shop La Boutique du Vin",
     "phone": "787-250-0008",
     "category": "Shopping",
     "description": "boutiqueduvin.com",
-    "section": "Off Property Restaurants and Shopping"
+    "section": "Off Property"
   },
   {
     "name": "Birthday Cakes and Desserts: Sweet Drops by Fanny",
@@ -775,7 +775,7 @@ export const contacts = [
     "phone": "787-728-2050",
     "category": "Places to Visit",
     "description": "🌟 **Explore these amazing off-property destinations:**\n\n- 🌊 **Las Pailas** (River with Natural Slides)\n- 🏞️ **Charco Frio** (River)\n- 🏖️ **Seven Seas** (Beach)\n- 🛑 **Hidden Beach** (Adults Only)\n- 🍴 **Las Croabas** (Oceanfront Restaurantss)\n- 🏄‍♂️ **La Pared Beach in Luquillo**\n\n📞 **Contact us** for directions or more information!",
-    "section": "Off Property Restaurants and Shopping"
+    "section": "Off Property"
   },
   {
     "name": "Supermax Isla Verde",
@@ -783,7 +783,7 @@ export const contacts = [
     "subcategories":"On the way from the airport (more variety)",
     "category": "Shopping",
     "description": " ",
-    "section": "Off Property Restaurants and Shopping"
+    "section": "Off Property"
   },
   {
     "name": "Pueblo Isla Verde",
@@ -791,7 +791,7 @@ export const contacts = [
     "subcategories":"On the way from the airport (more variety)",
     "category": "Shopping",
     "description": " ",
-    "section": "Off Property Restaurants and Shopping"
+    "section": "Off Property"
   },
   {
     "name": "Costco",
@@ -799,7 +799,7 @@ export const contacts = [
     "subcategories":"On the way from the airport (more variety)",
     "category": "Shopping",
     "description": " ",
-    "section": "Off Property Restaurants and Shopping"
+    "section": "Off Property"
   },
   {
     "name": "FreshMart Carolina ",
@@ -807,7 +807,7 @@ export const contacts = [
     "subcategories":"On the way from the airport (more variety)",
     "category": "Shopping",
     "description": "Vegan, vegetarian and gluten free options",
-    "section": "Off Property Restaurants and Shopping"
+    "section": "Off Property"
   },
   {
     "name": "Walmart Canóvanas",
@@ -815,7 +815,7 @@ export const contacts = [
     "subcategories":"Near Bahia Beach",
     "category": "Shopping",
     "description": " ",
-    "section": "Off Property Restaurants and Shopping"
+    "section": "Off Property"
   },
   {
     "name": "Ralph's Supermarket",
@@ -823,7 +823,7 @@ export const contacts = [
     "subcategories":"Near Bahia Beach",
     "category": "Shopping",
     "description": " ",
-    "section": "Off Property Restaurants and Shopping"
+    "section": "Off Property"
   },
   {
     "name": "Famcoop Supermarket",
@@ -831,7 +831,7 @@ export const contacts = [
     "subcategories":"Near Bahia Beach",
     "category": "Shopping",
     "description": " ",
-    "section": "Off Property Restaurants and Shopping"
+    "section": "Off Property"
   },
   {
     "name": "Walgreens",
@@ -839,7 +839,7 @@ export const contacts = [
     "subcategories":"Near Bahia Beach",
     "category": "Shopping",
     "description": " ",
-    "section": "Off Property Restaurants and Shopping"
+    "section": "Off Property"
   },
   {
     "name": "Econo Canóvanas",
@@ -847,7 +847,7 @@ export const contacts = [
     "subcategories":"Near Bahia Beach",
     "category": "Shopping",
     "description": " ",
-    "section": "Off Property Restaurants and Shopping"
+    "section": "Off Property"
   },
   {
     "name": "Finca Agrícola Neo- Jibairo",
@@ -855,7 +855,7 @@ export const contacts = [
     "subcategories":"Near and Casual",
     "description": "(Bar and Pizza: Thu-Sun 3:00 PM)",
     "category":"Restaurants",
-    "section": "Off Property Restaurants and Shopping"
+    "section": "Off Property"
   },
   {
     "name": "Ekelekua",
@@ -863,7 +863,7 @@ export const contacts = [
     "subcategories":"Near and Casual",
     "description": "(Brunch, Bar, Tapas) (Mon, Wed-Sun 7:00 AM- 3:00 PM)",
     "category":"Restaurants",
-    "section": "Off Property Restaurants and Shopping"
+    "section": "Off Property"
   },
   {
     "name": "Carabalí Bar and Grill",
@@ -871,7 +871,7 @@ export const contacts = [
     "subcategories":"Near and Casual",
     "category":"Restaurants",
     "description": " ",
-    "section": "Off Property Restaurants and Shopping"
+    "section": "Off Property"
   },
   {
     "name": "Pizzeria Trattoria Italiana at Canóvanas",
@@ -879,7 +879,7 @@ export const contacts = [
     "subcategories":"Near and Casual",
     "category":"Restaurants",
     "description": "(Thurs- Sund)",
-    "section": "Off Property Restaurants and Shopping"
+    "section": "Off Property"
   },
   {
     "name": "Don Pepe",
@@ -887,7 +887,7 @@ export const contacts = [
     "subcategories":"Near and Casual",
     "category":"Restaurants",
     "description": "(Local food)",
-    "section": "Off Property Restaurants and Shopping"
+    "section": "Off Property"
   },
   {
     "name": "Dos Panzas",
@@ -895,7 +895,7 @@ export const contacts = [
     "subcategories":"Near and Casual",
     "category":"Restaurants",
     "description": "(Mexican)",
-    "section": "Off Property Restaurants and Shopping"
+    "section": "Off Property"
   },
   {
     "name": "La Parrilla at Kioskos de Luquillo",
@@ -903,7 +903,7 @@ export const contacts = [
     "subcategories":"Near and Casual",
     "category":"Restaurants",
     "description": " ",
-    "section": "Off Property Restaurants and Shopping"
+    "section": "Off Property"
   },
   {
     "name": "Sama Bistro",
@@ -911,7 +911,7 @@ export const contacts = [
     "subcategories":"Near and Casual",
     "category":"Restaurants",
     "description": "(Coastal Seaside Cuisine) (Wed-Sun)",
-    "section": "Off Property Restaurants and Shopping"
+    "section": "Off Property"
   },
   {
     "name": "Nectar LLC",
@@ -919,7 +919,7 @@ export const contacts = [
     "subcategories":"Near and Casual",
     "category":"Restaurants",
     "description": "(Local Food) (Wed-Thurs, 5:00 PM-10:00 PM) / (Fri-Sun, 12:00 PM- 10:00 PM): nectarpuertorico.com",
-    "section": "Off Property Restaurants and Shopping"
+    "section": "Off Property"
   },
   {
     "name": "Water's Edge",
@@ -927,7 +927,7 @@ export const contacts = [
     "subcategories":"Near and Casual",
     "category":"Restaurants",
     "description": "(Breakfast and Dinner Buffets) (Daily, 12:00 PM- 10:00 PM)",
-    "section": "Off Property Restaurants and Shopping"
+    "section": "Off Property"
   },
   {
     "name": "Prime 787",
@@ -935,7 +935,7 @@ export const contacts = [
     "subcategories":"Near and Casual",
     "category":"Restaurants",
     "description": "(American Steakhouse) (Daily, 6:00 PM-10:30 PM)",
-    "section": "Off Property Restaurants and Shopping"
+    "section": "Off Property"
   },
   {
     "name": "La Mina Restaurants",
@@ -943,7 +943,7 @@ export const contacts = [
     "subcategories":"Near and Casual",
     "category":"Restaurants",
     "description": "(Local Food) (Daily, 11:00 AM-6:00 PM)",
-    "section": "Off Property Restaurants and Shopping"
+    "section": "Off Property"
   },
   {
     "name": "Nori Teppanyaki",
@@ -951,7 +951,7 @@ export const contacts = [
     "subcategories":"Near and Casual",
     "category":"Restaurants",
     "description": "(Asian) (Daily, 6:00 PM–10:00 PM)",
-    "section": "Off Property Restaurants and Shopping"
+    "section": "Off Property"
   },
   {
     "name": "El Oceano En Tu Mesa",
@@ -959,7 +959,7 @@ export const contacts = [
     "subcategories":"Near and Casual",
     "category":"Restaurants",
     "description": "(Foodtruck Seafood) (Thurs-Fri, 2:00 PM-9:00 PM, Sat- Sun, 12:00 PM-9:00 PM, Mon 2:00 PM–9:00 PM)",
-    "section": "Off Property Restaurants and Shopping"
+    "section": "Off Property"
   },
   {
     "name": "Boss's Brunch",
@@ -967,7 +967,7 @@ export const contacts = [
     "subcategories":"30 min West (Carolina)",
     "category":"Restaurants",
     "description": "(Brunch) (Thurs-Sat): @bossbrunchpr on IG",
-    "section": "Off Property Restaurants and Shopping"
+    "section": "Off Property"
   },
   {
     "name": "Pimentón Pizza and Pasta",
@@ -975,7 +975,7 @@ export const contacts = [
     "subcategories":"30 min West (Carolina)",
     "category":"Restaurants",
     "description": "(Casual, great food)",
-    "section": "Off Property Restaurants and Shopping"
+    "section": "Off Property"
   },
   {
     "name": "Lala",
@@ -983,7 +983,7 @@ export const contacts = [
     "subcategories":"30 min West (Carolina)",
     "category":"Restaurants",
     "description": "(Upscale international) at the Mall of San Juan",
-    "section": "Off Property Restaurants and Shopping"
+    "section": "Off Property"
   },
   {
     "name": "Pasión por el Fogón",
@@ -991,7 +991,7 @@ export const contacts = [
     "subcategories":"30 min East (Fajardo)",
     "category":"Restaurants",
     "description": "(Casual fine dining)",
-    "section": "Off Property Restaurants and Shopping"
+    "section": "Off Property"
   },
   {
     "name": "El Yate",
@@ -999,7 +999,7 @@ export const contacts = [
     "subcategories":"30 min East (Fajardo)",
     "category":"Restaurants",
     "description": "(Outdoor marina view)",
-    "section": "Off Property Restaurants and Shopping"
+    "section": "Off Property"
   },
   {
     "name": "La Estación",
@@ -1007,7 +1007,7 @@ export const contacts = [
     "subcategories":"30 min East (Fajardo)",
     "category":"Restaurants",
     "description": "(Outdoor BBQ)",
-    "section": "Off Property Restaurants and Shopping"
+    "section": "Off Property"
   },
   {
     "name": "Butaque",
@@ -1015,7 +1015,7 @@ export const contacts = [
     "subcategories":"30 min East (Fajardo)",
     "category":"Restaurants",
     "description": "(Tex-Mex)",
-    "section": "Off Property Restaurants and Shopping"
+    "section": "Off Property"
   },
   {
     "name": "Las Vistas Café",
@@ -1023,7 +1023,7 @@ export const contacts = [
     "subcategories":"30 min East (Fajardo)",
     "category":"Restaurants",
     "description": "(Breakfast and Brunch) (Thurs-Mon 8:00 AM–2:00 PM, Closed Tues-Wed)",
-    "section": "Off Property Restaurants and Shopping"
+    "section": "Off Property"
   },
   {
     "name": "Don Esteban",
@@ -1031,7 +1031,7 @@ export const contacts = [
     "subcategories":"30 min East (Fajardo)",
     "category":"Restaurants",
     "description": "Wed-Thurs 11:00 AM-9:00 PM, Fri 11:00 AM-10:00 PM, Sat 1:00 PM-9:00 PM, Sun 11:00 AM-9:00 PM, Mon-Tues, Closed",
-    "section": "Off Property Restaurants and Shopping"
+    "section": "Off Property"
   },
   {
     "name": "Verde Mesa",
@@ -1039,7 +1039,7 @@ export const contacts = [
     "subcategories":"45 min West (San Juan)",
     "category":"Restaurants",
     "description": "@verdemesa on IG",
-    "section": "Off Property Restaurants and Shopping"
+    "section": "Off Property"
   },
   {
     "name": "Berlingeri",
@@ -1047,7 +1047,7 @@ export const contacts = [
     "subcategories":"45 min West (San Juan)",
     "category":"Restaurants",
     "description":  " ",
-    "section": "Off Property Restaurants and Shopping"
+    "section": "Off Property"
   },
   {
     "name": "Purefood",
@@ -1055,7 +1055,7 @@ export const contacts = [
     "subcategories":"45 min West (San Juan)",
     "category":"Restaurants",
     "description": "@purefoodpr on IG",
-    "section": "Off Property Restaurants and Shopping"
+    "section": "Off Property"
   },
   {
     "name": "La Lanterna",
@@ -1063,7 +1063,7 @@ export const contacts = [
     "subcategories":"45 min West (San Juan)",
     "category":"Restaurants",
     "description": "Upscale Fine Dining Italian @ Old San Juan",
-    "section": "Off Property Restaurants and Shopping"
+    "section": "Off Property"
   },
   {
     "name": "Marmalade",
@@ -1071,7 +1071,7 @@ export const contacts = [
     "subcategories":"45 min West (San Juan)",
     "category":"Restaurants",
     "description": "Upscale Fine Dining French @ Old San Juan",
-    "section": "Off Property Restaurants and Shopping"
+    "section": "Off Property"
   },
   {
     "name": "Ariel",
@@ -1079,7 +1079,7 @@ export const contacts = [
     "subcategories":"45 min West (San Juan)",
     "category":"Restaurants",
     "description": "Upscale Fine Dining Fusion",
-    "section": "Off Property Restaurants and Shopping"
+    "section": "Off Property"
   },
   {
     "name": "1919",
@@ -1087,7 +1087,7 @@ export const contacts = [
     "subcategories":"45 min West (San Juan)",
     "category":"Restaurants",
     "description": "Upscale Fine Dining Fusion",
-    "section": "Off Property Restaurants and Shopping"
+    "section": "Off Property"
   },
   {
     "name": "Cocina al Fondo",
@@ -1095,7 +1095,7 @@ export const contacts = [
     "subcategories":"45 min West (San Juan)",
     "category":"Restaurants",
     "description": "Award Winning Chef",
-    "section": "Off Property Restaurants and Shopping"
+    "section": "Off Property"
   },
   {
     "name": "Yoko",
@@ -1103,7 +1103,7 @@ export const contacts = [
     "subcategories":"45 min West (San Juan)",
     "category":"Restaurants",
     "description": "Good vibes, cool scene, and great sushi",
-    "section": "Off Property Restaurants and Shopping"
+    "section": "Off Property"
   },
   {
     "name": "Vianda",
@@ -1111,7 +1111,7 @@ export const contacts = [
     "subcategories":"45 min West (San Juan)",
     "category":"Restaurants",
     "description": "Fine Dining Fusion",
-    "section": "Off Property Restaurants and Shopping"
+    "section": "Off Property"
   },
   {
     "name": "La Pícara",
@@ -1119,7 +1119,7 @@ export const contacts = [
     "subcategories":"45 min West (San Juan)",
     "category":"Restaurants",
     "description": "Good vibes, cool scene, and great fusion food",
-    "section": "Off Property Restaurants and Shopping"
+    "section": "Off Property"
   },
   {
     "name": "Santaella",
@@ -1127,7 +1127,7 @@ export const contacts = [
     "subcategories":"45 min West (San Juan)",
     "category":"Restaurants",
     "description": "Good vibes, cool scene, and great local food",
-    "section": "Off Property Restaurants and Shopping"
+    "section": "Off Property"
   },
   {
     "name": "Mario Pagan",
@@ -1135,7 +1135,7 @@ export const contacts = [
     "subcategories":"45 min West (San Juan)",
     "category":"Restaurants",
     "description": "Good vibes, cool scene, and great local food",
-    "section": "Off Property Restaurants and Shopping"
+    "section": "Off Property"
   },
   {
     "name": "Raya",
@@ -1143,7 +1143,7 @@ export const contacts = [
     "subcategories":"45 min West (San Juan)",
     "category":"Restaurants",
     "description": "Upscale Good vibes, cool scene, and great fusion food",
-    "section": "Off Property Restaurants and Shopping"
+    "section": "Off Property"
   },
   {
     "name": "La Central by Mario Pagán",
@@ -1151,7 +1151,7 @@ export const contacts = [
     "subcategories":"45 min West (San Juan)",
     "category":"Restaurants",
     "description": "Puerto Rican Fusion",
-    "section": "Off Property Restaurants and Shopping"
+    "section": "Off Property"
   },
   {
     "name": "Pio Pio",
@@ -1159,7 +1159,7 @@ export const contacts = [
     "subcategories":"45 min West (San Juan)",
     "category":"Restaurants",
     "description": "Good vibes, fusion food @ Old San Juan",
-    "section": "Off Property Restaurants and Shopping"
+    "section": "Off Property"
   },
   {
     "name": "Princesa Cocina Cultura",
@@ -1167,7 +1167,7 @@ export const contacts = [
     "subcategories":"45 min West (San Juan)",
     "category":"Restaurants",
     "description": "Caribbean @ Old San Juan",
-    "section": "Off Property Restaurants and Shopping"
+    "section": "Off Property"
   },
   {
     "name": "Casita Miramar",
@@ -1175,7 +1175,7 @@ export const contacts = [
     "subcategories":"45 min West (San Juan)",
     "category": "Restaurants",
     "description": "Puerto Rican",
-    "section": "Off Property Restaurants and Shopping"
+    "section": "Off Property"
   },
   {
     "name": "Tasca El Pescador",
@@ -1183,7 +1183,7 @@ export const contacts = [
     "subcategories":"45 min West (San Juan)",
     "category": "Restaurants",
     "description": "Fresh seafood",
-    "section": "Off Property Restaurants and Shopping"
+    "section": "Off Property"
   },
   {
     "name": "Bottles",
@@ -1191,7 +1191,7 @@ export const contacts = [
     "subcategories":"45 min West (San Juan)",
     "category": "Restaurants",
     "description": "Good vibes, cool scene, and great international food",
-    "section": "Off Property Restaurants and Shopping"
+    "section": "Off Property"
   },
   {
     "name": "Cut butcher Shop",
@@ -1199,7 +1199,7 @@ export const contacts = [
     "subcategories":"Specialty Food, Wine and Liquors Stores",
     "category": "Shopping",
     "description": "Isla Verde",
-    "section": "Off Property Restaurants and Shopping"
+    "section": "Off Property"
   },
   {
     "name": "Alans Fish Market",
@@ -1207,7 +1207,7 @@ export const contacts = [
     "subcategories":"Specialty Food, Wine and Liquors Stores",
     "category": "Shopping",
     "description": "Guaynabo",
-    "section": "Off Property Restaurants and Shopping"
+    "section": "Off Property"
   },
   {
     "name": "El Horno de Pan Bakery",
@@ -1215,7 +1215,7 @@ export const contacts = [
     "subcategories":"Specialty Food, Wine and Liquors Stores",
     "category": "Shopping",
     "description": "Hato Rey: @elhornodepane",
-    "section": "Off Property Restaurants and Shopping"
+    "section": "Off Property"
   },
   {
     "name": "Lucia Patisserie",
@@ -1223,7 +1223,7 @@ export const contacts = [
     "subcategories":"Specialty Food, Wine and Liquors Stores",
     "category": "Shopping",
     "description": "Miramar",
-    "section": "Off Property Restaurants and Shopping"
+    "section": "Off Property"
   },
   {
     "name": "The House Liquor Store",
@@ -1231,7 +1231,7 @@ export const contacts = [
     "subcategories":"Specialty Food, Wine and Liquors Stores",
     "category": "Shopping",
     "description": "Condado",
-    "section": "Off Property Restaurants and Shopping"
+    "section": "Off Property"
   },
   {
     "name": "Bodegas Compostela Wine",
@@ -1239,7 +1239,7 @@ export const contacts = [
     "subcategories":"Specialty Food, Wine and Liquors Stores",
     "category": "Shopping",
     "description": "Condado",
-    "section": "Off Property Restaurants and Shopping"
+    "section": "Off Property"
   },
   {
     "name": "La Boutique Du Vin (Wine and Liquor)",
@@ -1247,7 +1247,7 @@ export const contacts = [
     "subcategories":"Specialty Food, Wine and Liquors Stores",
     "category": "Shopping",
     "description": "Hato Rey",
-    "section": "Off Property Restaurants and Shopping"
+    "section": "Off Property"
   },
   {
     "name": "Cremaldi Ice Cream Shop",
@@ -1255,7 +1255,7 @@ export const contacts = [
     "subcategories":"Specialty Food, Wine and Liquors Stores",
     "category": "Shopping",
     "description": "Fajardo",
-    "section": "Off Property Restaurants and Shopping"
+    "section": "Off Property"
   },
   {
     "name": "Shopping Malls",
@@ -1263,6 +1263,6 @@ export const contacts = [
     "subcategories": "Shopping Malls",
     "category": "Shopping",
     "description": "🛍️ Explore the best shopping malls nearby:<br>- Canóvanas Outlets<br>- The Mall of San Juan<br>- Plaza Carolina<br>- Plaza Las Américas",
-    "section": "Off Property Restaurants and Shopping"
+    "section": "Off Property"
 }
 ]
